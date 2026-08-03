@@ -1,0 +1,40 @@
+{
+    "orders":
+    [
+    {
+        "type": "classic",
+        "phrases": [
+            "Keep it classic",
+            "Give me a traditional roll"
+        ]
+    },
+    {
+        "type": "sweet",
+        "phrases": [
+            "There's always room for dessert!",
+            "I have a sweet tooth today"
+        ]
+    },
+    {
+        "type": "spicy",
+        "phrases": [
+            "Give me something with a kick!",
+            "I want to feel the burn!"
+        ]
+    },
+    {
+        "type": "healthy",
+        "phrases": [
+            "I'm trying to eat healthy",
+            "I'm on a diet"
+        ]
+    },
+    {
+        "type": "rich",
+        "phrases": [
+            "I could go for something filling",
+            "I'm bulking"
+        ]
+    }
+    ]
+}

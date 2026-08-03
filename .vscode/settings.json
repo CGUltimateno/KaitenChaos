@@ -67,6 +67,6 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "esp-26-kaiten-chaos.slnx",
+    "dotnet.defaultSolution": "KaitenChaos.slnx",
     "dotnet.enableWorkspaceBasedDevelopment": false
 }
