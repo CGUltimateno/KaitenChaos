@@ -3,7 +3,7 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-// Implemented by Mohamed Osman
+// Implemented by Mohamed Osman on 2026-08-03
 // AI assistance: VS Code (autocomplete), Claude (architecture review)
 
 public class GameDatabase : MonoBehaviour

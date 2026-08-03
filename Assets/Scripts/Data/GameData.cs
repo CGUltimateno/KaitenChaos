@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-// Implemented by Mohamed Osman
+// Implemented by Mohamed Osman on 2026-08-03
 // AI assistance: VS Code (autocomplete), Claude (architecture review)
 
 [Serializable]
