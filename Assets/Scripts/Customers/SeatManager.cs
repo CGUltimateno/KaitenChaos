@@ -2,10 +2,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // Implemented by Mohamed Osman on 2026-08-03
-// AI assistance: VS Code (autocomplete), Claude (architecture review)
+// AI assistance: Claude (autocomplete, architecture review)
 
 public class SeatManager : MonoBehaviour
 {
+    public static SeatManager Instance { get; private set; }
+
     [Header("Seat Setup")]
     [SerializeField] private Transform[] seatPositions = new Transform[4];
 
@@ -20,6 +22,13 @@ public class SeatManager : MonoBehaviour
 
     private void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+
         occupants = new Customer[seatPositions.Length];
         spawnTimer = 0f;
         turnedAwayCount = 0;

@@ -1,5 +1,5 @@
 // Implemented by Mohamed Osman on 2026-08-03
-// AI assistance: VS Code (autocomplete), Claude (architecture review)
+// AI assistance: Claude (autocomplete, architecture review)
 
 public static class ScoringService
 {
@@ -26,5 +26,13 @@ public static class ScoringService
         if (calculatedScore > 100) calculatedScore = 100;
 
         return calculatedScore;
+    }
+
+    public static int BindTicketToDish(Dish dish, Ticket ticket)
+    {
+        dish.boundTicket = ticket;
+        int score = ComputeCravingMatch(dish, ticket);
+        dish.cravingMatchScore = score;
+        return score;
     }
 }

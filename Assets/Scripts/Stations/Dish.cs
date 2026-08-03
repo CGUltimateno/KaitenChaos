@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 
 // Implemented by Mohamed Osman on 2026-08-03
-// AI assistance: VS Code (autocomplete), Claude (architecture review)
+// AI assistance: Claude (autocomplete, architecture review)
 
 public class Dish
 {

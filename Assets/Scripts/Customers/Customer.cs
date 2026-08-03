@@ -1,7 +1,7 @@
 using UnityEngine;
 
 // Implemented by Mohamed Osman on 2026-08-03
-// AI assistance: VS Code (autocomplete), Claude (architecture review)
+// AI assistance: Claude (autocomplete, architecture review)
 
 public class Customer : MonoBehaviour
 {
@@ -35,7 +35,12 @@ public class Customer : MonoBehaviour
         }
 
         spriteRenderer.color = Random.ColorHSV(0f, 1f, 0.5f, 0.8f, 0.7f, 1f);
-        transform.localScale = Vector3.one * 0.8f;
+        // size is temporary to test click collision, will replace with actual art later
+        transform.localScale = Vector3.one * 50f; 
+        
+        BoxCollider2D collider = GetComponent<BoxCollider2D>();
+        if (collider == null)
+            collider = gameObject.AddComponent<BoxCollider2D>();
     }
 
     private void Update()
@@ -44,6 +49,16 @@ public class Customer : MonoBehaviour
         {
             PatienceTimer += Time.deltaTime;
         }
+    }
+
+    private void OnMouseDown()
+    {
+        if (CurrentState != State.NeedsOrderTaken)
+            return;
+
+        Ticket.loggedToTray = true;
+        TicketTray.Instance.AddTicket(Ticket);
+        SetState(State.WaitingForFood);
     }
 
     public void SetState(State newState)
