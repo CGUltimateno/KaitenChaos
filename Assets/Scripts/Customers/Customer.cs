@@ -12,35 +12,30 @@ public class Customer : MonoBehaviour
     public float PatienceTimer { get; private set; }
     public int SeatIndex { get; private set; }
 
-    private SpriteRenderer spriteRenderer;
+    private SpriteRenderer portraitRenderer;
+    private BoxCollider2D boxCollider;
 
-    public void Init(Ticket ticket, int seatIndex)
+    public void Init(Ticket ticket, int seatIndex, Sprite portraitSprite, Vector3 portraitOffset, float portraitScale)
     {
         Ticket = ticket;
         SeatIndex = seatIndex;
         CurrentState = State.NeedsOrderTaken;
         PatienceTimer = 0f;
 
-        // colored square placeholder
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        if (spriteRenderer == null)
-            spriteRenderer = gameObject.AddComponent<SpriteRenderer>();
+        GameObject portraitObj = new GameObject("Portrait");
+        portraitRenderer = portraitObj.AddComponent<SpriteRenderer>();
+        portraitRenderer.sprite = portraitSprite;
+        portraitRenderer.material = new Material(Shader.Find("Sprites/Default"));
+        portraitObj.transform.SetParent(transform, false);
+        portraitObj.transform.localPosition = portraitOffset;
+        portraitObj.transform.localScale = Vector3.one * portraitScale;
 
-        spriteRenderer.sprite = Resources.Load<Sprite>("unity_builtin_extra/Sprites/Square");
-        if (spriteRenderer.sprite == null)
-        {
-            // fallback: create via Sprite.Create if built-in load fails
-            Texture2D tex = Texture2D.whiteTexture;
-            spriteRenderer.sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f));
-        }
-
-        spriteRenderer.color = Random.ColorHSV(0f, 1f, 0.5f, 0.8f, 0.7f, 1f);
-        // size is temporary to test click collision, will replace with actual art later
-        transform.localScale = Vector3.one * 50f; 
-        
-        BoxCollider2D collider = GetComponent<BoxCollider2D>();
-        if (collider == null)
-            collider = gameObject.AddComponent<BoxCollider2D>();
+        // click hitbox sized to match the portrait's actual rendered bounds
+        boxCollider = GetComponent<BoxCollider2D>();
+        if (boxCollider == null)
+            boxCollider = gameObject.AddComponent<BoxCollider2D>();
+        boxCollider.offset = portraitOffset;
+        boxCollider.size = portraitSprite.bounds.size * portraitScale;
     }
 
     private void Update()
@@ -53,12 +48,23 @@ public class Customer : MonoBehaviour
 
     private void OnMouseDown()
     {
+        LogTicket();
+    }
+
+    public void LogTicket()
+    {
         if (CurrentState != State.NeedsOrderTaken)
             return;
 
         Ticket.loggedToTray = true;
         TicketTray.Instance.AddTicket(Ticket);
         SetState(State.WaitingForFood);
+    }
+
+    public void SetVisible(bool visible)
+    {
+        portraitRenderer.enabled = visible;
+        boxCollider.enabled = visible;
     }
 
     public void SetState(State newState)
