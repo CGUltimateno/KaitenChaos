@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using UnityEngine;
+
 // Implemented by Mohamed Osman on 2026-08-03
 // AI assistance: Claude (autocomplete, architecture review)
 
@@ -34,5 +37,38 @@ public static class ScoringService
         int score = ComputeCravingMatch(dish, ticket);
         dish.cravingMatchScore = score;
         return score;
+    }
+
+    public static int ComputeFillingScore(Dish dish, float lineStartX, float lineWidth)
+    {
+        int totalIngredients = dish.chosenIngredientIds.Count;
+        if (totalIngredients == 0)
+            return dish.ricePlaced ? 100 : 0;
+
+        List<float> placedX = new List<float>();
+        foreach (string id in dish.chosenIngredientIds)
+        {
+            if (dish.fillingPlacements.TryGetValue(id, out Vector3 pos))
+                placedX.Add(pos.x);
+        }
+        placedX.Sort();
+
+        float totalDeviation = 0f;
+        for (int i = 0; i < placedX.Count; i++)
+        {
+            float idealX = lineStartX + (i + 1) * (lineWidth / (totalIngredients + 1));
+            totalDeviation += Mathf.Abs(placedX[i] - idealX);
+        }
+
+        int missing = totalIngredients - placedX.Count;
+        totalDeviation += missing * lineWidth;
+
+        float maxPossibleDeviation = totalIngredients * lineWidth;
+        float placementAccuracy = maxPossibleDeviation > 0
+            ? 1f - Mathf.Clamp01(totalDeviation / maxPossibleDeviation)
+            : 1f;
+
+        float overall = (placementAccuracy * totalIngredients + (dish.ricePlaced ? 1 : 0)) / (totalIngredients + 1);
+        return Mathf.RoundToInt(overall * 100f);
     }
 }
