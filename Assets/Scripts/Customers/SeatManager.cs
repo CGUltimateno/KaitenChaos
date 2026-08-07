@@ -10,6 +10,9 @@ public class SeatManager : MonoBehaviour
 
     [Header("Seat Setup")]
     [SerializeField] private Transform[] seatPositions = new Transform[4];
+    [SerializeField] private Sprite defaultPortrait;
+    [SerializeField] private Vector3 portraitOffset = new Vector3(0f, 1f, 0f);
+    [SerializeField] private float portraitScale = 0.3f;
 
     [Header("Spawn Timing")]
     [SerializeField] private float spawnInterval = 5f;
@@ -41,6 +44,8 @@ public class SeatManager : MonoBehaviour
         if (spawnTimer >= spawnInterval)
         {
             spawnTimer = 0f;
+            if (DayManager.Instance != null && !DayManager.Instance.CanSpawnNewCustomers)
+                return;
             TrySpawnCustomer();
         }
     }
@@ -59,10 +64,12 @@ public class SeatManager : MonoBehaviour
         Ticket ticket = OrderGenerator.Generate(freeSeat);
 
         GameObject customerObj = new GameObject($"Customer_Seat{freeSeat}");
+        customerObj.transform.SetParent(transform, true);
         customerObj.transform.position = seatPositions[freeSeat].position;
 
         Customer customer = customerObj.AddComponent<Customer>();
-        customer.Init(ticket, freeSeat);
+        customer.Init(ticket, freeSeat, defaultPortrait, portraitOffset, portraitScale);
+        customer.SetVisible(ViewManager.Instance.IsOrderViewActive);
 
         occupants[freeSeat] = customer;
 
@@ -99,5 +106,11 @@ public class SeatManager : MonoBehaviour
         if (seatIndex >= 0 && seatIndex < occupants.Length)
             return occupants[seatIndex];
         return null;
+    }
+
+    public System.Collections.Generic.IEnumerable<Customer> GetAllCustomers()
+    {
+        foreach (var c in occupants)
+            if (c != null) yield return c;
     }
 }
