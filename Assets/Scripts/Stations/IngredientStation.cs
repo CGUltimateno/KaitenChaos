@@ -25,13 +25,16 @@ public class IngredientStation : MonoBehaviour
 
     private void Start()
     {
-        List<string> ingredientIds = new List<string>(GameDatabase.Instance.Ingredients.Keys);
-
-        for (int i = 0; i < crateContainer.childCount && i < ingredientIds.Count; i++)
+        for (int i = 0; i < crateContainer.childCount; i++)
         {
             Transform crate = crateContainer.GetChild(i);
+            string id = crate.name;
+
+            if (!GameDatabase.Instance.Ingredients.ContainsKey(id))
+                continue; // crate has no matching ingredient yet
+
             IngredientIcon icon = crate.gameObject.AddComponent<IngredientIcon>();
-            icon.Init(ingredientIds[i]);
+            icon.Init(id);
             icons.Add(icon);
         }
 
