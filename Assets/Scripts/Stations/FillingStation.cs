@@ -10,25 +10,37 @@ public class FillingStation : MonoBehaviour
 
     [SerializeField] private SpriteRenderer matRenderer;
     [SerializeField] private BoxCollider2D matCollider;
+    [SerializeField] private Sprite noriOnMatSprite;
+    [SerializeField] private Sprite riceOnMatSprite;
+    [SerializeField] private SpriteRenderer backgroundRenderer;
+    [SerializeField] private Sprite backgroundWithBowlSprite;
+    [SerializeField] private Sprite backgroundWithoutBowlSprite;
     [SerializeField] private Transform[] prepBoxSlots = new Transform[6];
     [SerializeField] private Transform lineStart;
     [SerializeField] private Transform lineEnd;
+    [SerializeField] private List<IngredientSpriteSet> ingredientSprites;
 
     public float LineStartX => lineStart.position.x;
     public float LineWidth => lineEnd.position.x - lineStart.position.x;
 
     private bool hasSeenHint;
+    private Dictionary<string, IngredientSpriteSet> spriteLookup;
 
     private void Awake()
     {
         if (Instance != null && Instance != this) { Destroy(gameObject); return; }
         Instance = this;
+
+        spriteLookup = new Dictionary<string, IngredientSpriteSet>();
+        foreach (var set in ingredientSprites)
+            spriteLookup[set.ingredientId] = set;
     }
 
     public void LoadDish(Dish dish)
     {
         ClearIcons();
-        matRenderer.color = Color.white;
+        matRenderer.sprite = noriOnMatSprite;
+        backgroundRenderer.sprite = backgroundWithBowlSprite;
 
         if (!hasSeenHint)
         {
@@ -38,19 +50,51 @@ public class FillingStation : MonoBehaviour
 
         for (int i = 0; i < dish.chosenIngredientIds.Count; i++)
         {
-            GameObject iconObj = new GameObject($"Filling_{dish.chosenIngredientIds[i]}");
+            string id = dish.chosenIngredientIds[i];
+            spriteLookup.TryGetValue(id, out IngredientSpriteSet spriteSet);
+
+            // static group art — stays in the prep box, never moves, not draggable
+            GroupSlot groupSlot = null;
+
+            if (spriteSet != null && spriteSet.groupSprite != null)
+            {
+                GameObject groupObj = new GameObject($"Group_{id}");
+                groupObj.transform.SetParent(transform, false);
+                groupObj.transform.position = prepBoxSlots[i].position;
+                groupObj.transform.localScale = Vector3.one;
+
+                SpriteRenderer groupSr = groupObj.AddComponent<SpriteRenderer>();
+                groupSr.sprite = spriteSet.groupSprite;
+                groupSr.material = new Material(Shader.Find("Sprites/Default"));
+                groupSr.sortingOrder = 1;
+
+                groupSlot = groupObj.AddComponent<GroupSlot>();
+                groupSlot.Init(id);
+            }
+
+            // the actual draggable single piece, sits on top
+            GameObject iconObj = new GameObject($"Filling_{id}");
             iconObj.transform.SetParent(transform, false);
             iconObj.transform.position = prepBoxSlots[i].position;
-            iconObj.transform.localScale = Vector3.one * 40f;
 
             SpriteRenderer sr = iconObj.AddComponent<SpriteRenderer>();
-            Texture2D tex = Texture2D.whiteTexture;
-            sr.sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f));
             sr.material = new Material(Shader.Find("Sprites/Default"));
-            sr.color = Color.gray;
             sr.sortingOrder = 2;
 
-            iconObj.AddComponent<FillingIcon>().Init(dish.chosenIngredientIds[i]);
+            if (spriteSet != null && spriteSet.singleSprite != null)
+            {
+                sr.sprite = spriteSet.singleSprite;
+                iconObj.transform.localScale = Vector3.one;
+            }
+            else
+            {
+                Texture2D tex = Texture2D.whiteTexture;
+                sr.sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f));
+                sr.color = Color.gray;
+                iconObj.transform.localScale = Vector3.one * 40f;
+            }
+
+            iconObj.AddComponent<FillingIcon>().Init(id, groupSlot);
         }
     }
 
@@ -68,6 +112,11 @@ public class FillingStation : MonoBehaviour
         DishManager.Instance.CurrentDish.fillingPlacements[ingredientId] = worldPos;
     }
 
+    public void OnRiceGrabbed()
+    {
+        backgroundRenderer.sprite = backgroundWithoutBowlSprite;
+    }
+
     public void OnRiceDropped(Vector3 worldPos)
     {
         if (DishManager.Instance.CurrentDish == null)
@@ -76,7 +125,7 @@ public class FillingStation : MonoBehaviour
         if (matCollider.bounds.Contains(worldPos))
         {
             DishManager.Instance.CurrentDish.ricePlaced = true;
-            matRenderer.color = new Color(1f, 0.95f, 0.8f); // TEMP tint standing in for real rice art
+            matRenderer.sprite = riceOnMatSprite;
             Debug.Log("[FillingStation] Rice placed.");
         }
     }
@@ -93,8 +142,9 @@ public class FillingStation : MonoBehaviour
 
             Debug.Log($"[FillingStation] Recorded {DishManager.Instance.CurrentDish.fillingPlacements.Count} placements, rice: {DishManager.Instance.CurrentDish.ricePlaced}");
             ClearIcons();
-            matRenderer.color = Color.white;
-            ViewManager.Instance.ShowOrderView(); // TEMP until Station 3 exists
+            matRenderer.sprite = noriOnMatSprite;
+            CuttingStation.Instance.LoadDish(DishManager.Instance.CurrentDish);
+            ViewManager.Instance.ShowCuttingStation();
         }
     }
 }
