@@ -13,6 +13,7 @@ public class ViewManager : MonoBehaviour
     [SerializeField] private GameObject stationViewIngredients;
     [SerializeField] private GameObject stationViewFilling;
     [SerializeField] private GameObject stationViewCutting;
+    [SerializeField] private GameObject stationViewServing;
 
     private void Awake()
     {
@@ -36,6 +37,7 @@ public class ViewManager : MonoBehaviour
         stationViewIngredients.SetActive(false);
         stationViewFilling.SetActive(false);
         stationViewCutting.SetActive(false);
+        stationViewServing.SetActive(false);
         foreach (var c in SeatManager.Instance.GetAllCustomers())
             c.SetVisible(true);
         Debug.Log("[ViewManager] Showing Order View");
@@ -47,6 +49,7 @@ public class ViewManager : MonoBehaviour
         stationViewIngredients.SetActive(true);
         stationViewFilling.SetActive(false);
         stationViewCutting.SetActive(false);
+        stationViewServing.SetActive(false);
         foreach (var c in SeatManager.Instance.GetAllCustomers())
             c.SetVisible(false);
         Debug.Log("[ViewManager] Showing Ingredients Station");
@@ -58,6 +61,7 @@ public class ViewManager : MonoBehaviour
         stationViewIngredients.SetActive(false);
         stationViewFilling.SetActive(true);
         stationViewCutting.SetActive(false);
+        stationViewServing.SetActive(false);
         foreach (var c in SeatManager.Instance.GetAllCustomers())
             c.SetVisible(false);
         Debug.Log("[ViewManager] Showing Filling Station");
@@ -69,9 +73,22 @@ public class ViewManager : MonoBehaviour
         stationViewIngredients.SetActive(false);
         stationViewFilling.SetActive(false);
         stationViewCutting.SetActive(true);
+        stationViewServing.SetActive(false);
         foreach (var c in SeatManager.Instance.GetAllCustomers())
             c.SetVisible(false);
         Debug.Log("[ViewManager] Showing Cutting Station");
+    }
+
+    public void ShowServingStation()
+    {
+        orderView.SetActive(false);
+        stationViewIngredients.SetActive(false);
+        stationViewFilling.SetActive(false);
+        stationViewCutting.SetActive(false);
+        stationViewServing.SetActive(true);
+        foreach (var c in SeatManager.Instance.GetAllCustomers())
+            c.SetVisible(false);
+        Debug.Log("[ViewManager] Showing Serving Station");
     }
 
     private void ShowDayEndView()
@@ -80,6 +97,7 @@ public class ViewManager : MonoBehaviour
         stationViewIngredients.SetActive(false);
         stationViewFilling.SetActive(false);
         stationViewCutting.SetActive(false);
+        stationViewServing.SetActive(false);
         Debug.Log("[ViewManager] Day ended — no more input.");
     }
 
@@ -96,5 +114,7 @@ public class ViewManager : MonoBehaviour
             ShowFillingStation();
         if (Input.GetKeyDown(KeyCode.Alpha4))
             ShowCuttingStation();
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+            ShowServingStation();
     }
 }

@@ -89,7 +89,8 @@ public class CuttingStation : MonoBehaviour
         Debug.Log($"[CuttingStation] Cut score: {dish.rollCutScore}%");
 
         ClearMarks();
-        ViewManager.Instance.ShowOrderView(); // TEMP until Serve station exists
+        ViewManager.Instance.ShowServingStation();
+        ServingStation.Instance.LoadDish(DishManager.Instance.CurrentDish);
     }
 
     private Vector3 GetMouseWorldPos()
