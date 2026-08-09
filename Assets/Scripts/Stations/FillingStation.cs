@@ -143,8 +143,8 @@ public class FillingStation : MonoBehaviour
             Debug.Log($"[FillingStation] Recorded {DishManager.Instance.CurrentDish.fillingPlacements.Count} placements, rice: {DishManager.Instance.CurrentDish.ricePlaced}");
             ClearIcons();
             matRenderer.sprite = noriOnMatSprite;
-            CuttingStation.Instance.LoadDish(DishManager.Instance.CurrentDish);
             ViewManager.Instance.ShowCuttingStation();
+            CuttingStation.Instance.LoadDish(DishManager.Instance.CurrentDish);
         }
     }
 }

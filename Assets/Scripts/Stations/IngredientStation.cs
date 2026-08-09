@@ -63,8 +63,8 @@ public class IngredientStation : MonoBehaviour
         {
             List<string> selected = GetSelectedIds();
             Dish dish = DishManager.Instance.StartNewDish(selected);
-            FillingStation.Instance.LoadDish(dish);
             ViewManager.Instance.ShowFillingStation();
+            FillingStation.Instance.LoadDish(dish);
 
             foreach (var icon in icons)
                 icon.Deselect();
