@@ -71,4 +71,30 @@ public static class ScoringService
         float overall = (placementAccuracy * totalIngredients + (dish.ricePlaced ? 1 : 0)) / (totalIngredients + 1);
         return Mathf.RoundToInt(overall * 100f);
     }
+
+    public static int ComputeRollCutScore(List<float> cutPositionsX, float lineStartX, float lineWidth, int expectedCutCount)
+    {
+        if (expectedCutCount == 0)
+            return 100;
+
+        List<float> sorted = new List<float>(cutPositionsX);
+        sorted.Sort();
+
+        float totalDeviation = 0f;
+        for (int i = 0; i < sorted.Count; i++)
+        {
+            float idealX = lineStartX + (i + 1) * (lineWidth / (expectedCutCount + 1));
+            totalDeviation += Mathf.Abs(sorted[i] - idealX);
+        }
+
+        int missing = expectedCutCount - sorted.Count;
+        totalDeviation += missing * lineWidth;
+
+        float maxPossibleDeviation = expectedCutCount * lineWidth;
+        float accuracy = maxPossibleDeviation > 0
+            ? 1f - Mathf.Clamp01(totalDeviation / maxPossibleDeviation)
+            : 1f;
+
+        return Mathf.RoundToInt(accuracy * 100f);
+    }
 }

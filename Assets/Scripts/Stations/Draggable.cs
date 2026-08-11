@@ -6,6 +6,7 @@ using UnityEngine;
 public class Draggable : MonoBehaviour
 {
     public System.Action<Vector3> onDropped;
+    public System.Action onPickedUp;
     private bool dragging;
     private Vector3 offset;
 
@@ -13,6 +14,7 @@ public class Draggable : MonoBehaviour
     {
         dragging = true;
         offset = transform.position - GetMouseWorldPos();
+        onPickedUp?.Invoke();
     }
 
     private void Update()

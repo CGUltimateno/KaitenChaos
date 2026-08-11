@@ -11,7 +11,13 @@ public class RiceBowl : MonoBehaviour
     {
         homePosition = transform.position;
         Draggable draggable = gameObject.AddComponent<Draggable>();
+        draggable.onPickedUp = OnPickedUp;
         draggable.onDropped = OnDropped;
+    }
+
+    private void OnPickedUp()
+    {
+        FillingStation.Instance.OnRiceGrabbed();
     }
 
     private void OnDropped(Vector3 worldPos)
