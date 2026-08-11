@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 
 // Implemented by: Cise Nil Köksal on 06.08.2026
-//AI: ChatGPT (For debugging appropriate vector values)
+//AI: ChatGPT (For debugging appropriate vector values, implementing draggable logic)
 public class OrdersView : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -53,5 +53,27 @@ public class OrdersView : MonoBehaviour
     {
         expandedBackground.localScale = Vector3.Lerp(expandedBackground.localScale, target, 10f * Time.deltaTime);
 
+    }
+    public void AddTicket(Ticket ticket)
+    {
+        foreach (GameObject note in orderNotes)
+        {
+            OrderNote note = note.GetComponent<OrderNote>();
+
+            if (note.ticket == null)
+            {
+                note.ticket = ticket;
+                note.SetActive(true);
+
+                Draggable draggable = noteObject.GetComponent<Draggable>();
+
+                draggable.onDropped = (position) =>
+                {
+                    ServingStation.Instance.DropTicketAt(note.ticket, position);
+                };
+
+                return;
+            }
+        }
     }
 }
