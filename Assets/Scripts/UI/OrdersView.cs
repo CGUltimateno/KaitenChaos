@@ -58,18 +58,18 @@ public class OrdersView : MonoBehaviour
     {
         foreach (GameObject note in orderNotes)
         {
-            OrderNote note = note.GetComponent<OrderNote>();
+            OrderNote orderNote = note.GetComponent<OrderNote>();
 
-            if (note.ticket == null)
+            if (orderNote.ticket == null)
             {
-                note.ticket = ticket;
-                note.SetActive(true);
+                orderNote.ticket = ticket;
+                note.gameObject.SetActive(true);
 
-                Draggable draggable = noteObject.GetComponent<Draggable>();
+                Draggable draggable = note.GetComponent<Draggable>();
 
                 draggable.onDropped = (position) =>
                 {
-                    ServingStation.Instance.DropTicketAt(note.ticket, position);
+                    ServingStation.Instance.TryDropTicketAt(orderNote.ticket, position);
                 };
 
                 return;
