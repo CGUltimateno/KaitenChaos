@@ -8,7 +8,6 @@ public class IngredientIcon : MonoBehaviour
     public string ingredientId;
     public bool isSelected;
 
-    private SpriteRenderer spriteRenderer;
     private GameObject checkmarkObj;
 
     public void Init(string id, GameObject checkmarkPrefab)
@@ -16,13 +15,12 @@ public class IngredientIcon : MonoBehaviour
         ingredientId = id;
         isSelected = false;
 
-        spriteRenderer = GetComponent<SpriteRenderer>();
         BoxCollider2D collider = GetComponent<BoxCollider2D>();
         if (collider == null)
             collider = gameObject.AddComponent<BoxCollider2D>();
 
-        Bounds bounds = spriteRenderer.bounds;
-        Vector3 checkmarkPos = new Vector3(bounds.max.x, bounds.min.y, transform.position.z);
+        Vector3 checkmarkLocalOffset = new Vector3(0.955f, -0.761f, 0f);
+        Vector3 checkmarkPos = transform.TransformPoint(checkmarkLocalOffset);
 
         checkmarkObj = Instantiate(checkmarkPrefab, checkmarkPos, Quaternion.identity, IngredientStation.Instance.transform);
         checkmarkObj.GetComponent<SpriteRenderer>().sortingOrder = 5;
