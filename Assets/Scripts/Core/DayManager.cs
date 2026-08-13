@@ -15,6 +15,9 @@ public class DayManager : MonoBehaviour
     public bool CanSpawnNewCustomers => CurrentState == DayState.Spawning;
     public event System.Action OnDayEnded;
 
+    public int DishesServed { get; private set; }
+    public int TotalStars { get; private set; }
+
     private float dayTimer;
 
     private void Awake()
@@ -53,6 +56,12 @@ public class DayManager : MonoBehaviour
             Debug.Log("[DayManager] All customers served — day ended.");
             OnDayEnded?.Invoke();
         }
+    }
+
+    public void RecordServedDish(int stars)
+    {
+        DishesServed++;
+        TotalStars += stars;
     }
 
     private bool AllSeatsEmpty()

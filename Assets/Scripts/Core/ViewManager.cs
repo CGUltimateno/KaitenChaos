@@ -14,6 +14,7 @@ public class ViewManager : MonoBehaviour
     [SerializeField] private GameObject stationViewFilling;
     [SerializeField] private GameObject stationViewCutting;
     [SerializeField] private GameObject stationViewServing;
+    [SerializeField] private GameObject dayEndView;
 
     private void Awake()
     {
@@ -98,6 +99,8 @@ public class ViewManager : MonoBehaviour
         stationViewFilling.SetActive(false);
         stationViewCutting.SetActive(false);
         stationViewServing.SetActive(false);
+        dayEndView.SetActive(true);
+        dayEndView.GetComponent<DayEndView>().ShowSummary();
         Debug.Log("[ViewManager] Day ended — no more input.");
     }
 

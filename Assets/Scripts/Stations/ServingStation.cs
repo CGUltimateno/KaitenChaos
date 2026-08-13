@@ -64,7 +64,6 @@ public class ServingStation : MonoBehaviour
 
     public bool TryDropTicketAt(Ticket ticket, Vector3 worldPos)
     {
-        Debug.Log($"[ServingStation] Ticket dropped at {worldPos}"); // TEMP diagnostic
         foreach (var slot in ticketSlots)
         {
             if (slot.ContainsPoint(worldPos))
@@ -109,7 +108,11 @@ public class ServingStation : MonoBehaviour
         int cravingScore = ScoringService.BindTicketToDish(dish, ticket);
         dish.fillingScore = ScoringService.ComputeFillingScore(dish, FillingStation.Instance.LineStartX, FillingStation.Instance.LineWidth);
 
-        Debug.Log($"[ServingStation] Served! Craving match: {cravingScore}%, Filling: {dish.fillingScore}%, Cut: {dish.rollCutScore}%");
+        int overallScore = ScoringService.ComputeOverallScore(dish);
+        int stars = ScoringService.ScoreToStars(overallScore);
+        DayManager.Instance.RecordServedDish(stars);
+
+        Debug.Log($"[ServingStation] Served! Craving match: {cravingScore}%, Filling: {dish.fillingScore}%, Cut: {dish.rollCutScore}%, Overall: {overallScore}% ({stars}★)");
 
         Customer customer = SeatManager.Instance.GetCustomerAtSeat(ticket.sourceSeat);
         if (customer != null)

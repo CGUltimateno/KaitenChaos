@@ -97,4 +97,16 @@ public static class ScoringService
 
         return Mathf.RoundToInt(accuracy * 100f);
     }
+
+    public static int ComputeOverallScore(Dish dish)
+    {
+        return Mathf.RoundToInt(dish.cravingMatchScore * 0.5f + dish.fillingScore * 0.25f + dish.rollCutScore * 0.25f);
+    }
+
+    public static int ScoreToStars(int overallScore)
+    {
+        if (overallScore >= 70) return 3;
+        if (overallScore >= 40) return 2;
+        return 1;
+    }
 }
