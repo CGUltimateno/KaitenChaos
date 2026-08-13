@@ -31,7 +31,7 @@
             }
         },
         {
-            "id": "tamagoyaki",
+            "id": "egg",
             "traits": {
                 "classic": 2,
                 "sweet": 2,
@@ -131,7 +131,7 @@
             }
         },
         {
-            "id": "fried_onions",
+            "id": "crispy_onions",
             "traits": {
                 "classic": -1,
                 "sweet": -1,

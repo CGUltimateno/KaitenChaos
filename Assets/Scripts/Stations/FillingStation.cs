@@ -66,7 +66,7 @@ public class FillingStation : MonoBehaviour
                 SpriteRenderer groupSr = groupObj.AddComponent<SpriteRenderer>();
                 groupSr.sprite = spriteSet.groupSprite;
                 groupSr.material = new Material(Shader.Find("Sprites/Default"));
-                groupSr.sortingOrder = 1;
+                groupSr.sortingOrder = 2;
 
                 groupSlot = groupObj.AddComponent<GroupSlot>();
                 groupSlot.Init(id);
@@ -79,7 +79,7 @@ public class FillingStation : MonoBehaviour
 
             SpriteRenderer sr = iconObj.AddComponent<SpriteRenderer>();
             sr.material = new Material(Shader.Find("Sprites/Default"));
-            sr.sortingOrder = 2;
+            sr.sortingOrder = 3;
 
             if (spriteSet != null && spriteSet.singleSprite != null)
             {

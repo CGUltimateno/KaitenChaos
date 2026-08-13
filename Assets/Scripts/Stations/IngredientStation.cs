@@ -12,6 +12,9 @@ public class IngredientStation : MonoBehaviour
 
     [SerializeField] private Transform crateContainer;
     [SerializeField] private int maxSelectable = 6;
+    [SerializeField] private GameObject checkmarkPrefab;
+
+    private const string CratePrefix = "ingredient_crate_";
 
     private void Awake()
     {
@@ -28,13 +31,13 @@ public class IngredientStation : MonoBehaviour
         for (int i = 0; i < crateContainer.childCount; i++)
         {
             Transform crate = crateContainer.GetChild(i);
-            string id = crate.name;
+            string id = crate.name.StartsWith(CratePrefix) ? crate.name.Substring(CratePrefix.Length) : crate.name;
 
             if (!GameDatabase.Instance.Ingredients.ContainsKey(id))
-                continue; // crate has no matching ingredient yet
+                continue;
 
             IngredientIcon icon = crate.gameObject.AddComponent<IngredientIcon>();
-            icon.Init(id);
+            icon.Init(id, checkmarkPrefab);
             icons.Add(icon);
         }
 

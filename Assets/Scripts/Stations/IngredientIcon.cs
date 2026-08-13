@@ -9,19 +9,24 @@ public class IngredientIcon : MonoBehaviour
     public bool isSelected;
 
     private SpriteRenderer spriteRenderer;
-    private Color baseColor;
+    private GameObject checkmarkObj;
 
-    public void Init(string id)
+    public void Init(string id, GameObject checkmarkPrefab)
     {
         ingredientId = id;
         isSelected = false;
 
         spriteRenderer = GetComponent<SpriteRenderer>();
-        baseColor = spriteRenderer != null ? spriteRenderer.color : Color.white;
         BoxCollider2D collider = GetComponent<BoxCollider2D>();
-        
         if (collider == null)
             collider = gameObject.AddComponent<BoxCollider2D>();
+
+        Bounds bounds = spriteRenderer.bounds;
+        Vector3 checkmarkPos = new Vector3(bounds.max.x, bounds.min.y, transform.position.z);
+
+        checkmarkObj = Instantiate(checkmarkPrefab, checkmarkPos, Quaternion.identity, IngredientStation.Instance.transform);
+        checkmarkObj.GetComponent<SpriteRenderer>().sortingOrder = 5;
+        checkmarkObj.SetActive(false);
     }
 
     private void OnMouseDown()
@@ -33,15 +38,13 @@ public class IngredientIcon : MonoBehaviour
         }
 
         isSelected = !isSelected;
-        spriteRenderer.color = isSelected
-            ? new Color(0.2f, 0.9f, 0.3f, 1f)
-            : baseColor;
+        checkmarkObj.SetActive(isSelected);
         Debug.Log($"[IngredientIcon] {ingredientId} {(isSelected ? "SELECTED" : "deselected")}");
     }
 
     public void Deselect()
     {
         isSelected = false;
-        spriteRenderer.color = baseColor;
+        checkmarkObj.SetActive(false);
     }
 }
