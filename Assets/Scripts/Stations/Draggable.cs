@@ -27,7 +27,7 @@ public class Draggable : MonoBehaviour
     {
         if (!dragging) return;
         dragging = false;
-        onDropped?.Invoke(transform.position);
+        onDropped?.Invoke(GetMouseWorldPos());
     }
 
     private Vector3 GetMouseWorldPos()

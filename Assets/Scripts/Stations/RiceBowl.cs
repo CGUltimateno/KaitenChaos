@@ -10,6 +10,11 @@ public class RiceBowl : MonoBehaviour
     private void Awake()
     {
         homePosition = transform.position;
+
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        if (sr != null)
+            sr.sortingOrder = 5;
+
         Draggable draggable = gameObject.AddComponent<Draggable>();
         draggable.onPickedUp = OnPickedUp;
         draggable.onDropped = OnDropped;

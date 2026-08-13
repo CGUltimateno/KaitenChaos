@@ -14,8 +14,9 @@ public class Customer : MonoBehaviour
 
     private SpriteRenderer portraitRenderer;
     private BoxCollider2D boxCollider;
+    private TicketBubble bubble;
 
-    public void Init(Ticket ticket, int seatIndex, Sprite portraitSprite, Vector3 portraitOffset, float portraitScale)
+    public void Init(Ticket ticket, int seatIndex, Sprite portraitSprite, Vector3 portraitOffset, float portraitScale, GameObject bubblePrefab, Vector3 bubbleOffset)
     {
         Ticket = ticket;
         SeatIndex = seatIndex;
@@ -36,6 +37,14 @@ public class Customer : MonoBehaviour
             boxCollider = gameObject.AddComponent<BoxCollider2D>();
         boxCollider.offset = portraitOffset;
         boxCollider.size = portraitSprite.bounds.size * portraitScale;
+
+        if (bubblePrefab != null)
+        {
+            GameObject bubbleObj = Instantiate(bubblePrefab, transform);
+            bubbleObj.transform.localPosition = bubbleOffset;
+            bubble = bubbleObj.AddComponent<TicketBubble>();
+            bubble.Init(this);
+        }
     }
 
     private void Update()
@@ -65,6 +74,7 @@ public class Customer : MonoBehaviour
     {
         portraitRenderer.enabled = visible;
         boxCollider.enabled = visible;
+        bubble?.SetVisible(visible);
     }
 
     public void SetState(State newState)

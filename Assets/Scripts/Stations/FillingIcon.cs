@@ -14,10 +14,13 @@ public class FillingIcon : MonoBehaviour
         ingredientId = id;
         this.groupSlot = groupSlot;
         sr = GetComponent<SpriteRenderer>();
-        sr.enabled = false; // invisible until picked up — the group art is all you see at rest
+        sr.enabled = groupSlot == null;
 
         if (GetComponent<BoxCollider2D>() == null)
-            gameObject.AddComponent<BoxCollider2D>();
+        {
+            BoxCollider2D col = gameObject.AddComponent<BoxCollider2D>();
+            col.size = sr.sprite.bounds.size;
+        }
 
         Draggable draggable = gameObject.AddComponent<Draggable>();
         draggable.onPickedUp = OnPickedUp;
