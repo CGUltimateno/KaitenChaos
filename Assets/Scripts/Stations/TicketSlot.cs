@@ -6,6 +6,7 @@ using UnityEngine;
 public class TicketSlot : MonoBehaviour
 {
     [SerializeField] private GameObject orderNotePrefab;
+    [SerializeField] private Vector3 boundNoteOffset = Vector3.zero;
     [SerializeField] private float boundNoteScale = 0.5f;
 
     private BoxCollider2D zone;
@@ -22,7 +23,6 @@ public class TicketSlot : MonoBehaviour
     public bool ContainsPoint(Vector3 worldPos)
     {
         bool hit = zone.OverlapPoint(worldPos);
-        Debug.Log($"[TicketSlot] {name} bounds center: {zone.bounds.center}, checking: {worldPos}, hit: {hit}"); // TEMP diagnostic
         return hit;
     }
 
