@@ -24,6 +24,7 @@ public class TicketTray : MonoBehaviour
     {
         tickets.Add(ticket);
         Debug.Log($"[TicketTray] Added ticket: {ticket.requestedCount}x {ticket.cravingTrait} — \"{ticket.phrase}\" (total: {tickets.Count})");
+        OrdersView.Instance.AddTicket(ticket);
     }
 
     public void RemoveTicket(Ticket ticket)
