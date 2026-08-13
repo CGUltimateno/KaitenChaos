@@ -92,56 +92,6 @@ public class GameDatabase : MonoBehaviour
         LogTables();
     }
 
-    // TEMP: F1-F4 serve test (seat index) — delete after real Serve station exists.
-    // Using F-keys, not Alpha1-4, because ViewManager already owns Alpha1/Alpha2 for view switching.
-    private void Update()
-    {
-        for (int seatIndex = 0; seatIndex < 4; seatIndex++)
-        {
-            if (Input.GetKeyDown(KeyCode.F1 + seatIndex))
-            {
-                TryServeSeat(seatIndex);
-            }
-        }
-    }
-
-    private void TryServeSeat(int seatIndex)
-    {
-        if (TicketTray.Instance == null)
-            return;
-
-        Ticket ticket = TicketTray.Instance.tickets.Find(t => t.sourceSeat == seatIndex);
-        if (ticket == null)
-        {
-            Debug.Log($"[TEST] No ticket logged for seat {seatIndex}.");
-            return;
-        }
-
-        Dish dish = DishManager.Instance.CurrentDish;
-        if (dish == null)
-        {
-            Debug.Log("[TEST] No dish has gone through the stations yet.");
-            return;
-        }
-
-        int cravingScore = ScoringService.BindTicketToDish(dish, ticket);
-        dish.fillingScore = ScoringService.ComputeFillingScore(dish, FillingStation.Instance.LineStartX, FillingStation.Instance.LineWidth);
-
-        Debug.Log($"[TEST] Dish #{dish.dishId} bound to seat {seatIndex}'s {ticket.cravingTrait} ticket — " +
-                  $"craving match: {cravingScore}%, filling: {dish.fillingScore}%");
-
-        Customer customer = SeatManager.Instance.GetCustomerAtSeat(ticket.sourceSeat);
-        if (customer != null)
-        {
-            customer.SetState(Customer.State.Served);
-            SeatManager.Instance.FreeSeat(ticket.sourceSeat);
-            Debug.Log($"[TEST] Served and freed seat {ticket.sourceSeat}.");
-        }
-
-        TicketTray.Instance.RemoveTicket(ticket);
-        DishManager.Instance.ClearCurrentDish();
-    }
-
     private void LogTables()
     {
         StringBuilder sbMaxRoll = new StringBuilder();

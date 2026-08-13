@@ -9,8 +9,10 @@ public class ServingStation : MonoBehaviour
 
     [SerializeField] private Transform plateSlot;
     [SerializeField] private BoxCollider2D conveyorBeltCollider;
+    [SerializeField] private TicketSlot[] ticketSlots;
 
     private GameObject dishIconObj;
+    private TicketSlot boundSlot;
     public Ticket BoundTicket { get; private set; }
 
     private void Awake()
@@ -38,7 +40,8 @@ public class ServingStation : MonoBehaviour
         sr.color = new Color(0.95f, 0.85f, 0.6f); // placeholder plated-dish color
         sr.sortingOrder = 2;
 
-        dishIconObj.AddComponent<BoxCollider2D>();
+        BoxCollider2D dishCollider = dishIconObj.AddComponent<BoxCollider2D>();
+        dishCollider.size = sr.sprite.bounds.size;
         Draggable draggable = dishIconObj.AddComponent<Draggable>();
         draggable.onDropped = OnDishDropped;
     }
@@ -46,7 +49,9 @@ public class ServingStation : MonoBehaviour
     public void BindTicket(Ticket ticket)
     {
         BoundTicket = ticket;
-        Debug.Log($"[ServingStation] Bound ticket: {ticket.cravingTrait} — \"{ticket.phrase}\"");
+        Debug.Log(ticket != null
+            ? $"[ServingStation] Bound ticket: {ticket.cravingTrait} — \"{ticket.phrase}\""
+            : "[ServingStation] Ticket unbound.");
     }
 
     private void OnDishDropped(Vector3 worldPos)
@@ -57,9 +62,36 @@ public class ServingStation : MonoBehaviour
             dishIconObj.transform.position = plateSlot.position;
     }
 
-    public void TryDropTicketAt(Ticket ticket, Vector3 worldPos)
+    public bool TryDropTicketAt(Ticket ticket, Vector3 worldPos)
     {
-        // TODO: check against ticket-slot boxes, bind if inside one
+        Debug.Log($"[ServingStation] Ticket dropped at {worldPos}"); // TEMP diagnostic
+        foreach (var slot in ticketSlots)
+        {
+            if (slot.ContainsPoint(worldPos))
+            {
+                if (boundSlot != null && boundSlot != slot)
+                    boundSlot.ClearIcon();
+                if (BoundTicket != null && BoundTicket != ticket)
+                    OrdersView.Instance.AddTicket(BoundTicket);
+
+                slot.Bind(ticket);
+                boundSlot = slot;
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void UnbindFromSlot(TicketSlot slot, Ticket ticket)
+    {
+        if (boundSlot == slot)
+        {
+            BindTicket(null);
+            boundSlot = null;
+        }
+
+        if (ticket != null)
+            OrdersView.Instance.AddTicket(ticket);
     }
 
     private void FinalizeServe()
@@ -71,7 +103,30 @@ public class ServingStation : MonoBehaviour
             return;
         }
 
-        Debug.Log("[ServingStation] Serving! (scoring/customer-serving logic comes next step)");
-        // next step: scoring + SeatManager/TicketTray/DishManager cleanup goes here
+        Dish dish = DishManager.Instance.CurrentDish;
+        Ticket ticket = BoundTicket;
+
+        int cravingScore = ScoringService.BindTicketToDish(dish, ticket);
+        dish.fillingScore = ScoringService.ComputeFillingScore(dish, FillingStation.Instance.LineStartX, FillingStation.Instance.LineWidth);
+
+        Debug.Log($"[ServingStation] Served! Craving match: {cravingScore}%, Filling: {dish.fillingScore}%, Cut: {dish.rollCutScore}%");
+
+        Customer customer = SeatManager.Instance.GetCustomerAtSeat(ticket.sourceSeat);
+        if (customer != null)
+        {
+            customer.SetState(Customer.State.Served);
+            SeatManager.Instance.FreeSeat(ticket.sourceSeat);
+        }
+
+        TicketTray.Instance.RemoveTicket(ticket);
+        DishManager.Instance.ClearCurrentDish();
+
+        Destroy(dishIconObj);
+        dishIconObj = null;
+        BoundTicket = null;
+        boundSlot?.ClearIcon();
+        boundSlot = null;
+
+        ViewManager.Instance.ShowOrderView();
     }
 }
