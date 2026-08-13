@@ -428,6 +428,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -8776276224301494530, guid: 509664d26eff8a44dbe8259b41ba97e2, type: 3}
     - target: {fileID: 5716712953361110964, guid: 1d66768aa4650e8489ebb8e4688348cc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5716712953361110964, guid: 1d66768aa4650e8489ebb8e4688348cc, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
@@ -615,6 +619,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1772592662619135692}
     m_Modifications:
+    - target: {fileID: 3931855441787849619, guid: 6e47e12c584783a4d88372fd4f05b15e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4391101345515446396, guid: 6e47e12c584783a4d88372fd4f05b15e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.86
@@ -1111,7 +1119,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -5838560117421861970, guid: 52198a0c5aacf424e9cfca0f887bc424, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
