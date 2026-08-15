@@ -16,6 +16,7 @@ public class Dish
     public int rollCutScore;
     public Ticket boundTicket;
     public int cravingMatchScore;
+    public int patienceScore;
 
     public Dish()
     {
@@ -27,5 +28,6 @@ public class Dish
         rollCutScore = 0;
         boundTicket = null;
         cravingMatchScore = 0;
+        patienceScore = 0;
     }
 }

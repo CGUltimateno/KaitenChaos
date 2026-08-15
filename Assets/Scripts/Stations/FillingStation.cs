@@ -19,12 +19,15 @@ public class FillingStation : MonoBehaviour
     [SerializeField] private Transform lineStart;
     [SerializeField] private Transform lineEnd;
     [SerializeField] private List<IngredientSpriteSet> ingredientSprites;
+    [SerializeField] private float submitDragThresholdX;
 
     public float LineStartX => lineStart.position.x;
     public float LineWidth => lineEnd.position.x - lineStart.position.x;
+    public Bounds MatBounds => matRenderer.bounds;
 
     private bool hasSeenHint;
     private Dictionary<string, IngredientSpriteSet> spriteLookup;
+    private Vector3 matHomePosition;
 
     private void Awake()
     {
@@ -34,12 +37,17 @@ public class FillingStation : MonoBehaviour
         spriteLookup = new Dictionary<string, IngredientSpriteSet>();
         foreach (var set in ingredientSprites)
             spriteLookup[set.ingredientId] = set;
+
+        matHomePosition = matRenderer.transform.position;
+        Draggable matDraggable = matRenderer.gameObject.AddComponent<Draggable>();
+        matDraggable.onDropped = OnMatDropped;
     }
 
     public void LoadDish(Dish dish)
     {
         ClearIcons();
         matRenderer.sprite = noriOnMatSprite;
+        matRenderer.transform.position = matHomePosition;
         backgroundRenderer.sprite = backgroundWithBowlSprite;
 
         if (!hasSeenHint)
@@ -98,18 +106,26 @@ public class FillingStation : MonoBehaviour
         }
     }
 
+    public Sprite GetSingleSprite(string ingredientId)
+    {
+        return spriteLookup.TryGetValue(ingredientId, out var set) ? set.singleSprite : null;
+    }
+
     private void ClearIcons()
     {
         foreach (Transform child in transform)
             Destroy(child.gameObject);
+        foreach (Transform child in matRenderer.transform)
+            Destroy(child.gameObject);
     }
 
-    public void RecordPlacement(string ingredientId, Vector3 worldPos)
+    public void RecordPlacement(string ingredientId, Vector3 worldPos, Transform iconTransform)
     {
         if (DishManager.Instance.CurrentDish == null)
             return;
 
         DishManager.Instance.CurrentDish.fillingPlacements[ingredientId] = worldPos;
+        iconTransform.SetParent(matRenderer.transform, true);
     }
 
     public void OnRiceGrabbed()
@@ -130,21 +146,20 @@ public class FillingStation : MonoBehaviour
         }
     }
 
-    private void Update()
+    private void OnMatDropped(Vector3 worldPos)
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (DishManager.Instance.CurrentDish != null && worldPos.x >= submitDragThresholdX)
         {
-            if (DishManager.Instance.CurrentDish == null)
-            {
-                Debug.Log("[FillingStation] No dish in progress yet.");
-                return;
-            }
-
             Debug.Log($"[FillingStation] Recorded {DishManager.Instance.CurrentDish.fillingPlacements.Count} placements, rice: {DishManager.Instance.CurrentDish.ricePlaced}");
             ClearIcons();
             matRenderer.sprite = noriOnMatSprite;
-            ViewManager.Instance.ShowCuttingStation();
+            matRenderer.transform.position = matHomePosition;
             CuttingStation.Instance.LoadDish(DishManager.Instance.CurrentDish);
+            ViewManager.Instance.ShowCuttingStation();
+        }
+        else
+        {
+            matRenderer.transform.position = matHomePosition;
         }
     }
 }

@@ -15,6 +15,7 @@ public class ViewManager : MonoBehaviour
     [SerializeField] private GameObject stationViewCutting;
     [SerializeField] private GameObject stationViewServing;
     [SerializeField] private GameObject dayEndView;
+    [SerializeField] private GameObject stationBar;
 
     private void Awake()
     {
@@ -99,25 +100,10 @@ public class ViewManager : MonoBehaviour
         stationViewFilling.SetActive(false);
         stationViewCutting.SetActive(false);
         stationViewServing.SetActive(false);
+        stationBar.SetActive(false);
+        OrdersView.Instance.gameObject.SetActive(false);
         dayEndView.SetActive(true);
         dayEndView.GetComponent<DayEndView>().ShowSummary();
         Debug.Log("[ViewManager] Day ended — no more input.");
-    }
-
-    private void Update()
-    {
-        if (DayManager.Instance.CurrentState == DayManager.DayState.DayEnded)
-            return;
-
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-            ShowOrderView();
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-            ShowIngredientsStation();
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-            ShowFillingStation();
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-            ShowCuttingStation();
-        if (Input.GetKeyDown(KeyCode.Alpha5))
-            ShowServingStation();
     }
 }

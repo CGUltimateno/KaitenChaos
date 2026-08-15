@@ -24,7 +24,7 @@ public class FillingIcon : MonoBehaviour
 
         Draggable draggable = gameObject.AddComponent<Draggable>();
         draggable.onPickedUp = OnPickedUp;
-        draggable.onDropped = pos => FillingStation.Instance.RecordPlacement(ingredientId, pos);
+        draggable.onDropped = pos => FillingStation.Instance.RecordPlacement(ingredientId, pos, transform);
     }
 
     private void OnPickedUp()

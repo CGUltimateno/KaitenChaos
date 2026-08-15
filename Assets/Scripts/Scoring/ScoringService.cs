@@ -100,7 +100,16 @@ public static class ScoringService
 
     public static int ComputeOverallScore(Dish dish)
     {
-        return Mathf.RoundToInt(dish.cravingMatchScore * 0.5f + dish.fillingScore * 0.25f + dish.rollCutScore * 0.25f);
+        return Mathf.RoundToInt(dish.cravingMatchScore * 0.4f + dish.fillingScore * 0.2f + dish.rollCutScore * 0.2f + dish.patienceScore * 0.2f);
+    }
+
+    public static int ComputePatienceScore(float patienceTimer, float maxPatience)
+    {
+        if (maxPatience <= 0f)
+            return 100;
+
+        float fraction = Mathf.Clamp01(patienceTimer / maxPatience);
+        return Mathf.RoundToInt((1f - fraction) * 100f);
     }
 
     public static int ScoreToStars(int overallScore)
@@ -108,5 +117,32 @@ public static class ScoringService
         if (overallScore >= 70) return 3;
         if (overallScore >= 40) return 2;
         return 1;
+    }
+
+    private static readonly string[] Traits = { "classic", "sweet", "spicy", "healthy", "rich" };
+
+    public static string GetDominantTrait(Dish dish)
+    {
+        string bestTrait = Traits[0];
+        int bestScore = int.MinValue;
+
+        foreach (string trait in Traits)
+        {
+            int score = 0;
+            foreach (string id in dish.chosenIngredientIds)
+            {
+                IngredientData ingredient = GameDatabase.Instance.GetIngredient(id);
+                if (ingredient != null && ingredient.traits != null)
+                    score += ingredient.traits.GetValue(trait);
+            }
+
+            if (score > bestScore)
+            {
+                bestScore = score;
+                bestTrait = trait;
+            }
+        }
+
+        return bestTrait;
     }
 }
