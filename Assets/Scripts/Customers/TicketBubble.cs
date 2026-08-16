@@ -7,11 +7,18 @@ using UnityEngine;
 
 public class TicketBubble : MonoBehaviour
 {
+    private const float BubblePaddingX = 1.2f;
+    private const float BubblePaddingY = 0.8f;
+    private const float MaxBubbleWidth = 5.9925f;
+
     public bool isLogged = false;
     private bool isExpanded = false;
+    private Vector3 expandedTargetScale;
+    private Vector3 collapsedScale;
+    private float expansion;       // 0 = collapsed, 1 = expanded — drives background scale + text fade/scale together
+    private float targetExpansion;
     private SpriteRenderer bubbleBackground;
     private GameObject bubbleText;
-    private Vector3 target;
     private Color32 unloggedColor;
     private Color32 loggedColor;
     private Color32 targetColor;
@@ -23,14 +30,15 @@ public class TicketBubble : MonoBehaviour
         bubbleBackground = transform.Find("Background").GetComponent<SpriteRenderer>();
         bubbleText = transform.Find("Text").gameObject;
         textMesh = bubbleText.GetComponent<TMPro.TextMeshPro>();
+        textMesh.verticalAlignment = TMPro.VerticalAlignmentOptions.Middle;
 
         bubbleBackground.transform.localPosition = Vector3.zero;
         RectTransform textRect = bubbleText.GetComponent<RectTransform>();
         if (textRect != null)
             textRect.anchoredPosition = Vector2.zero;
         bubbleBackground.transform.localScale = new Vector3(4f, 4f, 1f);
-        target = bubbleBackground.transform.localScale;
-        bubbleBackground.sortingOrder = 10; 
+        collapsedScale = bubbleBackground.transform.localScale;
+        bubbleBackground.sortingOrder = 10;
 
         Renderer textRenderer = bubbleText.GetComponent<Renderer>();
         if (textRenderer != null)
@@ -54,7 +62,26 @@ public class TicketBubble : MonoBehaviour
         owner = customer;
 
         if (textMesh != null && owner != null && owner.Ticket != null)
+        {
             textMesh.text = owner.Ticket.phrase;
+            expandedTargetScale = ComputeExpandedScale();
+        }
+    }
+
+    // fits the wrap box + background to the actual phrase (capped at MaxBubbleWidth) instead of always filling a fixed-size box
+    private Vector3 ComputeExpandedScale()
+    {
+        Vector2 preferred = textMesh.GetPreferredValues(textMesh.text, MaxBubbleWidth, 0f);
+        float width = Mathf.Clamp(preferred.x, 2f, MaxBubbleWidth);
+        float height = Mathf.Clamp(preferred.y, 1.2f, 8f);
+
+        RectTransform textRect = textMesh.GetComponent<RectTransform>();
+        textRect.sizeDelta = new Vector2(width, height);
+
+        Vector2 nativeSize = bubbleBackground.sprite.bounds.size;
+        float scaleX = (width + BubblePaddingX) / nativeSize.x;
+        float scaleY = (height + BubblePaddingY) / nativeSize.y;
+        return new Vector3(scaleX, scaleY, 1f);
     }
 
     public void SetVisible(bool visible)
@@ -68,24 +95,19 @@ public class TicketBubble : MonoBehaviour
         {
             isLogged = true;
             isExpanded = true;
-            bubbleText.SetActive(true);
-            target = new Vector3(24.51f, 10.47f, 1f);
+            targetExpansion = 1f;
             targetColor = unloggedColor;
             owner?.LogTicket();
-
         }
         else if (isExpanded)
         {
-            target = new Vector3(4f, 4f, 1f);
-
-            bubbleText.SetActive(false);
+            targetExpansion = 0f;
             isExpanded = false;
             targetColor = loggedColor;
         }
         else
         {
-            target = new Vector3(24.51f, 10.47f, 1f);
-            bubbleText.SetActive(true);
+            targetExpansion = 1f;
             isExpanded = true;
             targetColor = loggedColor;
         }
@@ -93,8 +115,18 @@ public class TicketBubble : MonoBehaviour
 
     void Update()
     {
-        bubbleBackground.transform.localScale = Vector3.Lerp(bubbleBackground.transform.localScale, target, 4f * Time.deltaTime);
+        expansion = Mathf.Lerp(expansion, targetExpansion, 4f * Time.deltaTime);
+        bubbleBackground.transform.localScale = Vector3.Lerp(collapsedScale, expandedTargetScale, expansion);
         bubbleBackground.color = targetColor;
+
+        bool shouldShowText = expansion > 0.02f;
+        if (bubbleText.activeSelf != shouldShowText)
+            bubbleText.SetActive(shouldShowText);
+        if (shouldShowText)
+        {
+            textMesh.alpha = expansion;
+            bubbleText.transform.localScale = Vector3.one * expansion;
+        }
 
         if (isExpanded && Input.GetMouseButtonDown(0))
         {
@@ -110,8 +142,7 @@ public class TicketBubble : MonoBehaviour
     {
         if (isLogged)
         {
-            target = new Vector3(4f, 4f, 1f);
-            bubbleText.SetActive(false);
+            targetExpansion = 0f;
             isExpanded = false;
             targetColor = loggedColor;
         }

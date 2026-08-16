@@ -10,11 +10,12 @@ public class SeatManager : MonoBehaviour
 
     [Header("Seat Setup")]
     [SerializeField] private Transform[] seatPositions = new Transform[4];
-    [SerializeField] private Sprite defaultPortrait;
+    [SerializeField] private List<CustomerPortraitSet> characterPortraits;
     [SerializeField] private Vector3 portraitOffset = new Vector3(0f, 1f, 0f);
     [SerializeField] private float portraitScale = 0.3f;
     [SerializeField] private GameObject bubblePrefab;
     [SerializeField] private Vector3 bubbleOffset = new Vector3(0f, 2f, 0f);
+    [SerializeField] private float maxPatience = 45f;
 
     [Header("Spawn Timing")]
     [SerializeField] private float spawnInterval = 5f;
@@ -64,13 +65,14 @@ public class SeatManager : MonoBehaviour
         }
 
         Ticket ticket = OrderGenerator.Generate(freeSeat);
+        CustomerPortraitSet portraits = characterPortraits[Random.Range(0, characterPortraits.Count)];
 
         GameObject customerObj = new GameObject($"Customer_Seat{freeSeat}");
         customerObj.transform.SetParent(transform, true);
         customerObj.transform.position = seatPositions[freeSeat].position;
 
         Customer customer = customerObj.AddComponent<Customer>();
-        customer.Init(ticket, freeSeat, defaultPortrait, portraitOffset, portraitScale, bubblePrefab, bubbleOffset);
+        customer.Init(ticket, freeSeat, portraits.neutral, portraits.happy, portraits.angry, maxPatience, portraitOffset, portraitScale, bubblePrefab, bubbleOffset);
         customer.SetVisible(ViewManager.Instance.IsOrderViewActive);
 
         occupants[freeSeat] = customer;

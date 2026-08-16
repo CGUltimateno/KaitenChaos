@@ -60,17 +60,14 @@ public class IngredientStation : MonoBehaviour
         return GetSelectedIds().Count < maxSelectable;
     }
 
-    private void Update()
+    public void SubmitIngredients()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            List<string> selected = GetSelectedIds();
-            Dish dish = DishManager.Instance.StartNewDish(selected);
-            ViewManager.Instance.ShowFillingStation();
-            FillingStation.Instance.LoadDish(dish);
+        List<string> selected = GetSelectedIds();
+        Dish dish = DishManager.Instance.StartNewDish(selected);
+        ViewManager.Instance.ShowFillingStation();
+        FillingStation.Instance.LoadDish(dish);
 
-            foreach (var icon in icons)
-                icon.Deselect();
-        }
+        foreach (var icon in icons)
+            icon.Deselect();
     }
 }

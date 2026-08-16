@@ -11,21 +11,29 @@ public class Customer : MonoBehaviour
     public State CurrentState { get; private set; }
     public float PatienceTimer { get; private set; }
     public int SeatIndex { get; private set; }
+    public float MaxPatience { get; private set; }
 
     private SpriteRenderer portraitRenderer;
     private BoxCollider2D boxCollider;
     private TicketBubble bubble;
+    private Sprite neutralPortrait;
+    private Sprite happyPortrait;
+    private Sprite angryPortrait;
 
-    public void Init(Ticket ticket, int seatIndex, Sprite portraitSprite, Vector3 portraitOffset, float portraitScale, GameObject bubblePrefab, Vector3 bubbleOffset)
+    public void Init(Ticket ticket, int seatIndex, Sprite neutralPortrait, Sprite happyPortrait, Sprite angryPortrait, float maxPatience, Vector3 portraitOffset, float portraitScale, GameObject bubblePrefab, Vector3 bubbleOffset)
     {
         Ticket = ticket;
         SeatIndex = seatIndex;
         CurrentState = State.NeedsOrderTaken;
         PatienceTimer = 0f;
+        this.neutralPortrait = neutralPortrait;
+        this.happyPortrait = happyPortrait;
+        this.angryPortrait = angryPortrait;
+        MaxPatience = maxPatience;
 
         GameObject portraitObj = new GameObject("Portrait");
         portraitRenderer = portraitObj.AddComponent<SpriteRenderer>();
-        portraitRenderer.sprite = portraitSprite;
+        portraitRenderer.sprite = happyPortrait;
         portraitRenderer.material = new Material(Shader.Find("Sprites/Default"));
         portraitObj.transform.SetParent(transform, false);
         portraitObj.transform.localPosition = portraitOffset;
@@ -36,7 +44,7 @@ public class Customer : MonoBehaviour
         if (boxCollider == null)
             boxCollider = gameObject.AddComponent<BoxCollider2D>();
         boxCollider.offset = portraitOffset;
-        boxCollider.size = portraitSprite.bounds.size * portraitScale;
+        boxCollider.size = happyPortrait.bounds.size * portraitScale;
 
         if (bubblePrefab != null)
         {
@@ -49,10 +57,23 @@ public class Customer : MonoBehaviour
 
     private void Update()
     {
-        if (CurrentState != State.Served)
-        {
-            PatienceTimer += Time.deltaTime;
-        }
+        if (CurrentState == State.Served)
+            return;
+
+        PatienceTimer += Time.deltaTime;
+        UpdateMoodPortrait();
+    }
+
+    private void UpdateMoodPortrait()
+    {
+        float fraction = MaxPatience > 0f ? PatienceTimer / MaxPatience : 1f;
+
+        if (fraction >= 2f / 3f)
+            portraitRenderer.sprite = angryPortrait;
+        else if (fraction >= 1f / 3f)
+            portraitRenderer.sprite = neutralPortrait;
+        else
+            portraitRenderer.sprite = happyPortrait;
     }
 
     private void OnMouseDown()

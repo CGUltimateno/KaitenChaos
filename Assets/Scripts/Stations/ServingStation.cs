@@ -9,7 +9,12 @@ public class ServingStation : MonoBehaviour
 
     [SerializeField] private Transform plateSlot;
     [SerializeField] private BoxCollider2D conveyorBeltCollider;
+    [SerializeField] private BoxCollider2D trashCollider;
     [SerializeField] private TicketSlot[] ticketSlots;
+    [SerializeField] private Sprite classicDishSprite;
+    [SerializeField] private Sprite sweetDishSprite;
+    [SerializeField] private Sprite healthyDishSprite;
+    [SerializeField] private Sprite spicyDishSprite;
 
     private GameObject dishIconObj;
     private TicketSlot boundSlot;
@@ -31,19 +36,28 @@ public class ServingStation : MonoBehaviour
         dishIconObj = new GameObject("PlatedDish");
         dishIconObj.transform.SetParent(transform, false);
         dishIconObj.transform.position = plateSlot.position;
-        dishIconObj.transform.localScale = Vector3.one * 40f;
+        dishIconObj.transform.localScale = Vector3.one;
 
         SpriteRenderer sr = dishIconObj.AddComponent<SpriteRenderer>();
-        Texture2D tex = Texture2D.whiteTexture;
-        sr.sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f));
+        sr.sprite = GetPlateSprite(ScoringService.GetDominantTrait(dish));
         sr.material = new Material(Shader.Find("Sprites/Default"));
-        sr.color = new Color(0.95f, 0.85f, 0.6f); // placeholder plated-dish color
         sr.sortingOrder = 2;
 
         BoxCollider2D dishCollider = dishIconObj.AddComponent<BoxCollider2D>();
         dishCollider.size = sr.sprite.bounds.size;
         Draggable draggable = dishIconObj.AddComponent<Draggable>();
         draggable.onDropped = OnDishDropped;
+    }
+
+    private Sprite GetPlateSprite(string trait)
+    {
+        switch (trait)
+        {
+            case "sweet": return sweetDishSprite;
+            case "healthy": return healthyDishSprite;
+            case "spicy": return spicyDishSprite;
+            default: return classicDishSprite; // classic + rich share this — no dedicated art for rich
+        }
     }
 
     public void BindTicket(Ticket ticket)
@@ -58,6 +72,8 @@ public class ServingStation : MonoBehaviour
     {
         if (conveyorBeltCollider.bounds.Contains(worldPos))
             FinalizeServe();
+        else if (trashCollider.bounds.Contains(worldPos))
+            DiscardDish();
         else
             dishIconObj.transform.position = plateSlot.position;
     }
@@ -104,17 +120,20 @@ public class ServingStation : MonoBehaviour
 
         Dish dish = DishManager.Instance.CurrentDish;
         Ticket ticket = BoundTicket;
+        Customer customer = SeatManager.Instance.GetCustomerAtSeat(ticket.sourceSeat);
 
         int cravingScore = ScoringService.BindTicketToDish(dish, ticket);
         dish.fillingScore = ScoringService.ComputeFillingScore(dish, FillingStation.Instance.LineStartX, FillingStation.Instance.LineWidth);
+        dish.patienceScore = customer != null
+            ? ScoringService.ComputePatienceScore(customer.PatienceTimer, customer.MaxPatience)
+            : 100;
 
         int overallScore = ScoringService.ComputeOverallScore(dish);
         int stars = ScoringService.ScoreToStars(overallScore);
         DayManager.Instance.RecordServedDish(stars);
 
-        Debug.Log($"[ServingStation] Served! Craving match: {cravingScore}%, Filling: {dish.fillingScore}%, Cut: {dish.rollCutScore}%, Overall: {overallScore}% ({stars}★)");
+        Debug.Log($"[ServingStation] Served! Craving match: {cravingScore}%, Filling: {dish.fillingScore}%, Cut: {dish.rollCutScore}%, Patience: {dish.patienceScore}%, Overall: {overallScore}% ({stars}★)");
 
-        Customer customer = SeatManager.Instance.GetCustomerAtSeat(ticket.sourceSeat);
         if (customer != null)
         {
             customer.SetState(Customer.State.Served);
@@ -122,6 +141,24 @@ public class ServingStation : MonoBehaviour
         }
 
         TicketTray.Instance.RemoveTicket(ticket);
+        DishManager.Instance.ClearCurrentDish();
+
+        Destroy(dishIconObj);
+        dishIconObj = null;
+        BoundTicket = null;
+        boundSlot?.ClearIcon();
+        boundSlot = null;
+
+        ViewManager.Instance.ShowOrderView();
+    }
+
+    private void DiscardDish()
+    {
+        Debug.Log("[ServingStation] Dish discarded.");
+
+        if (BoundTicket != null)
+            OrdersView.Instance.AddTicket(BoundTicket);
+
         DishManager.Instance.ClearCurrentDish();
 
         Destroy(dishIconObj);
