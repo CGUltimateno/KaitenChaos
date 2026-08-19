@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 // Implemented by Mohamed Osman on 2026-08-08
@@ -15,6 +16,15 @@ public class ServingStation : MonoBehaviour
     [SerializeField] private Sprite sweetDishSprite;
     [SerializeField] private Sprite healthyDishSprite;
     [SerializeField] private Sprite spicyDishSprite;
+
+    [Header("Rating Popup")]
+    [SerializeField] private int maxStars = 5;
+    [SerializeField] private float ratingDisplayDuration = 2f;
+    [SerializeField] private float ratingPopInDuration = 0.3f;
+    [SerializeField] private Vector3 ratingPopupOffset = new Vector3(0f, 4.5f, 0f);
+    [SerializeField] private Color filledStarColor = new Color(1f, 0.84f, 0f);
+    [SerializeField] private Color halfStarColor = new Color(0.85f, 0.6f, 0.2f);
+    [SerializeField] private Color emptyStarColor = new Color(0.6f, 0.6f, 0.6f);
 
     private GameObject dishIconObj;
     private TicketSlot boundSlot;
@@ -56,7 +66,7 @@ public class ServingStation : MonoBehaviour
             case "sweet": return sweetDishSprite;
             case "healthy": return healthyDishSprite;
             case "spicy": return spicyDishSprite;
-            default: return classicDishSprite; // classic + rich share this — no dedicated art for rich
+            default: return classicDishSprite;
         }
     }
 
@@ -129,16 +139,10 @@ public class ServingStation : MonoBehaviour
             : 100;
 
         int overallScore = ScoringService.ComputeOverallScore(dish);
-        int stars = ScoringService.ScoreToStars(overallScore);
+        float stars = ScoringService.ScoreToStars(overallScore);
         DayManager.Instance.RecordServedDish(stars);
 
-        Debug.Log($"[ServingStation] Served! Craving match: {cravingScore}%, Filling: {dish.fillingScore}%, Cut: {dish.rollCutScore}%, Patience: {dish.patienceScore}%, Overall: {overallScore}% ({stars}★)");
-
-        if (customer != null)
-        {
-            customer.SetState(Customer.State.Served);
-            SeatManager.Instance.FreeSeat(ticket.sourceSeat);
-        }
+        Debug.Log($"[ServingStation] Served! Craving match: {cravingScore}%, Filling: {dish.fillingScore}%, Cut: {dish.rollCutScore}%, Patience: {dish.patienceScore}%, Overall: {overallScore}% ({stars:F1}★)");
 
         TicketTray.Instance.RemoveTicket(ticket);
         DishManager.Instance.ClearCurrentDish();
@@ -150,6 +154,89 @@ public class ServingStation : MonoBehaviour
         boundSlot = null;
 
         ViewManager.Instance.ShowOrderView();
+
+        if (customer != null)
+        {
+            customer.SetState(Customer.State.Served);
+            DayManager.Instance.StartCoroutine(ShowRatingThenFreeSeat(customer, stars));
+        }
+    }
+
+    private IEnumerator ShowRatingThenFreeSeat(Customer customer, float stars)
+    {
+        Time.timeScale = 0f;
+        GameObject blocker = BuildInputBlocker();
+
+        GameObject popup = BuildRatingPopup(customer.transform.position + ratingPopupOffset, stars);
+        popup.transform.localScale = Vector3.zero;
+
+        float t = 0f;
+        while (t < ratingPopInDuration)
+        {
+            t += Time.unscaledDeltaTime;
+            popup.transform.localScale = Vector3.one * Mathf.SmoothStep(0f, 1f, t / ratingPopInDuration);
+            yield return null;
+        }
+        popup.transform.localScale = Vector3.one;
+
+        yield return new WaitForSecondsRealtime(ratingDisplayDuration);
+
+        Destroy(popup);
+        Destroy(blocker);
+        Time.timeScale = 1f;
+        SeatManager.Instance.FreeSeat(customer.SeatIndex);
+    }
+
+    private GameObject BuildRatingPopup(Vector3 position, float stars)
+    {
+        GameObject popup = new GameObject("RatingPopup");
+        popup.transform.position = position;
+
+        float spacing = 0.9f;
+        float startX = -(maxStars - 1) * spacing / 2f;
+        int fullStars = Mathf.FloorToInt(stars);
+        bool hasHalf = (stars - fullStars) >= 0.5f;
+
+        for (int i = 0; i < maxStars; i++)
+        {
+            Color color;
+            if (i < fullStars) color = filledStarColor;
+            else if (i == fullStars && hasHalf) color = halfStarColor;
+            else color = emptyStarColor;
+
+            GameObject starObj = new GameObject($"Star_{i}");
+            starObj.transform.SetParent(popup.transform, false);
+            starObj.transform.localPosition = new Vector3(startX + i * spacing, 0f, 0f);
+            starObj.transform.localScale = Vector3.one * 18f;
+
+            SpriteRenderer sr = starObj.AddComponent<SpriteRenderer>();
+            Texture2D tex = Texture2D.whiteTexture;
+            sr.sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f));
+            sr.material = new Material(Shader.Find("Sprites/Default"));
+            sr.color = color;
+            sr.sortingOrder = 200;
+        }
+
+        return popup;
+    }
+
+    private GameObject BuildInputBlocker()
+    {
+        GameObject blocker = new GameObject("RatingInputBlocker");
+        blocker.transform.position = new Vector3(0f, 0f, -2f);
+        blocker.transform.localScale = new Vector3(38.4f, 21.6f, 1f);
+
+        SpriteRenderer sr = blocker.AddComponent<SpriteRenderer>();
+        Texture2D tex = Texture2D.whiteTexture;
+        sr.sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f));
+        sr.material = new Material(Shader.Find("Sprites/Default"));
+        sr.color = new Color(0f, 0f, 0f, 0f);
+        sr.sortingOrder = 199;
+
+        BoxCollider2D col = blocker.AddComponent<BoxCollider2D>();
+        col.size = new Vector2(1f, 1f);
+
+        return blocker;
     }
 
     private void DiscardDish()

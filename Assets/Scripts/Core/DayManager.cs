@@ -15,8 +15,11 @@ public class DayManager : MonoBehaviour
     public bool CanSpawnNewCustomers => CurrentState == DayState.Spawning;
     public event System.Action OnDayEnded;
 
+    public int DayNumber { get; private set; }
     public int DishesServed { get; private set; }
-    public int TotalStars { get; private set; }
+    public float TotalStars { get; private set; }
+    public float BestRating { get; private set; }
+    public int PerfectDishCount { get; private set; }
 
     private float dayTimer;
 
@@ -32,9 +35,25 @@ public class DayManager : MonoBehaviour
 
     private void Start()
     {
+        DayNumber = 1;
+        BeginDay();
+    }
+
+    public void StartNextDay()
+    {
+        DayNumber++;
+        BeginDay();
+    }
+
+    private void BeginDay()
+    {
         CurrentState = DayState.Spawning;
         dayTimer = 0f;
-        Debug.Log($"[DayManager] Day started — {dayLength}s shift.");
+        DishesServed = 0;
+        TotalStars = 0f;
+        BestRating = 0f;
+        PerfectDishCount = 0;
+        Debug.Log($"[DayManager] Day {DayNumber} started — {dayLength}s shift.");
     }
 
     private void Update()
@@ -58,10 +77,14 @@ public class DayManager : MonoBehaviour
         }
     }
 
-    public void RecordServedDish(int stars)
+    public void RecordServedDish(float stars)
     {
         DishesServed++;
         TotalStars += stars;
+        if (stars > BestRating)
+            BestRating = stars;
+        if (stars >= 5f)
+            PerfectDishCount++;
     }
 
     private bool AllSeatsEmpty()

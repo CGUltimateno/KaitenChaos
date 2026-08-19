@@ -101,5 +101,7 @@ public class Customer : MonoBehaviour
     public void SetState(State newState)
     {
         CurrentState = newState;
+        if (newState == State.Served)
+            bubble?.SetVisible(false);
     }
 }

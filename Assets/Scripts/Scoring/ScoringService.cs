@@ -112,11 +112,10 @@ public static class ScoringService
         return Mathf.RoundToInt((1f - fraction) * 100f);
     }
 
-    public static int ScoreToStars(int overallScore)
+    public static float ScoreToStars(int overallScore)
     {
-        if (overallScore >= 70) return 3;
-        if (overallScore >= 40) return 2;
-        return 1;
+        float raw = overallScore / 100f * 5f;
+        return Mathf.Round(raw * 2f) / 2f;
     }
 
     private static readonly string[] Traits = { "classic", "sweet", "spicy", "healthy", "rich" };
