@@ -18,6 +18,9 @@ public class CuttingStation : MonoBehaviour
     [SerializeField] private GameObject rollObj;
     [SerializeField] private Sprite rollSprite;
     [SerializeField] private Sprite[] rollStageSprites;
+    [SerializeField] private Sprite cutMarkSprite;
+    [SerializeField] private Sprite cutKnifeSprite;
+    [SerializeField] private Vector2 knifeOffset = new Vector2(-0.3f, -0.8f);
 
     private bool isRolled;
     private int rollStage;
@@ -128,15 +131,22 @@ public class CuttingStation : MonoBehaviour
 
         GameObject mark = new GameObject($"CutMark_{cutPositions.Count}");
         mark.transform.SetParent(transform, false);
-        mark.transform.position = new Vector3(worldX, lineStart.position.y, 0);
-        mark.transform.localScale = Vector3.one * 20f;
+        mark.transform.position = new Vector3(worldX, rollCollider.bounds.center.y, 0);
+        mark.transform.localScale = Vector3.one;
 
-        SpriteRenderer sr = mark.AddComponent<SpriteRenderer>();
-        Texture2D tex = Texture2D.whiteTexture;
-        sr.sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f));
-        sr.material = new Material(Shader.Find("Sprites/Default"));
-        sr.color = Color.red;
-        sr.sortingOrder = 2;
+        SpriteRenderer lineSr = mark.AddComponent<SpriteRenderer>();
+        lineSr.sprite = cutMarkSprite;
+        lineSr.material = new Material(Shader.Find("Sprites/Default"));
+        lineSr.sortingOrder = 2;
+
+        GameObject knifeObj = new GameObject("Knife");
+        knifeObj.transform.SetParent(mark.transform, false);
+        knifeObj.transform.localPosition = new Vector3(knifeOffset.x, knifeOffset.y, 0f);
+
+        SpriteRenderer knifeSr = knifeObj.AddComponent<SpriteRenderer>();
+        knifeSr.sprite = cutKnifeSprite;
+        knifeSr.material = new Material(Shader.Find("Sprites/Default"));
+        knifeSr.sortingOrder = 3;
 
         cutMarks.Add(mark);
     }

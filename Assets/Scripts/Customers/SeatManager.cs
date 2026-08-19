@@ -117,4 +117,10 @@ public class SeatManager : MonoBehaviour
         foreach (var c in occupants)
             if (c != null) yield return c;
     }
+
+    public void ResetForNewDay()
+    {
+        turnedAwayCount = 0;
+        spawnTimer = 0f;
+    }
 }

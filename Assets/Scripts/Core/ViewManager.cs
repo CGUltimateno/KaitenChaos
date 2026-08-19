@@ -40,6 +40,9 @@ public class ViewManager : MonoBehaviour
         stationViewFilling.SetActive(false);
         stationViewCutting.SetActive(false);
         stationViewServing.SetActive(false);
+        stationBar.SetActive(true);
+        dayEndView.SetActive(false);
+        OrdersView.Instance.gameObject.SetActive(true);
         foreach (var c in SeatManager.Instance.GetAllCustomers())
             c.SetVisible(true);
         Debug.Log("[ViewManager] Showing Order View");
