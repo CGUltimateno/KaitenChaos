@@ -104,4 +104,16 @@ public class Customer : MonoBehaviour
         if (newState == State.Served)
             bubble?.SetVisible(false);
     }
+
+    public void ReactToRating(float stars, float maxStars = 5f)
+    {
+        float fraction = maxStars > 0f ? stars / maxStars : 0f;
+
+        if (fraction >= 2f / 3f)
+            portraitRenderer.sprite = happyPortrait;
+        else if (fraction >= 1f / 3f)
+            portraitRenderer.sprite = neutralPortrait;
+        else
+            portraitRenderer.sprite = angryPortrait;
+    }
 }

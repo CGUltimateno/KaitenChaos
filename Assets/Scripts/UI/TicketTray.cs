@@ -32,4 +32,10 @@ public class TicketTray : MonoBehaviour
         tickets.Remove(ticket);
         Debug.Log($"[TicketTray] Removed ticket: {ticket.cravingTrait} (remaining: {tickets.Count})");
     }
+
+    public void ClearAll()
+    {
+        tickets.Clear();
+        OrdersView.Instance.ClearAllNotes();
+    }
 }
