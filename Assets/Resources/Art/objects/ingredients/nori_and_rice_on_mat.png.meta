@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: f20a7cf96c946fc4e86c577e58d8e382
+guid: e3c080b3ad3fcb141b673a80bf421d03
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9215051515045193046
-    second: book_minus_one_0
+      213: 6797955065760979000
+    second: nori_and_rice_on_mat_0
   - first:
-      213: 3752424276782918783
-    second: book_minus_one_1
+      213: 2813849288819648000
+    second: nori_and_rice_on_mat_1
   - first:
-      213: -1689443419705005119
-    second: book_minus_one_2
+      213: 5201696655580062000
+    second: nori_and_rice_on_mat_2
   - first:
-      213: -6562597867173792951
-    second: book_minus_one_3
+      213: -1821207192031652600
+    second: nori_and_rice_on_mat_3
   - first:
-      213: -2793840699737559503
-    second: book_minus_one_4
+      213: 6535553200228661000
+    second: nori_and_rice_on_mat_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -125,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: book_minus_one_0
+      name: nori_and_rice_on_mat_0
       rect:
         serializedVersion: 2
-        x: 29
-        y: 227
-        width: 79
-        height: 79
+        x: 175
+        y: 144
+        width: 1176
+        height: 629
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aaa5ec2787f8d1080800000000000000
-      internalID: -9215051515045193046
+      spriteID: ac910cd7d10375e50800000000000000
+      internalID: 6797955065760979000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: book_minus_one_1
+      name: nori_and_rice_on_mat_1
       rect:
         serializedVersion: 2
-        x: 121
-        y: 226
-        width: 79
-        height: 79
+        x: 181
+        y: 341
+        width: 9
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f7ca230aff9431430800000000000000
-      internalID: 3752424276782918783
+      spriteID: 9d6a49f050dcc0720800000000000000
+      internalID: 2813849288819648000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: book_minus_one_2
+      name: nori_and_rice_on_mat_2
       rect:
         serializedVersion: 2
-        x: 219
-        y: 226
-        width: 79
-        height: 79
+        x: 1342
+        y: 256
+        width: 17
+        height: 145
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1cbac5c2924ed88e0800000000000000
-      internalID: -1689443419705005119
+      spriteID: 4b1ef296c83203840800000000000000
+      internalID: 5201696655580062000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: book_minus_one_3
+      name: nori_and_rice_on_mat_3
       rect:
         serializedVersion: 2
-        x: 311
-        y: 228
-        width: 79
-        height: 79
+        x: 175
+        y: 246
+        width: 8
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 943be5b8208fce4a0800000000000000
-      internalID: -6562597867173792951
+      spriteID: ad4119045b5c9b6e0800000000000000
+      internalID: -1821207192031652600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: book_minus_one_4
+      name: nori_and_rice_on_mat_4
       rect:
         serializedVersion: 2
-        x: 406
-        y: 227
-        width: 81
-        height: 80
+        x: 170
+        y: 190
+        width: 8
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,8 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 13e2d1d9fa84a39d0800000000000000
-      internalID: -2793840699737559503
+      spriteID: 896fb4e3203f2ba50800000000000000
+      internalID: 6535553200228661000
       vertices: []
       indices: 
       edges: []
@@ -248,11 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      book_minus_one_0: -9215051515045193046
-      book_minus_one_1: 3752424276782918783
-      book_minus_one_2: -1689443419705005119
-      book_minus_one_3: -6562597867173792951
-      book_minus_one_4: -2793840699737559503
+      nori_and_rice_on_mat_0: 6797955065760979000
+      nori_and_rice_on_mat_1: 2813849288819648000
+      nori_and_rice_on_mat_2: 5201696655580062000
+      nori_and_rice_on_mat_3: -1821207192031652600
+      nori_and_rice_on_mat_4: 6535553200228661000
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

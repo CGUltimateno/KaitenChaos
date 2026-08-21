@@ -160,6 +160,25 @@ public class ServingStation : MonoBehaviour
             customer.SetState(Customer.State.Served);
             DayManager.Instance.StartCoroutine(ShowRatingThenFreeSeat(customer, stars));
         }
+        Debug.Log($"[Guidebook] Serving dish. Trait = {ticket.cravingTrait}");
+        foreach (string ingredientId in dish.chosenIngredientIds)
+        {
+            Debug.Log($"[Guidebook] Ingredient in dish = '{ingredientId}'");
+            IngredientData ingredient = GameDatabase.Instance.GetIngredient(ingredientId);
+
+            if (ingredient != null && ingredient.traits != null)
+            {
+                int traitScore = ingredient.traits.GetValue(ticket.cravingTrait);
+                Debug.Log(
+                    $"[Guidebook] {ingredientId} + {ticket.cravingTrait} = {traitScore}"
+                );
+                Guidebook.Instance.UnlockTrait(
+                    ingredientId,
+                    ticket.cravingTrait,
+                    traitScore
+                );
+            }
+        }
     }
 
     private IEnumerator ShowRatingThenFreeSeat(Customer customer, float stars)

@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: c16ea41d5e355e64495462ec7b32a3e3
+guid: f20a7cf96c946fc4e86c577e58d8e382
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2833304103868128223
-    second: book_plus_zero_0
+      213: -9215051515045193046
+    second: book_minus_one_0
   - first:
-      213: 1586418120849500962
-    second: book_plus_zero_1
+      213: 3752424276782918783
+    second: book_minus_one_1
   - first:
-      213: -5103944358834437263
-    second: book_plus_zero_2
+      213: -1689443419705005119
+    second: book_minus_one_2
   - first:
-      213: 876612839968668076
-    second: book_plus_zero_3
+      213: -6562597867173792951
+    second: book_minus_one_3
   - first:
-      213: -2208472675954013790
-    second: book_plus_zero_4
+      213: -2793840699737559503
+    second: book_minus_one_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -125,7 +125,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: book_plus_zero_0
+      name: book_minus_one_0
       rect:
         serializedVersion: 2
         x: 29
@@ -140,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fdb57bb221be15720800000000000000
-      internalID: 2833304103868128223
+      spriteID: aaa5ec2787f8d1080800000000000000
+      internalID: -9215051515045193046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: book_plus_zero_1
+      name: book_minus_one_1
       rect:
         serializedVersion: 2
         x: 121
@@ -162,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 22b2a7e20e6140610800000000000000
-      internalID: 1586418120849500962
+      spriteID: f7ca230aff9431430800000000000000
+      internalID: 3752424276782918783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: book_plus_zero_2
+      name: book_minus_one_2
       rect:
         serializedVersion: 2
         x: 219
@@ -184,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1738052c5a52b29b0800000000000000
-      internalID: -5103944358834437263
+      spriteID: 1cbac5c2924ed88e0800000000000000
+      internalID: -1689443419705005119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: book_plus_zero_3
+      name: book_minus_one_3
       rect:
         serializedVersion: 2
         x: 311
@@ -206,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ca9f0e3cbba5a2c00800000000000000
-      internalID: 876612839968668076
+      spriteID: 943be5b8208fce4a0800000000000000
+      internalID: -6562597867173792951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: book_plus_zero_4
+      name: book_minus_one_4
       rect:
         serializedVersion: 2
         x: 406
@@ -228,8 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a9ca9d5dcde951e0800000000000000
-      internalID: -2208472675954013790
+      spriteID: 13e2d1d9fa84a39d0800000000000000
+      internalID: -2793840699737559503
       vertices: []
       indices: 
       edges: []
@@ -238,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -248,11 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      book_plus_zero_0: 2833304103868128223
-      book_plus_zero_1: 1586418120849500962
-      book_plus_zero_2: -5103944358834437263
-      book_plus_zero_3: 876612839968668076
-      book_plus_zero_4: -2208472675954013790
+      book_minus_one_0: -9215051515045193046
+      book_minus_one_1: 3752424276782918783
+      book_minus_one_2: -1689443419705005119
+      book_minus_one_3: -6562597867173792951
+      book_minus_one_4: -2793840699737559503
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
