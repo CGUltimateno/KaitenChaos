@@ -9,6 +9,7 @@ public class ViewManager : MonoBehaviour
 
     public bool IsOrderViewActive => orderView.activeSelf;
 
+    [SerializeField] private GameObject mainMenuView;
     [SerializeField] private GameObject orderView;
     [SerializeField] private GameObject stationViewIngredients;
     [SerializeField] private GameObject stationViewFilling;
@@ -16,6 +17,7 @@ public class ViewManager : MonoBehaviour
     [SerializeField] private GameObject stationViewServing;
     [SerializeField] private GameObject dayEndView;
     [SerializeField] private GameObject stationBar;
+    [SerializeField] private GameObject guidebookRoot;
 
     private void Awake()
     {
@@ -29,8 +31,44 @@ public class ViewManager : MonoBehaviour
 
     private void Start()
     {
-        ShowOrderView();
+        ShowMainMenu();
         DayManager.Instance.OnDayEnded += ShowDayEndView;
+    }
+
+    public void ShowMainMenu()
+    {
+        Guidebook.Instance.Close();
+        mainMenuView.SetActive(true);
+        orderView.SetActive(false);
+        stationViewIngredients.SetActive(false);
+        stationViewFilling.SetActive(false);
+        stationViewCutting.SetActive(false);
+        stationViewServing.SetActive(false);
+        stationBar.SetActive(false);
+        dayEndView.SetActive(false);
+        OrdersView.Instance.gameObject.SetActive(false);
+        guidebookRoot.SetActive(false);
+        Debug.Log("[ViewManager] Showing Main Menu");
+    }
+
+    public void PlayGame()
+    {
+        DayManager.Instance.StartGame();
+        mainMenuView.SetActive(false);
+        guidebookRoot.SetActive(true);
+        ShowOrderView();
+    }
+
+    public void ReturnToMainMenu()
+    {
+        PauseManager.Instance.ForceResume();
+        DishManager.Instance.ClearCurrentDish();
+        ServingStation.Instance.ResetState();
+        SeatManager.Instance.ClearAllSeats();
+        SeatManager.Instance.ResetForNewDay();
+        TicketTray.Instance.ClearAll();
+        DayManager.Instance.ReturnToMenu();
+        ShowMainMenu();
     }
 
     public void ShowOrderView()

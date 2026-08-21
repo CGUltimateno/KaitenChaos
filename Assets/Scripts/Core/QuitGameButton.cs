@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PauseQuitButton : MonoBehaviour
+public class QuitGameButton : MonoBehaviour
 {
     private void OnMouseDown()
     {

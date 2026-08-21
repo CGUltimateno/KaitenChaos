@@ -123,4 +123,10 @@ public class SeatManager : MonoBehaviour
         turnedAwayCount = 0;
         spawnTimer = 0f;
     }
+
+    public void ClearAllSeats()
+    {
+        for (int i = 0; i < occupants.Length; i++)
+            FreeSeat(i);
+    }
 }

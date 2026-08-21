@@ -158,6 +158,7 @@ public class ServingStation : MonoBehaviour
         if (customer != null)
         {
             customer.SetState(Customer.State.Served);
+            customer.ReactToRating(stars, maxStars);
             DayManager.Instance.StartCoroutine(ShowRatingThenFreeSeat(customer, stars));
         }
         Debug.Log($"[Guidebook] Serving dish. Trait = {ticket.cravingTrait}");
@@ -256,6 +257,16 @@ public class ServingStation : MonoBehaviour
         col.size = new Vector2(1f, 1f);
 
         return blocker;
+    }
+
+    public void ResetState()
+    {
+        if (dishIconObj != null)
+            Destroy(dishIconObj);
+        dishIconObj = null;
+        BoundTicket = null;
+        boundSlot?.ClearIcon();
+        boundSlot = null;
     }
 
     private void DiscardDish()

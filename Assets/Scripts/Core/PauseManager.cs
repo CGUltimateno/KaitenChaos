@@ -21,4 +21,11 @@ public class PauseManager : MonoBehaviour
         Time.timeScale = IsPaused ? 0f : 1f;
         pauseOverlay.SetActive(IsPaused);
     }
+
+    public void ForceResume()
+    {
+        IsPaused = false;
+        Time.timeScale = 1f;
+        pauseOverlay.SetActive(false);
+    }
 }

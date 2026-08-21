@@ -7,7 +7,7 @@ public class DayManager : MonoBehaviour
 {
     public static DayManager Instance { get; private set; }
 
-    public enum DayState { Spawning, LastOrders, DayEnded }
+    public enum DayState { NotStarted, Spawning, LastOrders, DayEnded }
 
     [SerializeField] private float dayLength = 60f;
 
@@ -35,6 +35,11 @@ public class DayManager : MonoBehaviour
 
     private void Start()
     {
+        CurrentState = DayState.NotStarted;
+    }
+
+    public void StartGame()
+    {
         DayNumber = 1;
         BeginDay();
     }
@@ -43,6 +48,11 @@ public class DayManager : MonoBehaviour
     {
         DayNumber++;
         BeginDay();
+    }
+
+    public void ReturnToMenu()
+    {
+        CurrentState = DayState.NotStarted;
     }
 
     private void BeginDay()

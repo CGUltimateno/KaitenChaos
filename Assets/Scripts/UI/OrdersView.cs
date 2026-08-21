@@ -122,29 +122,66 @@ public class OrdersView : MonoBehaviour
 
             if (orderNote.ticket == null)
             {
-                orderNote.ticket = ticket;
-                note.gameObject.SetActive(true);
-
-                Vector3 homeLocalPos = note.transform.localPosition;
-                Draggable draggable = note.GetComponent<Draggable>();
-
-                draggable.onDropped = (position) =>
-                {
-                    bool bound = ServingStation.Instance.TryDropTicketAt(orderNote.ticket, position);
-                    if (bound)
-                    {
-                        orderNote.ticket = null;
-                        note.transform.localPosition = homeLocalPos;
-                        note.SetActive(false);
-                    }
-                    else
-                    {
-                        note.transform.localPosition = homeLocalPos;
-                    }
-                };
-
+                AssignTicketToNote(note, orderNote, ticket);
                 return;
             }
         }
+    }
+
+    private void AssignTicketToNote(GameObject note, OrderNote orderNote, Ticket ticket)
+    {
+        orderNote.ticket = ticket;
+        note.SetActive(true);
+
+        Vector3 homeLocalPos = note.transform.localPosition;
+        Draggable draggable = note.GetComponent<Draggable>();
+
+        draggable.onDropped = (position) =>
+        {
+            bool bound = ServingStation.Instance.TryDropTicketAt(orderNote.ticket, position);
+            note.transform.localPosition = homeLocalPos;
+            if (bound)
+            {
+                orderNote.ticket = null;
+                CompactNotes();
+            }
+        };
+    }
+
+    private void CompactNotes()
+    {
+        List<Ticket> activeTickets = new List<Ticket>();
+        foreach (GameObject note in orderNotes)
+        {
+            OrderNote orderNote = note.GetComponent<OrderNote>();
+            if (orderNote.ticket != null)
+                activeTickets.Add(orderNote.ticket);
+            orderNote.ticket = null;
+            note.SetActive(false);
+        }
+
+        foreach (Ticket ticket in activeTickets)
+        {
+            foreach (GameObject note in orderNotes)
+            {
+                OrderNote orderNote = note.GetComponent<OrderNote>();
+                if (orderNote.ticket == null)
+                {
+                    AssignTicketToNote(note, orderNote, ticket);
+                    break;
+                }
+            }
+        }
+    }
+
+    public void ClearAllNotes()
+    {
+        foreach (GameObject note in orderNotes)
+        {
+            OrderNote orderNote = note.GetComponent<OrderNote>();
+            orderNote.ticket = null;
+            note.SetActive(false);
+        }
+        CloseTray();
     }
 }

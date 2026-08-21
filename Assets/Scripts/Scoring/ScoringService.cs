@@ -80,22 +80,22 @@ public static class ScoringService
         List<float> sorted = new List<float>(cutPositionsX);
         sorted.Sort();
 
-        float totalDeviation = 0f;
-        for (int i = 0; i < sorted.Count; i++)
+        float idealGap = lineWidth / (expectedCutCount + 1);
+
+        List<float> gaps = new List<float>();
+        float previousX = lineStartX;
+        foreach (float x in sorted)
         {
-            float idealX = lineStartX + (i + 1) * (lineWidth / (expectedCutCount + 1));
-            totalDeviation += Mathf.Abs(sorted[i] - idealX);
+            gaps.Add(x - previousX);
+            previousX = x;
         }
+        gaps.Add((lineStartX + lineWidth) - previousX);
 
-        int missing = expectedCutCount - sorted.Count;
-        totalDeviation += missing * lineWidth;
+        float totalScore = 0f;
+        foreach (float gap in gaps)
+            totalScore += Mathf.Clamp01(1f - Mathf.Abs(gap - idealGap) / idealGap);
 
-        float maxPossibleDeviation = expectedCutCount * lineWidth;
-        float accuracy = maxPossibleDeviation > 0
-            ? 1f - Mathf.Clamp01(totalDeviation / maxPossibleDeviation)
-            : 1f;
-
-        return Mathf.RoundToInt(accuracy * 100f);
+        return Mathf.RoundToInt((totalScore / gaps.Count) * 100f);
     }
 
     public static int ComputeOverallScore(Dish dish)
