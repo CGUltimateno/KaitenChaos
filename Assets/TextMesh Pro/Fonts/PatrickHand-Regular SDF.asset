@@ -35,7 +35,7 @@ MonoBehaviour:
     m_StrikethroughOffset: 16.8
     m_StrikethroughThickness: 4.5
     m_TabWidth: 21
-  m_Material: {fileID: 4076810293362428426}
+  m_Material: {fileID: 8356042223540677512}
   m_SourceFontFileGUID: a7549ccd669ab554c82b8a718493a1a1
   m_CreationSettings:
     sourceFontFileName: 
@@ -63,7 +63,7 @@ MonoBehaviour:
   m_GlyphTable: []
   m_CharacterTable: []
   m_AtlasTextures:
-  - {fileID: 4767759933361029681}
+  - {fileID: 9183671317936886598}
   m_AtlasTextureIndex: 0
   m_IsMultiAtlasTexturesEnabled: 0
   m_GetFontFeatures: 1
@@ -81,20 +81,20 @@ MonoBehaviour:
   m_FontFeatureTable:
     m_MultipleSubstitutionRecords: []
     m_LigatureSubstitutionRecords:
+    - m_ComponentGlyphIDs: 3000000079000000
+      m_LigatureGlyphID: 257
     - m_ComponentGlyphIDs: 5000000050000000
       m_LigatureGlyphID: 520
     - m_ComponentGlyphIDs: 5000000079000000
       m_LigatureGlyphID: 258
-    - m_ComponentGlyphIDs: 170000001300000018000000
-      m_LigatureGlyphID: 128
     - m_ComponentGlyphIDs: 4a00000050000000
       m_LigatureGlyphID: 519
     - m_ComponentGlyphIDs: 4a0000004d000000
       m_LigatureGlyphID: 518
     - m_ComponentGlyphIDs: 4a0000004a000000
       m_LigatureGlyphID: 517
-    - m_ComponentGlyphIDs: 3000000079000000
-      m_LigatureGlyphID: 257
+    - m_ComponentGlyphIDs: 170000001300000018000000
+      m_LigatureGlyphID: 128
     m_GlyphPairAdjustmentRecords: []
     m_MarkToBaseAdjustmentRecords: []
     m_MarkToMarkAdjustmentRecords: []
@@ -155,7 +155,7 @@ MonoBehaviour:
     kerningPairs: []
   fallbackFontAssets: []
   atlas: {fileID: 0}
---- !u!21 &4076810293362428426
+--- !u!21 &8356042223540677512
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -191,7 +191,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 4767759933361029681}
+        m_Texture: {fileID: 9183671317936886598}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineTex:
@@ -264,7 +264,7 @@ Material:
     - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!28 &4767759933361029681
+--- !u!28 &9183671317936886598
 Texture2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
