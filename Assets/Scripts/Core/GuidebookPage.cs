@@ -1,6 +1,6 @@
 using UnityEngine;
 // Implemented by Cise Nil Köksal on 21/08/2026
-// AI Assistance: ChatGPT (Conceptualization)
+// AI Assistance: ChatGPT (Conceptualization, Autocomplete, Debugging)
 public class GuidebookPage : MonoBehaviour
 {
 

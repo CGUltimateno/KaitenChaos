@@ -5,7 +5,9 @@ using TMPro;
 using UnityEngine.UI;
 
 // Implemented by Mohamed Osman on 2026-08-07
+//Extended by Cise Nil Köksal on 21/08/2026
 // AI assistance: Claude (autocomplete, architecture review)
+//ChatGPT: Debugging
 
 public class Guidebook : MonoBehaviour
 {

@@ -2,7 +2,9 @@ using System.Collections;
 using UnityEngine;
 
 // Implemented by Mohamed Osman on 2026-08-08
+//Extended by Cise Nil Köksal on 21/08/2026
 // AI assistance: Claude (autocomplete, architecture review)
+// ChatGPT (debugging)
 
 public class ServingStation : MonoBehaviour
 {
