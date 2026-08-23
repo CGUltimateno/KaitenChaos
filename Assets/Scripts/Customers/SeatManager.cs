@@ -17,11 +17,14 @@ public class SeatManager : MonoBehaviour
     [SerializeField] private Vector3 bubbleOffset = new Vector3(0f, 2f, 0f);
 
     [Header("Patience Settings")]
-    [SerializeField] private float patienceScaleFactor = 5f;
-    [SerializeField] private float minPatience = 5f;
+    [SerializeField] private float basePatienceSeconds = 160f;
+    [SerializeField] private float minPatience = 60f;
 
     [Header("Spawn Timing")]
     [SerializeField] private float minSpawnInterval = 4f;
+    [SerializeField] private int daysUntilFullSpawnDifficulty = 5;
+    [SerializeField] private float firstDaySpawnInterval = 12f;
+    [SerializeField] private float fullDifficultySpawnInterval = 6f;
 
     private Customer[] occupants;
     private float spawnTimer;
@@ -58,7 +61,10 @@ public class SeatManager : MonoBehaviour
 
     private float ComputeSpawnInterval()
     {
-        return Mathf.Max(minSpawnInterval, ComputeMaxPatience() / seatPositions.Length);
+        int day = DayManager.Instance != null ? DayManager.Instance.DayNumber : 1;
+        float t = Mathf.Clamp01((day - 1) / (float)Mathf.Max(1, daysUntilFullSpawnDifficulty - 1));
+        float interval = Mathf.Lerp(firstDaySpawnInterval, fullDifficultySpawnInterval, t);
+        return Mathf.Max(minSpawnInterval, interval);
     }
 
     private void TrySpawnCustomer()
@@ -91,8 +97,7 @@ public class SeatManager : MonoBehaviour
 
     private float ComputeMaxPatience()
     {
-        float dayLength = DayManager.Instance != null ? DayManager.Instance.DayLength : 60f;
-        return Mathf.Max(minPatience, patienceScaleFactor * Mathf.Sqrt(dayLength));
+        return Mathf.Max(minPatience, basePatienceSeconds);
     }
 
     private int FindFreeSeat()
