@@ -104,3 +104,7 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# Mainly Used to collect data to balance the game and fix bugs
+Assets/Scripts/Scoring/ScoreLogger.cs
+Assets/Scripts/Scoring/ScoreLogger.cs.meta
