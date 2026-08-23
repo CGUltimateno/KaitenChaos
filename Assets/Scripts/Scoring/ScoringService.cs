@@ -6,6 +6,12 @@ using UnityEngine;
 
 public static class ScoringService
 {
+    private const int DaysUntilFullDifficulty = 5;
+    private const float FirstDayForgiveness = 0.4f;
+
+    private const float FillingTolerance = 1.3f;
+    private const float CutTolerance = 1.75f;
+
     public static int ComputeCravingMatch(Dish dish, Ticket ticket)
     {
         int score = 0;
@@ -63,7 +69,7 @@ public static class ScoringService
         int missing = totalIngredients - placedX.Count;
         totalDeviation += missing * lineWidth;
 
-        float maxPossibleDeviation = totalIngredients * lineWidth;
+        float maxPossibleDeviation = totalIngredients * lineWidth * FillingTolerance;
         float placementAccuracy = maxPossibleDeviation > 0
             ? 1f - Mathf.Clamp01(totalDeviation / maxPossibleDeviation)
             : 1f;
@@ -93,14 +99,9 @@ public static class ScoringService
 
         float totalScore = 0f;
         foreach (float gap in gaps)
-            totalScore += Mathf.Clamp01(1f - Mathf.Abs(gap - idealGap) / idealGap);
+            totalScore += Mathf.Clamp01(1f - Mathf.Abs(gap - idealGap) / (idealGap * CutTolerance));
 
         return Mathf.RoundToInt((totalScore / gaps.Count) * 100f);
-    }
-
-    public static int ComputeOverallScore(Dish dish)
-    {
-        return Mathf.RoundToInt(dish.cravingMatchScore * 0.4f + dish.fillingScore * 0.2f + dish.rollCutScore * 0.2f + dish.patienceScore * 0.2f);
     }
 
     public static int ComputePatienceScore(float patienceTimer, float maxPatience)
@@ -143,5 +144,21 @@ public static class ScoringService
         }
 
         return bestTrait;
+    }
+
+    private static int ApplyLearningCurveForgiveness(int rawScore)
+    {
+        int day = DayManager.Instance != null ? DayManager.Instance.DayNumber : 1;
+        float t = Mathf.Clamp01((day - 1) / (float)(DaysUntilFullDifficulty - 1));
+        float forgiveness = Mathf.Lerp(FirstDayForgiveness, 0f, t);
+
+        float forgiven = rawScore + (100 - rawScore) * forgiveness;
+        return Mathf.Clamp(Mathf.RoundToInt(forgiven), 0, 100);
+    }
+
+    public static int ComputeOverallScore(Dish dish)
+    {
+        int raw = Mathf.RoundToInt(dish.cravingMatchScore * 0.4f + dish.fillingScore * 0.2f + dish.rollCutScore * 0.2f + dish.patienceScore * 0.2f);
+        return ApplyLearningCurveForgiveness(raw);
     }
 }
