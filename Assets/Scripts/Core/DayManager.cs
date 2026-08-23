@@ -13,6 +13,8 @@ public class DayManager : MonoBehaviour
 
     public DayState CurrentState { get; private set; }
     public bool CanSpawnNewCustomers => CurrentState == DayState.Spawning;
+    public float DayProgress => Mathf.Clamp01(dayTimer / dayLength);
+    public float DayLength => dayLength;
     public event System.Action OnDayEnded;
 
     public int DayNumber { get; private set; }

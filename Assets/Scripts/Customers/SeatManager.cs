@@ -15,10 +15,13 @@ public class SeatManager : MonoBehaviour
     [SerializeField] private float portraitScale = 0.3f;
     [SerializeField] private GameObject bubblePrefab;
     [SerializeField] private Vector3 bubbleOffset = new Vector3(0f, 2f, 0f);
-    [SerializeField] private float maxPatience = 45f;
+
+    [Header("Patience Settings")]
+    [SerializeField] private float patienceScaleFactor = 5f;
+    [SerializeField] private float minPatience = 5f;
 
     [Header("Spawn Timing")]
-    [SerializeField] private float spawnInterval = 5f;
+    [SerializeField] private float minSpawnInterval = 4f;
 
     private Customer[] occupants;
     private float spawnTimer;
@@ -44,13 +47,18 @@ public class SeatManager : MonoBehaviour
     {
         spawnTimer += Time.deltaTime;
 
-        if (spawnTimer >= spawnInterval)
+        if (spawnTimer >= ComputeSpawnInterval())
         {
             spawnTimer = 0f;
             if (DayManager.Instance != null && !DayManager.Instance.CanSpawnNewCustomers)
                 return;
             TrySpawnCustomer();
         }
+    }
+
+    private float ComputeSpawnInterval()
+    {
+        return Mathf.Max(minSpawnInterval, ComputeMaxPatience() / seatPositions.Length);
     }
 
     private void TrySpawnCustomer()
@@ -72,13 +80,19 @@ public class SeatManager : MonoBehaviour
         customerObj.transform.position = seatPositions[freeSeat].position;
 
         Customer customer = customerObj.AddComponent<Customer>();
-        customer.Init(ticket, freeSeat, portraits.neutral, portraits.happy, portraits.angry, maxPatience, portraitOffset, portraitScale, bubblePrefab, bubbleOffset);
+        customer.Init(ticket, freeSeat, portraits.neutral, portraits.happy, portraits.angry, ComputeMaxPatience(), portraitOffset, portraitScale, bubblePrefab, bubbleOffset);
         customer.SetVisible(ViewManager.Instance.IsOrderViewActive);
 
         occupants[freeSeat] = customer;
 
         Debug.Log($"[SeatManager] Seated customer at seat {freeSeat} — " +
                   $"wants {ticket.requestedCount}x {ticket.cravingTrait}: \"{ticket.phrase}\"");
+    }
+
+    private float ComputeMaxPatience()
+    {
+        float dayLength = DayManager.Instance != null ? DayManager.Instance.DayLength : 60f;
+        return Mathf.Max(minPatience, patienceScaleFactor * Mathf.Sqrt(dayLength));
     }
 
     private int FindFreeSeat()
