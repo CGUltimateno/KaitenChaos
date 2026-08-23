@@ -15,12 +15,12 @@ public class CuttingStation : MonoBehaviour
     [SerializeField] private int cutCount = 5;
     [SerializeField] private SpriteRenderer flatMatRenderer;
     [SerializeField] private Sprite flatMatSprite;
+    [SerializeField] private Sprite flatMatNoRiceSprite;
     [SerializeField] private GameObject rollObj;
     [SerializeField] private Sprite rollSprite;
     [SerializeField] private Sprite[] rollStageSprites;
-    [SerializeField] private Sprite cutMarkSprite;
-    [SerializeField] private Sprite cutKnifeSprite;
-    [SerializeField] private Vector2 knifeOffset = new Vector2(-0.3f, -0.8f);
+    [SerializeField] private GameObject flatMatIconPrefab;
+    [SerializeField] private GameObject cutMarkPrefab;
 
     private bool isRolled;
     private int rollStage;
@@ -51,7 +51,7 @@ public class CuttingStation : MonoBehaviour
         ClearFlatMatIcons();
         isRolled = false;
         rollStage = 0;
-        flatMatRenderer.sprite = flatMatSprite;
+        flatMatRenderer.sprite = dish.ricePlaced ? flatMatSprite : flatMatNoRiceSprite;
         flatMatRenderer.gameObject.SetActive(true);
         rollObj.SetActive(false);
 
@@ -76,16 +76,11 @@ public class CuttingStation : MonoBehaviour
             float fractionY = Mathf.Clamp01((originalPos.y - srcMatBounds.min.y) / srcMatBounds.size.y);
             float mappedX = Mathf.Lerp(matBounds.min.x, matBounds.max.x, fractionX);
             float mappedY = Mathf.Lerp(matBounds.min.y, matBounds.max.y, fractionY);
-
-            GameObject iconObj = new GameObject($"FlatMatIcon_{id}");
-            iconObj.transform.SetParent(flatMatRenderer.transform, false);
+            GameObject iconObj = Instantiate(flatMatIconPrefab, flatMatRenderer.transform);
+            iconObj.name = $"FlatMatIcon_{id}";
             iconObj.transform.position = new Vector3(mappedX, mappedY, flatMatRenderer.transform.position.z - 0.01f);
             iconObj.transform.localScale = Vector3.one;
-
-            SpriteRenderer sr = iconObj.AddComponent<SpriteRenderer>();
-            sr.sprite = singleSprite;
-            sr.material = new Material(Shader.Find("Sprites/Default"));
-            sr.sortingOrder = 5;
+            iconObj.GetComponent<SpriteRenderer>().sprite = singleSprite;
 
             flatMatIcons.Add(iconObj);
         }
@@ -129,25 +124,10 @@ public class CuttingStation : MonoBehaviour
     {
         cutPositions.Add(worldX);
 
-        GameObject mark = new GameObject($"CutMark_{cutPositions.Count}");
-        mark.transform.SetParent(transform, false);
+        GameObject mark = Instantiate(cutMarkPrefab, transform);
+        mark.name = $"CutMark_{cutPositions.Count}";
         mark.transform.position = new Vector3(worldX, rollCollider.bounds.center.y, 0);
         mark.transform.localScale = Vector3.one;
-
-        SpriteRenderer lineSr = mark.AddComponent<SpriteRenderer>();
-        lineSr.sprite = cutMarkSprite;
-        lineSr.material = new Material(Shader.Find("Sprites/Default"));
-        lineSr.sortingOrder = 2;
-
-        GameObject knifeObj = new GameObject("Knife");
-        knifeObj.transform.SetParent(mark.transform, false);
-        knifeObj.transform.localPosition = new Vector3(knifeOffset.x, knifeOffset.y, 0f);
-
-        SpriteRenderer knifeSr = knifeObj.AddComponent<SpriteRenderer>();
-        knifeSr.sprite = cutKnifeSprite;
-        knifeSr.material = new Material(Shader.Find("Sprites/Default"));
-        knifeSr.sortingOrder = 3;
-
         cutMarks.Add(mark);
     }
 
