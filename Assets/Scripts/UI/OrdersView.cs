@@ -6,10 +6,10 @@ using System.Collections.Generic;
 public class OrdersView : MonoBehaviour
 {
     public static OrdersView Instance { get; private set; }
-
+    [SerializeField] private AudioSource clickSound;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public bool isExpanded = false;
-    [SerializeField] private Transform arrowTransform; 
+    [SerializeField] private Transform arrowTransform;
     private Transform expandedBackground;
     private List<GameObject> orderNotes;
     private Vector3 target;
@@ -67,6 +67,7 @@ public class OrdersView : MonoBehaviour
 
     public void OnMouseDown()
     {
+        clickSound.Play();
         Debug.Log("Clicked");
         if (isExpanded)
             CloseTray();

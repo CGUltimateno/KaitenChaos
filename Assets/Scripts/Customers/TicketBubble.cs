@@ -24,9 +24,10 @@ public class TicketBubble : MonoBehaviour
     private Color32 targetColor;
     private Customer owner;
     private TMPro.TextMeshPro textMesh;
-
+    private AudioSource clickSound;
     private void Awake()
     {
+        clickSound = GameObject.Find("bubble_sound").GetComponent<AudioSource>();
         bubbleBackground = transform.Find("Background").GetComponent<SpriteRenderer>();
         bubbleText = transform.Find("Text").gameObject;
         textMesh = bubbleText.GetComponent<TMPro.TextMeshPro>();
@@ -42,7 +43,7 @@ public class TicketBubble : MonoBehaviour
 
         Renderer textRenderer = bubbleText.GetComponent<Renderer>();
         if (textRenderer != null)
-            textRenderer.sortingOrder = 11; 
+            textRenderer.sortingOrder = 11;
 
         bubbleText.SetActive(false);
 
@@ -91,8 +92,10 @@ public class TicketBubble : MonoBehaviour
 
     public void OnMouseDown()
     {
+
         if (!isLogged)
         {
+            clickSound.Play();
             isLogged = true;
             isExpanded = true;
             targetExpansion = 1f;

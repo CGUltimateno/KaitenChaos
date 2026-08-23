@@ -22,6 +22,7 @@ public class Guidebook : MonoBehaviour
     [SerializeField] private GameObject clickCatcher;
     [SerializeField] private GameObject[] pages;
     [SerializeField] private GuidebookPage[] subpages;
+    [SerializeField] private AudioSource turnSound;
 
     private static readonly string[] Traits = { "classic", "sweet", "spicy", "healthy", "rich" };
     private bool isOpen;
@@ -77,6 +78,7 @@ public class Guidebook : MonoBehaviour
     }
     private void ShowPage(int index)
     {
+        turnSound.Play();
         arrowLeft.SetActive(index > 0);
         arrowRight.SetActive(index < pages.Length - 1);
         for (int i = 0; i < pages.Length; i++)

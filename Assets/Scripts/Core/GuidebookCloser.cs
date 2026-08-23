@@ -5,5 +5,10 @@ using UnityEngine;
 
 public class GuidebookCloser : MonoBehaviour
 {
-    private void OnMouseDown() => Guidebook.Instance.Close();
+    [SerializeField] private AudioSource clickSound;
+    private void OnMouseDown()
+    {
+        clickSound.Play();
+        Guidebook.Instance.Close();
+    }
 }

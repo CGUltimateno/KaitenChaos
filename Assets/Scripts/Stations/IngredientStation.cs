@@ -14,6 +14,7 @@ public class IngredientStation : MonoBehaviour
     [SerializeField] private int maxSelectable = 6;
     [SerializeField] private GameObject checkmarkPrefab;
 
+
     private const string CratePrefix = "ingredient_crate_";
 
     private void Awake()

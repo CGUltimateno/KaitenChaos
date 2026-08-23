@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class GuidebookOpener : MonoBehaviour
 {
+    [SerializeField] private AudioSource clickSound;
     private void OnMouseDown()
     {
+        clickSound.Play();
         Guidebook.Instance.Open();
     }
 }

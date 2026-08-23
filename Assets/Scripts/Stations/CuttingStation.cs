@@ -21,6 +21,7 @@ public class CuttingStation : MonoBehaviour
     [SerializeField] private Sprite cutMarkSprite;
     [SerializeField] private Sprite cutKnifeSprite;
     [SerializeField] private Vector2 knifeOffset = new Vector2(-0.3f, -0.8f);
+    [SerializeField] private AudioSource cutSound;
 
     private bool isRolled;
     private int rollStage;
@@ -127,6 +128,7 @@ public class CuttingStation : MonoBehaviour
 
     private void PlaceCutMark(float worldX)
     {
+        cutSound.Play();
         cutPositions.Add(worldX);
 
         GameObject mark = new GameObject($"CutMark_{cutPositions.Count}");

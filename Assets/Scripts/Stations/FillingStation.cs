@@ -20,6 +20,7 @@ public class FillingStation : MonoBehaviour
     [SerializeField] private Transform lineEnd;
     [SerializeField] private List<IngredientSpriteSet> ingredientSprites;
     [SerializeField] private float submitDragThresholdX;
+    [SerializeField] private AudioSource placeSound;
 
     public float LineStartX => lineStart.position.x;
     public float LineWidth => lineEnd.position.x - lineStart.position.x;
@@ -126,6 +127,7 @@ public class FillingStation : MonoBehaviour
 
         DishManager.Instance.CurrentDish.fillingPlacements[ingredientId] = worldPos;
         iconTransform.SetParent(matRenderer.transform, true);
+        placeSound.Play();
     }
 
     public void OnRiceGrabbed()
@@ -140,6 +142,7 @@ public class FillingStation : MonoBehaviour
 
         if (matCollider.bounds.Contains(worldPos))
         {
+            placeSound.Play();
             DishManager.Instance.CurrentDish.ricePlaced = true;
             matRenderer.sprite = riceOnMatSprite;
             Debug.Log("[FillingStation] Rice placed.");

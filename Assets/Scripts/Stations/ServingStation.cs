@@ -31,6 +31,7 @@ public class ServingStation : MonoBehaviour
     private GameObject dishIconObj;
     private TicketSlot boundSlot;
     public Ticket BoundTicket { get; private set; }
+    [SerializeField] private AudioSource placeSound;
 
     private void Awake()
     {
@@ -82,6 +83,7 @@ public class ServingStation : MonoBehaviour
 
     private void OnDishDropped(Vector3 worldPos)
     {
+        placeSound.Play();
         if (conveyorBeltCollider.bounds.Contains(worldPos))
             FinalizeServe();
         else if (trashCollider.bounds.Contains(worldPos))

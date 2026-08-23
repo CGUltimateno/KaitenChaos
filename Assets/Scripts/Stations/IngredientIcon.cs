@@ -7,11 +7,13 @@ public class IngredientIcon : MonoBehaviour
 {
     public string ingredientId;
     public bool isSelected;
+    [SerializeField] private AudioSource selectSound;
 
     private GameObject checkmarkObj;
 
     public void Init(string id, GameObject checkmarkPrefab)
     {
+        selectSound = GameObject.Find("select_sound").GetComponent<AudioSource>();
         ingredientId = id;
         isSelected = false;
 
@@ -34,7 +36,7 @@ public class IngredientIcon : MonoBehaviour
             Debug.Log($"[IngredientIcon] Can't select {ingredientId} — all 6 prep boxes are full.");
             return;
         }
-
+        selectSound.Play();
         isSelected = !isSelected;
         checkmarkObj.SetActive(isSelected);
         Debug.Log($"[IngredientIcon] {ingredientId} {(isSelected ? "SELECTED" : "deselected")}");
