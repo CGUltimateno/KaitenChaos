@@ -8,6 +8,7 @@ public class FillingIcon : MonoBehaviour
     public string ingredientId;
     private SpriteRenderer sr;
     private GroupSlot groupSlot;
+    private Vector3 homePosition;
 
     public void Init(string id, GroupSlot groupSlot)
     {
@@ -15,6 +16,7 @@ public class FillingIcon : MonoBehaviour
         this.groupSlot = groupSlot;
         sr = GetComponent<SpriteRenderer>();
         sr.enabled = groupSlot == null;
+        homePosition = transform.position;
 
         if (GetComponent<BoxCollider2D>() == null)
         {
@@ -24,12 +26,27 @@ public class FillingIcon : MonoBehaviour
 
         Draggable draggable = gameObject.AddComponent<Draggable>();
         draggable.onPickedUp = OnPickedUp;
-        draggable.onDropped = pos => FillingStation.Instance.RecordPlacement(ingredientId, pos, transform);
+        draggable.onDropped = OnDropped;
     }
 
     private void OnPickedUp()
     {
         sr.enabled = true;
         groupSlot?.MarkTaken();
+    }
+
+    private void OnDropped(Vector3 pos)
+    {
+        if (FillingStation.Instance.IsOverMat(pos))
+        {
+            FillingStation.Instance.RecordPlacement(ingredientId, pos, transform);
+            return;
+        }
+
+        FillingStation.Instance.RemovePlacement(ingredientId);
+        transform.SetParent(FillingStation.Instance.transform, true);
+        transform.position = homePosition;
+        sr.enabled = groupSlot == null;
+        groupSlot?.UnmarkTaken();
     }
 }

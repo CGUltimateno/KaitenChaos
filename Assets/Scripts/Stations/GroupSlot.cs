@@ -20,6 +20,11 @@ public class GroupSlot : MonoBehaviour
         col.enabled = true;
     }
 
+    public void UnmarkTaken()
+    {
+        col.enabled = false;
+    }
+
     private void OnMouseDown()
     {
         Debug.Log($"[FillingStation] Already took a piece of {ingredientId} — only one per ingredient.");

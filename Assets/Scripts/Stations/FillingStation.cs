@@ -119,6 +119,8 @@ public class FillingStation : MonoBehaviour
             Destroy(child.gameObject);
     }
 
+    public bool IsOverMat(Vector3 worldPos) => matCollider.bounds.Contains(worldPos);
+
     public void RecordPlacement(string ingredientId, Vector3 worldPos, Transform iconTransform)
     {
         if (DishManager.Instance.CurrentDish == null)
@@ -126,6 +128,11 @@ public class FillingStation : MonoBehaviour
 
         DishManager.Instance.CurrentDish.fillingPlacements[ingredientId] = worldPos;
         iconTransform.SetParent(matRenderer.transform, true);
+    }
+
+    public void RemovePlacement(string ingredientId)
+    {
+        DishManager.Instance.CurrentDish?.fillingPlacements.Remove(ingredientId);
     }
 
     public void OnRiceGrabbed()
