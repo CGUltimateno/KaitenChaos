@@ -2,9 +2,9 @@ using System.Collections;
 using UnityEngine;
 
 // Implemented by Mohamed Osman on 2026-08-08
-//Extended by Cise Nil Köksal on 21/08/2026
+//Extended by Cise Nil Köksal on 21/08/2026 - Guidebook unlocks, on 24/08/2026 - Plate animation. AI: ChatGPT (animation implementation, guidebook debugging)
 // AI assistance: Claude (autocomplete, architecture review)
-// ChatGPT (debugging)
+
 
 public class ServingStation : MonoBehaviour
 {
@@ -13,6 +13,9 @@ public class ServingStation : MonoBehaviour
     [SerializeField] private Transform plateSlot;
     [SerializeField] private BoxCollider2D conveyorBeltCollider;
     [SerializeField] private BoxCollider2D trashCollider;
+    [SerializeField] private Transform conveyorEnd;
+    private bool dishMoving = false;
+    [SerializeField] private float conveyorSpeed = 6f;
     [SerializeField] private TicketSlot[] ticketSlots;
     [SerializeField] private Sprite classicDishSprite;
     [SerializeField] private Sprite sweetDishSprite;
@@ -40,7 +43,23 @@ public class ServingStation : MonoBehaviour
         if (Instance != null && Instance != this) { Destroy(gameObject); return; }
         Instance = this;
     }
+    private void Update()
+    {
+        if (!dishMoving || dishIconObj == null)
+            return;
 
+        dishIconObj.transform.position = Vector3.MoveTowards(
+            dishIconObj.transform.position,
+            conveyorEnd.position,
+            conveyorSpeed * Time.deltaTime
+        );
+
+        if (dishIconObj.transform.position == conveyorEnd.position)
+        {
+            dishMoving = false;
+            FinalizeServe();
+        }
+    }
     public void LoadDish(Dish dish)
     {
         BoundTicket = null;
@@ -87,7 +106,10 @@ public class ServingStation : MonoBehaviour
     {
         placeSound.Play();
         if (conveyorBeltCollider.bounds.Contains(worldPos))
-            FinalizeServe();
+        {
+            dishIconObj.transform.localScale = new Vector3(0.73f, 0.76f, 1f);
+            dishMoving = true;
+        }
         else if (trashCollider.bounds.Contains(worldPos))
             DiscardDish();
         else
