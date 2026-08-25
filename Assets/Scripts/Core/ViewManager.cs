@@ -7,7 +7,12 @@ public class ViewManager : MonoBehaviour
 {
     public static ViewManager Instance { get; private set; }
 
+    public enum Station { Order, Ingredients, Filling, Cutting, Serving }
+
     public bool IsOrderViewActive => orderView.activeSelf;
+    public bool IsMainMenuActive => mainMenuView.activeSelf;
+    public bool IsStationBarActive => stationBar.activeSelf;
+    public Station CurrentStation { get; private set; } = Station.Order;
 
     [SerializeField] private GameObject mainMenuView;
     [SerializeField] private GameObject orderView;
@@ -73,6 +78,7 @@ public class ViewManager : MonoBehaviour
 
     public void ShowOrderView()
     {
+        CurrentStation = Station.Order;
         orderView.SetActive(true);
         stationViewIngredients.SetActive(false);
         stationViewFilling.SetActive(false);
@@ -88,6 +94,7 @@ public class ViewManager : MonoBehaviour
 
     public void ShowIngredientsStation()
     {
+        CurrentStation = Station.Ingredients;
         orderView.SetActive(false);
         stationViewIngredients.SetActive(true);
         stationViewFilling.SetActive(false);
@@ -100,6 +107,7 @@ public class ViewManager : MonoBehaviour
 
     public void ShowFillingStation()
     {
+        CurrentStation = Station.Filling;
         orderView.SetActive(false);
         stationViewIngredients.SetActive(false);
         stationViewFilling.SetActive(true);
@@ -112,6 +120,7 @@ public class ViewManager : MonoBehaviour
 
     public void ShowCuttingStation()
     {
+        CurrentStation = Station.Cutting;
         orderView.SetActive(false);
         stationViewIngredients.SetActive(false);
         stationViewFilling.SetActive(false);
@@ -124,6 +133,7 @@ public class ViewManager : MonoBehaviour
 
     public void ShowServingStation()
     {
+        CurrentStation = Station.Serving;
         orderView.SetActive(false);
         stationViewIngredients.SetActive(false);
         stationViewFilling.SetActive(false);
@@ -132,6 +142,18 @@ public class ViewManager : MonoBehaviour
         foreach (var c in SeatManager.Instance.GetAllCustomers())
             c.SetVisible(false);
         Debug.Log("[ViewManager] Showing Serving Station");
+    }
+
+    public void ShowStation(Station station)
+    {
+        switch (station)
+        {
+            case Station.Order: ShowOrderView(); break;
+            case Station.Ingredients: ShowIngredientsStation(); break;
+            case Station.Filling: ShowFillingStation(); break;
+            case Station.Cutting: ShowCuttingStation(); break;
+            case Station.Serving: ShowServingStation(); break;
+        }
     }
 
     private void ShowDayEndView()
