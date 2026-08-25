@@ -1,6 +1,9 @@
 using UnityEngine;
 using TMPro;
 
+// Implemented by Mohamed Osman on 2026-08-14
+// AI assistance: Claude (autocomplete, architecture review)
+
 public class DayEndView : MonoBehaviour
 {
     public static DayEndView Instance { get; private set; }

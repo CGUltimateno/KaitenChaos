@@ -1,5 +1,8 @@
 using UnityEngine;
 
+// Implemented by Mohamed Osman on 2026-08-23
+// AI assistance: Claude (autocomplete, architecture review)
+
 public class DayProgressBarUI : MonoBehaviour
 {
     private const float BarWidth = 8f;
