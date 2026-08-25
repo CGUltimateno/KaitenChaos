@@ -23,11 +23,13 @@ public class ServingStation : MonoBehaviour
     [SerializeField] private Sprite spicyDishSprite;
 
     [Header("Rating Popup")]
+    [SerializeField] private Sprite star;
+    [SerializeField] private Sprite halfStar;
     [SerializeField] private int maxStars = 5;
     [SerializeField] private float ratingDisplayDuration = 2f;
     [SerializeField] private float ratingPopInDuration = 0.3f;
     [SerializeField] private Vector3 ratingPopupOffset = new Vector3(0f, 4.5f, 0f);
-    [SerializeField] private float starScale = 27f;
+    [SerializeField] private float starScale = 2f;
     [SerializeField] private float starSpacing = 1.35f;
     [SerializeField] private Color filledStarColor = new Color(1f, 0.84f, 0f);
     [SerializeField] private Color halfStarColor = new Color(0.85f, 0.6f, 0.2f);
@@ -258,8 +260,9 @@ public class ServingStation : MonoBehaviour
             starObj.transform.localScale = Vector3.one * starScale;
 
             SpriteRenderer sr = starObj.AddComponent<SpriteRenderer>();
-            Texture2D tex = Texture2D.whiteTexture;
-            sr.sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f));
+            if (i < fullStars) sr.sprite = star;
+            else if (i == fullStars && hasHalf) sr.sprite = halfStar;
+            else sr.sprite = star;
             sr.material = new Material(Shader.Find("Sprites/Default"));
             sr.color = color;
             sr.sortingOrder = 200;
