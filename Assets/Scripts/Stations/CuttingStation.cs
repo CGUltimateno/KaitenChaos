@@ -100,14 +100,12 @@ public class CuttingStation : MonoBehaviour
         {
             flatMatRenderer.sprite = rollStageSprites[rollStage];
             rollStage++;
-            Debug.Log($"[CuttingStation] Roll stage {rollStage}/{rollStageSprites.Length}");
         }
         else
         {
             isRolled = true;
             flatMatRenderer.gameObject.SetActive(false);
             rollObj.SetActive(true);
-            Debug.Log("[CuttingStation] Rolled! Now cut it.");
         }
     }
 
@@ -145,13 +143,11 @@ public class CuttingStation : MonoBehaviour
     {
         if (DishManager.Instance.CurrentDish == null)
         {
-            Debug.Log("[CuttingStation] No dish in progress yet.");
             return;
         }
 
         Dish dish = DishManager.Instance.CurrentDish;
         dish.rollCutScore = ScoringService.ComputeRollCutScore(cutPositions, LineStartX, LineWidth, cutCount);
-        Debug.Log($"[CuttingStation] Cut score: {dish.rollCutScore}%");
 
         ClearMarks();
         isRolled = false;

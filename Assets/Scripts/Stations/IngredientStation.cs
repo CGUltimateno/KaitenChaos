@@ -41,8 +41,6 @@ public class IngredientStation : MonoBehaviour
             icon.Init(id, checkmarkPrefab);
             icons.Add(icon);
         }
-
-        Debug.Log($"[IngredientStation] Initialized {icons.Count} ingredient crates.");
     }
 
     public List<string> GetSelectedIds()

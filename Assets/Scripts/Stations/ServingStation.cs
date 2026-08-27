@@ -100,9 +100,6 @@ public class ServingStation : MonoBehaviour
     public void BindTicket(Ticket ticket)
     {
         BoundTicket = ticket;
-        Debug.Log(ticket != null
-            ? $"[ServingStation] Bound ticket: {ticket.cravingTrait} — \"{ticket.phrase}\""
-            : "[ServingStation] Ticket unbound.");
     }
 
     private void OnDishDropped(Vector3 worldPos)
@@ -155,7 +152,6 @@ public class ServingStation : MonoBehaviour
     {
         if (BoundTicket == null)
         {
-            Debug.Log("[ServingStation] No ticket bound yet — can't serve.");
             dishIconObj.transform.position = plateSlot.position;
             return;
         }
@@ -174,8 +170,6 @@ public class ServingStation : MonoBehaviour
         float stars = ScoringService.ScoreToStars(overallScore);
         DayManager.Instance.RecordServedDish(stars);
 
-        Debug.Log($"[ServingStation] Served! Craving match: {cravingScore}%, Filling: {dish.fillingScore}%, Cut: {dish.rollCutScore}%, Patience: {dish.patienceScore}%, Overall: {overallScore}% ({stars:F1}★)");
-
         TicketTray.Instance.RemoveTicket(ticket);
         DishManager.Instance.ClearCurrentDish();
 
@@ -193,18 +187,13 @@ public class ServingStation : MonoBehaviour
             customer.ReactToRating(stars, maxStars);
             DayManager.Instance.StartCoroutine(ShowRatingThenFreeSeat(customer, stars));
         }
-        Debug.Log($"[Guidebook] Serving dish. Trait = {ticket.cravingTrait}");
         foreach (string ingredientId in dish.chosenIngredientIds)
         {
-            Debug.Log($"[Guidebook] Ingredient in dish = '{ingredientId}'");
             IngredientData ingredient = GameDatabase.Instance.GetIngredient(ingredientId);
 
             if (ingredient != null && ingredient.traits != null)
             {
                 int traitScore = ingredient.traits.GetValue(ticket.cravingTrait);
-                Debug.Log(
-                    $"[Guidebook] {ingredientId} + {ticket.cravingTrait} = {traitScore}"
-                );
                 Guidebook.Instance.UnlockTrait(
                     ingredientId,
                     ticket.cravingTrait,
@@ -304,8 +293,6 @@ public class ServingStation : MonoBehaviour
 
     private void DiscardDish()
     {
-        Debug.Log("[ServingStation] Dish discarded.");
-
         if (BoundTicket != null)
             OrdersView.Instance.AddTicket(BoundTicket);
 

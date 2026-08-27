@@ -53,7 +53,6 @@ public class ViewManager : MonoBehaviour
         dayEndView.SetActive(false);
         OrdersView.Instance.gameObject.SetActive(false);
         guidebookRoot.SetActive(false);
-        Debug.Log("[ViewManager] Showing Main Menu");
     }
 
     public void PlayGame()
@@ -89,7 +88,6 @@ public class ViewManager : MonoBehaviour
         OrdersView.Instance.gameObject.SetActive(true);
         foreach (var c in SeatManager.Instance.GetAllCustomers())
             c.SetVisible(true);
-        Debug.Log("[ViewManager] Showing Order View");
     }
 
     public void ShowIngredientsStation()
@@ -102,7 +100,6 @@ public class ViewManager : MonoBehaviour
         stationViewServing.SetActive(false);
         foreach (var c in SeatManager.Instance.GetAllCustomers())
             c.SetVisible(false);
-        Debug.Log("[ViewManager] Showing Ingredients Station");
     }
 
     public void ShowFillingStation()
@@ -115,7 +112,6 @@ public class ViewManager : MonoBehaviour
         stationViewServing.SetActive(false);
         foreach (var c in SeatManager.Instance.GetAllCustomers())
             c.SetVisible(false);
-        Debug.Log("[ViewManager] Showing Filling Station");
     }
 
     public void ShowCuttingStation()
@@ -128,7 +124,6 @@ public class ViewManager : MonoBehaviour
         stationViewServing.SetActive(false);
         foreach (var c in SeatManager.Instance.GetAllCustomers())
             c.SetVisible(false);
-        Debug.Log("[ViewManager] Showing Cutting Station");
     }
 
     public void ShowServingStation()
@@ -141,7 +136,6 @@ public class ViewManager : MonoBehaviour
         stationViewServing.SetActive(true);
         foreach (var c in SeatManager.Instance.GetAllCustomers())
             c.SetVisible(false);
-        Debug.Log("[ViewManager] Showing Serving Station");
     }
 
     public void ShowStation(Station station)
@@ -167,6 +161,5 @@ public class ViewManager : MonoBehaviour
         OrdersView.Instance.gameObject.SetActive(false);
         dayEndView.SetActive(true);
         dayEndView.GetComponent<DayEndView>().ShowSummary();
-        Debug.Log("[ViewManager] Day ended — no more input.");
     }
 }

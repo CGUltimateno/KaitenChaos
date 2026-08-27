@@ -65,7 +65,6 @@ public class DayManager : MonoBehaviour
         TotalStars = 0f;
         BestRating = 0f;
         PerfectDishCount = 0;
-        Debug.Log($"[DayManager] Day {DayNumber} started — {dayLength}s shift.");
     }
 
     private void Update()
@@ -78,13 +77,11 @@ public class DayManager : MonoBehaviour
         if (CurrentState == DayState.Spawning && dayTimer >= dayLength)
         {
             CurrentState = DayState.LastOrders;
-            Debug.Log("[DayManager] Shift over — last orders! No new customers.");
         }
 
         if (CurrentState == DayState.LastOrders && AllSeatsEmpty())
         {
             CurrentState = DayState.DayEnded;
-            Debug.Log("[DayManager] All customers served — day ended.");
             OnDayEnded?.Invoke();
         }
     }

@@ -13,9 +13,6 @@ public class GuidebookPage : MonoBehaviour
 
     public void UnlockTrait(string trait, int score)
     {
-        Debug.Log(
-        $"[GuidebookPage] {ingredientID}: unlocking {trait} with score {score}"
-    );
         Sprite scoreSprite = GetTraitScore(score);
 
         switch (trait)
@@ -75,13 +72,6 @@ public class GuidebookPage : MonoBehaviour
         Sprite s = Resources.Load<Sprite>(
             "Art/objects/book_ratings/" + spriteName
         );
-        Debug.Log(
-    s != null
-        ? $"LOADED SUCCESSFULLY: {s.name}"
-        : $"FAILED TO LOAD: Art/objects/book_ratings/{spriteName}"
-);
-
-        Debug.Log($"[GuidebookPage] Loading sprite '{spriteName}' -> {s}");
         return s;
     }
 

@@ -53,7 +53,6 @@ public class FillingStation : MonoBehaviour
 
         if (!hasSeenHint)
         {
-            Debug.Log("[FillingStation] First time here — check the guidebook (G) to see how to place your ingredients!");
             hasSeenHint = true;
         }
 
@@ -152,7 +151,6 @@ public class FillingStation : MonoBehaviour
             placeSound.Play();
             DishManager.Instance.CurrentDish.ricePlaced = true;
             matRenderer.sprite = riceOnMatSprite;
-            Debug.Log("[FillingStation] Rice placed.");
         }
     }
 
@@ -160,7 +158,6 @@ public class FillingStation : MonoBehaviour
     {
         if (DishManager.Instance.CurrentDish != null && worldPos.x >= submitDragThresholdX)
         {
-            Debug.Log($"[FillingStation] Recorded {DishManager.Instance.CurrentDish.fillingPlacements.Count} placements, rice: {DishManager.Instance.CurrentDish.ricePlaced}");
             ClearIcons();
             matRenderer.sprite = noriOnMatSprite;
             matRenderer.transform.position = matHomePosition;

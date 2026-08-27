@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using UnityEngine;
 
 // Implemented by Mohamed Osman on 2026-08-03
@@ -89,26 +88,6 @@ public class GameDatabase : MonoBehaviour
             }
             BestAchievable[trait] = runningSums;
         }
-        LogTables();
-    }
-
-    private void LogTables()
-    {
-        StringBuilder sbMaxRoll = new StringBuilder();
-        sbMaxRoll.AppendLine("[GameDatabase] MaxRollSize Table:");
-        foreach (var kvp in MaxRollSize)
-        {
-            sbMaxRoll.AppendLine($"  {kvp.Key}: {kvp.Value}");
-        }
-        Debug.Log(sbMaxRoll.ToString());
-
-        StringBuilder sbBest = new StringBuilder();
-        sbBest.AppendLine("[GameDatabase] BestAchievable Table:");
-        foreach (var kvp in BestAchievable)
-        {
-            sbBest.AppendLine($"  {kvp.Key}: [{string.Join(", ", kvp.Value)}]");
-        }
-        Debug.Log(sbBest.ToString());
     }
 
     public IngredientData GetIngredient(string id)

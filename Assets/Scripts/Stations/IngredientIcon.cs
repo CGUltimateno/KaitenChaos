@@ -33,13 +33,11 @@ public class IngredientIcon : MonoBehaviour
     {
         if (!isSelected && !IngredientStation.Instance.CanSelectMore())
         {
-            Debug.Log($"[IngredientIcon] Can't select {ingredientId} — all 6 prep boxes are full.");
             return;
         }
         selectSound.Play();
         isSelected = !isSelected;
         checkmarkObj.SetActive(isSelected);
-        Debug.Log($"[IngredientIcon] {ingredientId} {(isSelected ? "SELECTED" : "deselected")}");
     }
 
     public void Deselect()

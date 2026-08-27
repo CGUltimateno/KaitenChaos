@@ -68,7 +68,6 @@ public class OrdersView : MonoBehaviour
     public void OnMouseDown()
     {
         clickSound.Play();
-        Debug.Log("Clicked");
         if (isExpanded)
             CloseTray();
         else

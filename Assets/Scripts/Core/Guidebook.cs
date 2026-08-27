@@ -90,10 +90,6 @@ public class Guidebook : MonoBehaviour
 
     public void UnlockTrait(string ingredientId, string trait, int score)
     {
-        Debug.Log(
-        $"[Guidebook] UnlockTrait called: {ingredientId} / {trait} / {score}"
-    );
-
         foreach (GuidebookPage page in subpages)
         {
             if (page.ingredientID == ingredientId)

@@ -74,7 +74,6 @@ public class SeatManager : MonoBehaviour
         if (freeSeat < 0)
         {
             turnedAwayCount++;
-            Debug.Log($"[SeatManager] All seats full — turned away #{turnedAwayCount}");
             return;
         }
 
@@ -90,9 +89,6 @@ public class SeatManager : MonoBehaviour
         customer.SetVisible(ViewManager.Instance.IsOrderViewActive);
 
         occupants[freeSeat] = customer;
-
-        Debug.Log($"[SeatManager] Seated customer at seat {freeSeat} — " +
-                  $"wants {ticket.requestedCount}x {ticket.cravingTrait}: \"{ticket.phrase}\"");
     }
 
     private float ComputeMaxPatience()

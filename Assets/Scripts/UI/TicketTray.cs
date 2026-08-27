@@ -23,14 +23,12 @@ public class TicketTray : MonoBehaviour
     public void AddTicket(Ticket ticket)
     {
         tickets.Add(ticket);
-        Debug.Log($"[TicketTray] Added ticket: {ticket.requestedCount}x {ticket.cravingTrait} — \"{ticket.phrase}\" (total: {tickets.Count})");
         OrdersView.Instance.AddTicket(ticket);
     }
 
     public void RemoveTicket(Ticket ticket)
     {
         tickets.Remove(ticket);
-        Debug.Log($"[TicketTray] Removed ticket: {ticket.cravingTrait} (remaining: {tickets.Count})");
     }
 
     public void ClearAll()

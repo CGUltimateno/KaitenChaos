@@ -27,6 +27,5 @@ public class GroupSlot : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log($"[FillingStation] Already took a piece of {ingredientId} — only one per ingredient.");
     }
 }
