@@ -7,7 +7,7 @@ using UnityEngine.UI;
 // Implemented by Mohamed Osman on 2026-08-07
 //Extended by Cise Nil Köksal on 21/08/2026
 // AI assistance: Claude (autocomplete, architecture review)
-//ChatGPT: Debugging
+//ChatGPT: Debugging (Prompts(roughly): "Why are the lock icons not updating after unlocking trait ingredients?", "Why are the next/prev page buttons not turning the pages")
 
 public class Guidebook : MonoBehaviour
 {

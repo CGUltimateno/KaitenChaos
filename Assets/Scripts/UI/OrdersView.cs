@@ -4,6 +4,7 @@ using System.Collections.Generic;
 // Implemented by: Cise Nil Köksal on 06.08.2026
 // Extended by Mohamed Osman on 13.08.2026
 //AI: ChatGPT (For debugging appropriate vector values, implementing draggable logic)
+//Prompts (roughly): How can I make the order notes draggable and drop them into the serving station?, Why does the expanded view expand the wrong way etc.
 public class OrdersView : MonoBehaviour
 {
     public static OrdersView Instance { get; private set; }

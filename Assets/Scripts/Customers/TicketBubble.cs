@@ -4,6 +4,7 @@ using UnityEngine;
 
 //implemented by Cise Nil Köksal on 05.08.2026
 //AI Assistance: ChatGPT(debugging support on three-state switching)
+//Prompts (roughly): “Why does my first click after expanding only change the color instead of minimizing the ticket?”,  "debug my OnMouseDown logic so the ticket expands and collapses correctly while keeping the logged state permanent"
 //Extended by Mohamed Osman on 13.08.2026
 //AI assistance: Claude (autocomplete, architecture review)
 
