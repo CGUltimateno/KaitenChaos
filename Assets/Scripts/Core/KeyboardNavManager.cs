@@ -7,6 +7,8 @@ public class KeyboardNavManager : MonoBehaviour
 {
     public static KeyboardNavManager Instance { get; private set; }
 
+    [SerializeField] private GameObject creditsPanel;
+
     private void Awake()
     {
         if (Instance != null && Instance != this) { Destroy(gameObject); return; }
@@ -21,6 +23,9 @@ public class KeyboardNavManager : MonoBehaviour
             return;
         }
 
+        if (creditsPanel.activeSelf)
+            return;
+
         if (SettingsManager.Instance.IsOpen)
             return;
 
@@ -34,6 +39,12 @@ public class KeyboardNavManager : MonoBehaviour
 
     private void HandleEscape()
     {
+        if (creditsPanel.activeSelf)
+        {
+            creditsPanel.SetActive(false);
+            return;
+        }
+
         if (SettingsManager.Instance.IsOpen)
             SettingsManager.Instance.CloseSettings();
         else if (PauseManager.Instance.IsPaused)

@@ -19,7 +19,7 @@ public class Guidebook : MonoBehaviour
     [SerializeField] private GameObject arrowRight;
 
 
-    [SerializeField] private GameObject clickCatcher;
+    [SerializeField] private SpriteRenderer bookBackground;
     [SerializeField] private GameObject[] pages;
     [SerializeField] private GuidebookPage[] subpages;
     [SerializeField] private AudioSource turnSound;
@@ -27,6 +27,7 @@ public class Guidebook : MonoBehaviour
     private static readonly string[] Traits = { "classic", "sweet", "spicy", "healthy", "rich" };
     private bool isOpen;
     private int currentPage;
+    private bool suppressNextClose;
 
     private void Awake()
     {
@@ -37,24 +38,21 @@ public class Guidebook : MonoBehaviour
     private void Start()
     {
         panel.SetActive(false);
-        clickCatcher.SetActive(false);
-
     }
 
     public void Open()
     {
         isOpen = true;
         panel.SetActive(true);
-        clickCatcher.SetActive(true);
         currentPage = 0;
         ShowPage(0);
+        suppressNextClose = true;
     }
 
     public void Close()
     {
         isOpen = false;
         panel.SetActive(false);
-        clickCatcher.SetActive(false);
     }
 
     private void Update()
@@ -62,6 +60,23 @@ public class Guidebook : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.G))
         {
             if (isOpen) Close(); else Open();
+        }
+
+        if (isOpen && Input.GetMouseButtonDown(0))
+        {
+            if (suppressNextClose)
+            {
+                suppressNextClose = false;
+            }
+            else
+            {
+                Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Bounds bounds = bookBackground.bounds;
+                bool clickedOutside = mouseWorld.x < bounds.min.x || mouseWorld.x > bounds.max.x
+                    || mouseWorld.y < bounds.min.y || mouseWorld.y > bounds.max.y;
+                if (clickedOutside)
+                    Close();
+            }
         }
 
     }

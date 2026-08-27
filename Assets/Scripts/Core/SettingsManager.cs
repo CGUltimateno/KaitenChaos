@@ -57,6 +57,7 @@ public class SettingsManager : MonoBehaviour
     public void OpenSettings()
     {
         settingsPanel.SetActive(true);
+        PauseManager.Instance.SetBackgroundBlocking(false);
         foreach (var handle in settingsPanel.GetComponentsInChildren<VolumeSliderHandle>(true))
             handle.Refresh();
     }
@@ -64,6 +65,7 @@ public class SettingsManager : MonoBehaviour
     public void CloseSettings()
     {
         settingsPanel.SetActive(false);
+        PauseManager.Instance.SetBackgroundBlocking(true);
     }
 
     public void SetMusicVolume(float value01)

@@ -23,6 +23,7 @@ public class ViewManager : MonoBehaviour
     [SerializeField] private GameObject dayEndView;
     [SerializeField] private GameObject stationBar;
     [SerializeField] private GameObject guidebookRoot;
+    [SerializeField] private GameObject clock;
 
     private void Awake()
     {
@@ -53,6 +54,7 @@ public class ViewManager : MonoBehaviour
         dayEndView.SetActive(false);
         OrdersView.Instance.gameObject.SetActive(false);
         guidebookRoot.SetActive(false);
+        clock.SetActive(false);
     }
 
     public void PlayGame()
@@ -60,6 +62,7 @@ public class ViewManager : MonoBehaviour
         DayManager.Instance.StartGame();
         mainMenuView.SetActive(false);
         guidebookRoot.SetActive(true);
+        clock.SetActive(true);
         ShowOrderView();
     }
 

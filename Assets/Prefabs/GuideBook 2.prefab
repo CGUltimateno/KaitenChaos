@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1061293873841359379}
   - component: {fileID: 6521598279751448484}
   - component: {fileID: 9064622137941590070}
-  - component: {fileID: 832908302724750450}
   m_Layer: 0
   m_Name: sweet_lock
   m_TagString: Untagged
@@ -81,7 +80,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -139,18 +138,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &832908302724750450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 113560445315265163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &121155733138834220
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,7 +265,6 @@ GameObject:
   - component: {fileID: 5628655036764647833}
   - component: {fileID: 1498992729122384636}
   - component: {fileID: 6733391701408153373}
-  - component: {fileID: 3468671002343772500}
   m_Layer: 0
   m_Name: healthy_lock
   m_TagString: Untagged
@@ -348,7 +334,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -406,18 +392,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3468671002343772500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 216553763493145543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &295848921357237037
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,7 +475,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &2262092189472731481
@@ -682,7 +656,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &8024667244174769081
@@ -863,7 +837,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &8741378400443339423
@@ -972,7 +946,6 @@ GameObject:
   - component: {fileID: 18503789983321872}
   - component: {fileID: 1723017363724856306}
   - component: {fileID: 6846225467347367413}
-  - component: {fileID: 8490459406709565291}
   m_Layer: 0
   m_Name: book_egg
   m_TagString: Untagged
@@ -1042,7 +1015,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -4411569340179059538, guid: dca1abaa6c3a6814babf23a7747fda86, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1100,18 +1073,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8490459406709565291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529314654570131622}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &531939137042913381
 GameObject:
   m_ObjectHideFlags: 0
@@ -1195,7 +1156,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &7008888590846270405
@@ -1376,7 +1337,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &510239301099680013
@@ -1474,144 +1435,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 4339958995654548883}
   m_maskType: 0
---- !u!1 &596625074792171929
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1323386039097561946}
-  - component: {fileID: 8968677052905468564}
-  - component: {fileID: 965794878658405990}
-  m_Layer: 0
-  m_Name: Background
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1323386039097561946
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 596625074792171929}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: -4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7773354252374753204}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &8968677052905468564
-SpriteRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 596625074792171929}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 100
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: 3580409467149532229, guid: cf77e387ee6f84442a5ac6fdc06fe272, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
---- !u!61 &965794878658405990
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 596625074792171929}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 27.92, y: 20.849998}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &606018754838160753
 GameObject:
   m_ObjectHideFlags: 0
@@ -1659,7 +1482,6 @@ GameObject:
   - component: {fileID: 40168993345227447}
   - component: {fileID: 6665387576631338954}
   - component: {fileID: 6825700626802064796}
-  - component: {fileID: 1070392212969975277}
   m_Layer: 0
   m_Name: healthy_lock
   m_TagString: Untagged
@@ -1729,7 +1551,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -1787,18 +1609,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1070392212969975277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 615007981234097265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &662881586426518061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1810,7 +1620,6 @@ GameObject:
   - component: {fileID: 6629989605481261843}
   - component: {fileID: 5955585449078382050}
   - component: {fileID: 4477667218497670392}
-  - component: {fileID: 7880003274783459134}
   m_Layer: 0
   m_Name: book_carrot
   m_TagString: Untagged
@@ -1880,7 +1689,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2724558396456946970, guid: 73018c8dfb01e0a4fa7f5bad7f00c9a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1938,18 +1747,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7880003274783459134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 662881586426518061}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &666618912068735149
 GameObject:
   m_ObjectHideFlags: 0
@@ -2033,7 +1830,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &6661455089434673997
@@ -2142,7 +1939,6 @@ GameObject:
   - component: {fileID: 7100472158141888944}
   - component: {fileID: 4367484128964958719}
   - component: {fileID: 5239448966767617804}
-  - component: {fileID: 1001602267192132758}
   m_Layer: 0
   m_Name: book_carrot
   m_TagString: Untagged
@@ -2212,7 +2008,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2724558396456946970, guid: 73018c8dfb01e0a4fa7f5bad7f00c9a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2270,18 +2066,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1001602267192132758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 701658624270306348}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &715727471804308514
 GameObject:
   m_ObjectHideFlags: 0
@@ -2293,7 +2077,6 @@ GameObject:
   - component: {fileID: 4998499521498886834}
   - component: {fileID: 2001018837820260369}
   - component: {fileID: 5595858314279400280}
-  - component: {fileID: 3430795046644041920}
   m_Layer: 0
   m_Name: spicy_lock
   m_TagString: Untagged
@@ -2363,7 +2146,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -2421,18 +2204,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3430795046644041920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 715727471804308514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &761929407777572994
 GameObject:
   m_ObjectHideFlags: 0
@@ -2516,7 +2287,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &4934184087453009440
@@ -2697,7 +2468,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &2397845555666418858
@@ -2878,7 +2649,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &7278804029827086322
@@ -2987,7 +2758,6 @@ GameObject:
   - component: {fileID: 2745306281715107336}
   - component: {fileID: 2434623990264395552}
   - component: {fileID: 6441094586763147012}
-  - component: {fileID: 1530635606461808137}
   m_Layer: 0
   m_Name: book_crispy_onion
   m_TagString: Untagged
@@ -3057,7 +2827,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7746689838202435228, guid: b113e1b77fb65c444ab4208cb78e9ba1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3115,18 +2885,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1530635606461808137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794434641670717814}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &795126180935726823
 GameObject:
   m_ObjectHideFlags: 0
@@ -3210,7 +2968,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &3155813923979726366
@@ -3391,7 +3149,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5162572069922559188
@@ -3500,7 +3258,6 @@ GameObject:
   - component: {fileID: 710583315986504636}
   - component: {fileID: 2397651029142730041}
   - component: {fileID: 3832197662780219994}
-  - component: {fileID: 9194543097915013580}
   m_Layer: 0
   m_Name: rich_lock
   m_TagString: Untagged
@@ -3570,7 +3327,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -3628,18 +3385,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &9194543097915013580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 868967865585333740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &870517476137397776
 GameObject:
   m_ObjectHideFlags: 0
@@ -3650,8 +3395,8 @@ GameObject:
   m_Component:
   - component: {fileID: 85204243844955135}
   - component: {fileID: 5052645100951891918}
-  - component: {fileID: 8549700778375432871}
   - component: {fileID: 8363486373929330520}
+  - component: {fileID: 519828316605819753}
   m_Layer: 0
   m_Name: CloseButton
   m_TagString: Untagged
@@ -3721,7 +3466,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: 5839820706974066888, guid: 70067a2dbb055c44d8cb7b60fb242546, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3733,7 +3478,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!61 &8549700778375432871
+--- !u!114 &8363486373929330520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870517476137397776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
+  clickSound: {fileID: 0}
+--- !u!61 &519828316605819753
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3777,20 +3535,8 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.66, y: 0.66}
   m_EdgeRadius: 0
---- !u!114 &8363486373929330520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 870517476137397776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &872344426277365951
 GameObject:
   m_ObjectHideFlags: 0
@@ -3802,7 +3548,6 @@ GameObject:
   - component: {fileID: 3816937108394787839}
   - component: {fileID: 7938555323974823787}
   - component: {fileID: 3792536616663452069}
-  - component: {fileID: 4336124191874630755}
   m_Layer: 0
   m_Name: spicy_lock
   m_TagString: Untagged
@@ -3872,7 +3617,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -3930,18 +3675,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4336124191874630755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872344426277365951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &892261655021349148
 GameObject:
   m_ObjectHideFlags: 0
@@ -4025,7 +3758,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &2460888509623265015
@@ -4264,7 +3997,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &4178821246431384609
@@ -4445,7 +4178,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &8197556388940344501
@@ -4590,7 +4323,6 @@ GameObject:
   - component: {fileID: 6467389891774051229}
   - component: {fileID: 2875173347093504578}
   - component: {fileID: 6553885623884233880}
-  - component: {fileID: 3173850757692526659}
   m_Layer: 0
   m_Name: spicy_lock
   m_TagString: Untagged
@@ -4660,7 +4392,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -4718,18 +4450,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3173850757692526659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1107163557386126694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &1111144580585149881
 GameObject:
   m_ObjectHideFlags: 0
@@ -4741,7 +4461,6 @@ GameObject:
   - component: {fileID: 1475469386774743003}
   - component: {fileID: 5779386031805356635}
   - component: {fileID: 7990153389416901364}
-  - component: {fileID: 8778783303995605892}
   m_Layer: 0
   m_Name: book_spicy_mayo
   m_TagString: Untagged
@@ -4811,7 +4530,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3000447827351177221, guid: b1f406b44697e554f992648f1f12a815, type: 3}
   m_Color: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
@@ -4869,18 +4588,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8778783303995605892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1111144580585149881}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &1177655081577590610
 GameObject:
   m_ObjectHideFlags: 0
@@ -4964,7 +4671,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5272568295301901763
@@ -5073,7 +4780,6 @@ GameObject:
   - component: {fileID: 1252792280320129754}
   - component: {fileID: 3750253088065003631}
   - component: {fileID: 6698956754817948419}
-  - component: {fileID: 6942607051009139304}
   m_Layer: 0
   m_Name: spicy_lock
   m_TagString: Untagged
@@ -5143,7 +4849,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -5201,18 +4907,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6942607051009139304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1178581430350720130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &1244174837749380120
 GameObject:
   m_ObjectHideFlags: 0
@@ -5224,7 +4918,6 @@ GameObject:
   - component: {fileID: 8818665088932493997}
   - component: {fileID: 7102781125113690803}
   - component: {fileID: 8989328026879619025}
-  - component: {fileID: 8129153605808895785}
   m_Layer: 0
   m_Name: classic_lock
   m_TagString: Untagged
@@ -5294,7 +4987,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -5352,18 +5045,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8129153605808895785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1244174837749380120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &1249397800370759372
 GameObject:
   m_ObjectHideFlags: 0
@@ -5375,7 +5056,6 @@ GameObject:
   - component: {fileID: 9018477772753410465}
   - component: {fileID: 4381415060685590043}
   - component: {fileID: 913579797895629785}
-  - component: {fileID: 926310274999118623}
   m_Layer: 0
   m_Name: spicy_lock
   m_TagString: Untagged
@@ -5445,7 +5125,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -5503,18 +5183,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &926310274999118623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1249397800370759372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &1290457493174020934
 GameObject:
   m_ObjectHideFlags: 0
@@ -5562,7 +5230,6 @@ GameObject:
   - component: {fileID: 4746978283694680658}
   - component: {fileID: 287863542397773400}
   - component: {fileID: 1765145121498577029}
-  - component: {fileID: 3599948950704075647}
   m_Layer: 0
   m_Name: sweet_lock
   m_TagString: Untagged
@@ -5632,7 +5299,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -5690,18 +5357,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3599948950704075647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1334395927893574328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &1363065398127800929
 GameObject:
   m_ObjectHideFlags: 0
@@ -5785,7 +5440,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &7058728737041422436
@@ -5966,7 +5621,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &3585513844721956079
@@ -6147,7 +5802,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &1858950115119566424
@@ -6256,7 +5911,6 @@ GameObject:
   - component: {fileID: 2820628325923739495}
   - component: {fileID: 7078789880227826699}
   - component: {fileID: 1922189446507510979}
-  - component: {fileID: 856536241601363471}
   m_Layer: 0
   m_Name: sweet_lock
   m_TagString: Untagged
@@ -6326,7 +5980,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -6384,18 +6038,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &856536241601363471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1633337725238442393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &1745807331490355537
 GameObject:
   m_ObjectHideFlags: 0
@@ -6584,7 +6226,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &2603539693282128871
@@ -6765,7 +6407,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5760449887351894927
@@ -6946,7 +6588,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &8174210126123959513
@@ -7055,7 +6697,6 @@ GameObject:
   - component: {fileID: 1210120405828453386}
   - component: {fileID: 1545563950816838510}
   - component: {fileID: 3685283434432374968}
-  - component: {fileID: 1664347264574672826}
   m_Layer: 0
   m_Name: locked (1)
   m_TagString: Untagged
@@ -7125,7 +6766,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -7183,18 +6824,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1664347264574672826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931588773935423697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &1937477324762873929
 GameObject:
   m_ObjectHideFlags: 0
@@ -7206,7 +6835,6 @@ GameObject:
   - component: {fileID: 1662358341130881751}
   - component: {fileID: 903745465628993958}
   - component: {fileID: 7941698047026888296}
-  - component: {fileID: 2836450964137113291}
   m_Layer: 0
   m_Name: rich_lock
   m_TagString: Untagged
@@ -7276,7 +6904,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -7334,18 +6962,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2836450964137113291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1937477324762873929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &1987515409859934025
 GameObject:
   m_ObjectHideFlags: 0
@@ -7429,7 +7045,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &978419736362848445
@@ -7538,7 +7154,6 @@ GameObject:
   - component: {fileID: 8448541568955391690}
   - component: {fileID: 1182559073196759795}
   - component: {fileID: 2847252595155099730}
-  - component: {fileID: 4210205529733725027}
   m_Layer: 0
   m_Name: healthy_lock
   m_TagString: Untagged
@@ -7608,7 +7223,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -7666,18 +7281,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4210205529733725027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2034628611295819719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &2192392910495668271
 GameObject:
   m_ObjectHideFlags: 0
@@ -7689,7 +7292,6 @@ GameObject:
   - component: {fileID: 7155317353823605107}
   - component: {fileID: 8124741005690581618}
   - component: {fileID: 7326433346156129792}
-  - component: {fileID: 6559058186688328347}
   m_Layer: 0
   m_Name: sweet_lock
   m_TagString: Untagged
@@ -7759,7 +7361,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -7817,18 +7419,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6559058186688328347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2192392910495668271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &2232335124549324062
 GameObject:
   m_ObjectHideFlags: 0
@@ -7873,7 +7463,6 @@ GameObject:
   - component: {fileID: 5421158697779735383}
   - component: {fileID: 1418894054695656129}
   - component: {fileID: 2142248802680778652}
-  - component: {fileID: 867512309511785675}
   m_Layer: 0
   m_Name: spicy_lock
   m_TagString: Untagged
@@ -7943,7 +7532,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -8001,18 +7590,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &867512309511785675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2233557622496113412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &2334662998711353293
 GameObject:
   m_ObjectHideFlags: 0
@@ -8096,7 +7673,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &1999811488629740400
@@ -8205,7 +7782,6 @@ GameObject:
   - component: {fileID: 422543915185930592}
   - component: {fileID: 1862331825800868933}
   - component: {fileID: 6816727844548069737}
-  - component: {fileID: 8316212967001926741}
   m_Layer: 0
   m_Name: healthy_lock
   m_TagString: Untagged
@@ -8275,7 +7851,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -8333,18 +7909,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8316212967001926741
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2337637367024456576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &2378903064937537239
 GameObject:
   m_ObjectHideFlags: 0
@@ -8356,7 +7920,6 @@ GameObject:
   - component: {fileID: 6074880826853323720}
   - component: {fileID: 3796353109347872109}
   - component: {fileID: 6536451713592655518}
-  - component: {fileID: 9121914058283945083}
   m_Layer: 0
   m_Name: sweet_lock
   m_TagString: Untagged
@@ -8426,7 +7989,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -8484,18 +8047,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &9121914058283945083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2378903064937537239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &2382446190488096514
 GameObject:
   m_ObjectHideFlags: 0
@@ -8579,7 +8130,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &7879444728257374951
@@ -8710,97 +8261,6 @@ Transform:
   - {fileID: 1685803239353794245}
   m_Father: {fileID: 8608697936978047841}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2421573171955694917
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2847286847049854742}
-  - component: {fileID: 4382042604825285762}
-  m_Layer: 0
-  m_Name: salmon_single _0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2847286847049854742
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2421573171955694917}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.03, y: 6.27, z: -4}
-  m_LocalScale: {x: 0.7374885, y: 1.0064914, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7773354252374753204}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &4382042604825285762
-SpriteRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2421573171955694917}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: 6968482123839010341, guid: ffc23486a6772e94c8d3d10f3a5147af, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 3.38, y: 2.21}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
 --- !u!1 &2443938204767788431
 GameObject:
   m_ObjectHideFlags: 0
@@ -8812,7 +8272,6 @@ GameObject:
   - component: {fileID: 7111308204860794789}
   - component: {fileID: 8824010486705621229}
   - component: {fileID: 6571129966865162863}
-  - component: {fileID: 7258766024380515111}
   m_Layer: 0
   m_Name: book_salmon
   m_TagString: Untagged
@@ -8882,7 +8341,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -611345357495766623, guid: 825c92fa7dc8f8d4f9173e9a85efd0a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8940,18 +8399,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7258766024380515111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2443938204767788431}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &2452480530461044489
 GameObject:
   m_ObjectHideFlags: 0
@@ -8963,7 +8410,6 @@ GameObject:
   - component: {fileID: 4706810338268918881}
   - component: {fileID: 8681402204194486318}
   - component: {fileID: 5425011143719330640}
-  - component: {fileID: 5184188061575684107}
   m_Layer: 0
   m_Name: sweet_lock
   m_TagString: Untagged
@@ -9033,7 +8479,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -9091,18 +8537,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &5184188061575684107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2452480530461044489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &2491200010574875099
 GameObject:
   m_ObjectHideFlags: 0
@@ -9186,7 +8620,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &326776199576032996
@@ -9295,7 +8729,6 @@ GameObject:
   - component: {fileID: 7842149704656451057}
   - component: {fileID: 8983999196273601698}
   - component: {fileID: 4547452004633015662}
-  - component: {fileID: 2983926291728915924}
   m_Layer: 0
   m_Name: book_tuna
   m_TagString: Untagged
@@ -9365,7 +8798,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -221456226722966725, guid: 5b42173adb30f874786b5d25de73573a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9423,18 +8856,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2983926291728915924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2513117370713707905}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &2546579165542301869
 GameObject:
   m_ObjectHideFlags: 0
@@ -9518,7 +8939,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &6102769934478816150
@@ -9699,7 +9120,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &8258017416939170088
@@ -9808,7 +9229,6 @@ GameObject:
   - component: {fileID: 5294822499963468604}
   - component: {fileID: 1740803767478986154}
   - component: {fileID: 3941581246152510003}
-  - component: {fileID: 5920358623680805719}
   m_Layer: 0
   m_Name: book_cucumber
   m_TagString: Untagged
@@ -9878,7 +9298,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -5838560117421861970, guid: 52198a0c5aacf424e9cfca0f887bc424, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9936,18 +9356,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &5920358623680805719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2571859400921744096}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &2599450629365752759
 GameObject:
   m_ObjectHideFlags: 0
@@ -10031,7 +9439,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &3994522067157350185
@@ -10212,7 +9620,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &3726371926659979472
@@ -10321,7 +9729,6 @@ GameObject:
   - component: {fileID: 6241139001202312608}
   - component: {fileID: 3917277691919676039}
   - component: {fileID: 5770340765766122749}
-  - component: {fileID: 5280063994267530911}
   m_Layer: 0
   m_Name: book_egg
   m_TagString: Untagged
@@ -10391,7 +9798,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -4411569340179059538, guid: dca1abaa6c3a6814babf23a7747fda86, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -10449,18 +9856,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &5280063994267530911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2714387684060139429}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &2726570435065256900
 GameObject:
   m_ObjectHideFlags: 0
@@ -10588,7 +9983,6 @@ GameObject:
   - component: {fileID: 3040058652446556602}
   - component: {fileID: 2186186698314271884}
   - component: {fileID: 3784364623283382120}
-  - component: {fileID: 2741069975151264895}
   m_Layer: 0
   m_Name: book_cream_cheese
   m_TagString: Untagged
@@ -10658,7 +10052,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8573930197696259452, guid: 337d2d63ac6bf964f96f20de08869448, type: 3}
   m_Color: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
@@ -10716,18 +10110,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2741069975151264895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2751251318130111269}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &2769040613789403838
 GameObject:
   m_ObjectHideFlags: 0
@@ -10811,7 +10193,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &1978535419451221343
@@ -11011,7 +10393,6 @@ GameObject:
   - component: {fileID: 8507561528360680760}
   - component: {fileID: 265233908774038549}
   - component: {fileID: 4885813589966642862}
-  - component: {fileID: 2091340422925354361}
   m_Layer: 0
   m_Name: rich_lock
   m_TagString: Untagged
@@ -11081,7 +10462,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -11139,18 +10520,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2091340422925354361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2798683497899776599}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &2801023333232897643
 GameObject:
   m_ObjectHideFlags: 0
@@ -11162,7 +10531,6 @@ GameObject:
   - component: {fileID: 4279193636699475083}
   - component: {fileID: 2254798507845029119}
   - component: {fileID: 5340339749259419305}
-  - component: {fileID: 7834879950987437137}
   m_Layer: 0
   m_Name: rich_lock
   m_TagString: Untagged
@@ -11232,7 +10600,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -11290,18 +10658,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7834879950987437137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2801023333232897643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &2826123424121283762
 GameObject:
   m_ObjectHideFlags: 0
@@ -11385,7 +10741,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5395653286271921424
@@ -11494,7 +10850,6 @@ GameObject:
   - component: {fileID: 4298638956419947537}
   - component: {fileID: 6574981757566306942}
   - component: {fileID: 2693678303211400972}
-  - component: {fileID: 122507359802567609}
   m_Layer: 0
   m_Name: spicy_lock
   m_TagString: Untagged
@@ -11564,7 +10919,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -11622,18 +10977,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &122507359802567609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2827812520519428960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &2902111153773849616
 GameObject:
   m_ObjectHideFlags: 0
@@ -11645,7 +10988,6 @@ GameObject:
   - component: {fileID: 5693146711738730261}
   - component: {fileID: 6158562192104533565}
   - component: {fileID: 8368085855146765889}
-  - component: {fileID: 2611312296839386958}
   m_Layer: 0
   m_Name: book_fried_chicken
   m_TagString: Untagged
@@ -11715,7 +11057,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -8338660807769302954, guid: 145363ec4a6ce3c4794cda5f62e2b99a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -11773,18 +11115,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2611312296839386958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2902111153773849616}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &2909606455758810085
 GameObject:
   m_ObjectHideFlags: 0
@@ -11868,7 +11198,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &4762610911520825307
@@ -11977,7 +11307,6 @@ GameObject:
   - component: {fileID: 3978372263101298351}
   - component: {fileID: 510369560544915095}
   - component: {fileID: 5755958846758752078}
-  - component: {fileID: 935190746077099801}
   m_Layer: 0
   m_Name: spicy_lock
   m_TagString: Untagged
@@ -12047,7 +11376,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -12105,18 +11434,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &935190746077099801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2928234306747039145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &3105565031777202210
 GameObject:
   m_ObjectHideFlags: 0
@@ -12200,7 +11517,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &4852063292124146000
@@ -12381,7 +11698,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &465707770131298116
@@ -12562,7 +11879,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5792257015661781754
@@ -12707,7 +12024,6 @@ GameObject:
   - component: {fileID: 5135072676711585824}
   - component: {fileID: 8351492706045254989}
   - component: {fileID: 7206678023374566274}
-  - component: {fileID: 706564181070274976}
   m_Layer: 0
   m_Name: classic_lock
   m_TagString: Untagged
@@ -12777,7 +12093,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -12835,18 +12151,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &706564181070274976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3218685605630287728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &3223747172002329832
 GameObject:
   m_ObjectHideFlags: 0
@@ -12930,7 +12234,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &4427354118522609602
@@ -13039,7 +12343,6 @@ GameObject:
   - component: {fileID: 3284531181712695658}
   - component: {fileID: 4446701196874179062}
   - component: {fileID: 5160639925606173059}
-  - component: {fileID: 1768656207710496581}
   m_Layer: 0
   m_Name: book_cream_cheese
   m_TagString: Untagged
@@ -13109,7 +12412,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8573930197696259452, guid: 337d2d63ac6bf964f96f20de08869448, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -13167,18 +12470,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1768656207710496581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3262409374023501160}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &3284485600444562337
 GameObject:
   m_ObjectHideFlags: 0
@@ -13190,7 +12481,6 @@ GameObject:
   - component: {fileID: 3466328301309841701}
   - component: {fileID: 673624586068929604}
   - component: {fileID: 1341587775174426742}
-  - component: {fileID: 8561705293975728776}
   m_Layer: 0
   m_Name: classic_lock
   m_TagString: Untagged
@@ -13260,7 +12550,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -13318,18 +12608,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8561705293975728776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3284485600444562337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &3317351918711040072
 GameObject:
   m_ObjectHideFlags: 0
@@ -13413,7 +12691,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &7819768101600870337
@@ -13522,7 +12800,6 @@ GameObject:
   - component: {fileID: 6706091744766721486}
   - component: {fileID: 4659159978043015326}
   - component: {fileID: 5306524259426704069}
-  - component: {fileID: 7383877947554418174}
   m_Layer: 0
   m_Name: locked
   m_TagString: Untagged
@@ -13592,7 +12869,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -13650,18 +12927,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7383877947554418174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3343769606557627368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &3427148227572082807
 GameObject:
   m_ObjectHideFlags: 0
@@ -13673,7 +12938,6 @@ GameObject:
   - component: {fileID: 2417481535582026048}
   - component: {fileID: 2439495928637429827}
   - component: {fileID: 346459953662054942}
-  - component: {fileID: 8495338043144945167}
   m_Layer: 0
   m_Name: book_avocado
   m_TagString: Untagged
@@ -13743,7 +13007,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6443217551946223865, guid: 83304d5a27722d141b0035c9aeb64aa9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -13801,18 +13065,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8495338043144945167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3427148227572082807}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &3471801317288430443
 GameObject:
   m_ObjectHideFlags: 0
@@ -13896,7 +13148,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &1589614293737777626
@@ -13994,157 +13246,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 2612190548975887366}
   m_maskType: 0
---- !u!1 &3485667448801658173
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6325115106858588529}
-  - component: {fileID: 5760308528623157304}
-  - component: {fileID: 3459858565094849704}
-  - component: {fileID: 7167482684694622865}
-  m_Layer: 0
-  m_Name: CloseButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6325115106858588529
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3485667448801658173}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.34, y: 8.93, z: -4}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7773354252374753204}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &5760308528623157304
-SpriteRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3485667448801658173}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 100
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.8867924, g: 0.45594516, b: 0.45594516, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
---- !u!61 &3459858565094849704
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3485667448801658173}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &7167482684694622865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3485667448801658173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &3508208774504383563
 GameObject:
   m_ObjectHideFlags: 0
@@ -14286,7 +13387,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &9073627742153198842
@@ -14395,7 +13496,6 @@ GameObject:
   - component: {fileID: 4793804725657654765}
   - component: {fileID: 515613078429792868}
   - component: {fileID: 1673092533814787452}
-  - component: {fileID: 3704178116417042189}
   m_Layer: 0
   m_Name: rich_lock
   m_TagString: Untagged
@@ -14465,7 +13565,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -14523,18 +13623,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3704178116417042189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3651529630955093618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &3654769765772481124
 GameObject:
   m_ObjectHideFlags: 0
@@ -14618,7 +13706,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &8820042321400211508
@@ -14835,7 +13923,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &8657119509950340338
@@ -14944,7 +14032,6 @@ GameObject:
   - component: {fileID: 4566923088028182010}
   - component: {fileID: 3716719865541960138}
   - component: {fileID: 3161168292136158628}
-  - component: {fileID: 4038987672691499353}
   m_Layer: 0
   m_Name: locked (3)
   m_TagString: Untagged
@@ -15014,7 +14101,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -15072,18 +14159,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4038987672691499353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3693868322727720456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &3697202770722833527
 GameObject:
   m_ObjectHideFlags: 0
@@ -15095,7 +14170,6 @@ GameObject:
   - component: {fileID: 32982869959043940}
   - component: {fileID: 2036425794506890363}
   - component: {fileID: 6068414371791919249}
-  - component: {fileID: 3383253830087937935}
   m_Layer: 0
   m_Name: book_bellpepper
   m_TagString: Untagged
@@ -15165,7 +14239,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: 2138038235988477792, guid: 3282c8f43eff5254bb1546b5e864a2b6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -15223,18 +14297,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3383253830087937935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3697202770722833527}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &3723466703969240985
 GameObject:
   m_ObjectHideFlags: 0
@@ -15246,7 +14308,6 @@ GameObject:
   - component: {fileID: 2815345227840799853}
   - component: {fileID: 5890621316838366529}
   - component: {fileID: 1096592745860556141}
-  - component: {fileID: 8421016844902955387}
   m_Layer: 0
   m_Name: spicy_lock
   m_TagString: Untagged
@@ -15316,7 +14377,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -15374,18 +14435,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8421016844902955387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3723466703969240985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &3746982495507067265
 GameObject:
   m_ObjectHideFlags: 0
@@ -15469,7 +14518,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5897102994507166534
@@ -15650,7 +14699,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &8566700880843693796
@@ -15759,7 +14808,6 @@ GameObject:
   - component: {fileID: 8153668893772250547}
   - component: {fileID: 8043305745173201718}
   - component: {fileID: 916112425530934437}
-  - component: {fileID: 2406071421036336092}
   m_Layer: 0
   m_Name: healthy_lock
   m_TagString: Untagged
@@ -15829,7 +14877,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -15887,18 +14935,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2406071421036336092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3778177177801019689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &3802949039447347610
 GameObject:
   m_ObjectHideFlags: 0
@@ -15910,7 +14946,6 @@ GameObject:
   - component: {fileID: 1082116512637076400}
   - component: {fileID: 2865727321894452851}
   - component: {fileID: 5230768552590764585}
-  - component: {fileID: 7521141722448058389}
   m_Layer: 0
   m_Name: rich_lock
   m_TagString: Untagged
@@ -15980,7 +15015,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -16038,18 +15073,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7521141722448058389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3802949039447347610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &3806625995627599941
 GameObject:
   m_ObjectHideFlags: 0
@@ -16191,7 +15214,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5281136479923474871
@@ -16300,7 +15323,6 @@ GameObject:
   - component: {fileID: 1233804218917596367}
   - component: {fileID: 2288890974174218871}
   - component: {fileID: 3343699333234619780}
-  - component: {fileID: 8132216565128581311}
   m_Layer: 0
   m_Name: classic_lock
   m_TagString: Untagged
@@ -16370,7 +15392,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -16428,18 +15450,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8132216565128581311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3843966888026336943}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &3922328857958987304
 GameObject:
   m_ObjectHideFlags: 0
@@ -16581,7 +15591,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &4277077458896452335
@@ -16762,7 +15772,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &4692819728722842629
@@ -16871,7 +15881,6 @@ GameObject:
   - component: {fileID: 5444396744850876240}
   - component: {fileID: 4878692334857378600}
   - component: {fileID: 4296815799925661879}
-  - component: {fileID: 4345869328496716954}
   m_Layer: 0
   m_Name: book_pineapple
   m_TagString: Untagged
@@ -16941,7 +15950,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4546342716588443074, guid: aad679e404b61d0488404d8262506589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -16999,18 +16008,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4345869328496716954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4148490001716432813}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &4153947772534112819
 GameObject:
   m_ObjectHideFlags: 0
@@ -17058,7 +16055,6 @@ GameObject:
   - component: {fileID: 3517390831440493110}
   - component: {fileID: 5858458942516732906}
   - component: {fileID: 6146267340115297601}
-  - component: {fileID: 7256957369756413896}
   m_Layer: 0
   m_Name: healthy_lock
   m_TagString: Untagged
@@ -17128,7 +16124,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -17186,18 +16182,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7256957369756413896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4203536930495925337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &4213149641075554267
 GameObject:
   m_ObjectHideFlags: 0
@@ -17281,7 +16265,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &7216273734991851690
@@ -17390,7 +16374,6 @@ GameObject:
   - component: {fileID: 4015533134827927802}
   - component: {fileID: 4069889419792087825}
   - component: {fileID: 5935459938587599492}
-  - component: {fileID: 270213596772730304}
   m_Layer: 0
   m_Name: healthy_lock
   m_TagString: Untagged
@@ -17460,7 +16443,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -17518,18 +16501,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &270213596772730304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4246047888164560828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &4391654896588684710
 GameObject:
   m_ObjectHideFlags: 0
@@ -17541,7 +16512,6 @@ GameObject:
   - component: {fileID: 3891080822930089872}
   - component: {fileID: 3251380696255519052}
   - component: {fileID: 1099230522791612297}
-  - component: {fileID: 8161931807968670689}
   m_Layer: 0
   m_Name: rich_lock
   m_TagString: Untagged
@@ -17611,7 +16581,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -17669,18 +16639,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8161931807968670689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4391654896588684710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &4411695653715327502
 GameObject:
   m_ObjectHideFlags: 0
@@ -17800,7 +16758,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &15540242400071092
@@ -17981,7 +16939,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5983187182402633422
@@ -18164,7 +17122,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &248452640466907205
@@ -18408,7 +17366,6 @@ GameObject:
   - component: {fileID: 4604951471848433154}
   - component: {fileID: 3041096322259393766}
   - component: {fileID: 6846682803122876527}
-  - component: {fileID: 8859400122859370860}
   m_Layer: 0
   m_Name: spicy_lock
   m_TagString: Untagged
@@ -18478,7 +17435,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -18536,18 +17493,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8859400122859370860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4537208212604084041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &4559927744208616816
 GameObject:
   m_ObjectHideFlags: 0
@@ -18559,7 +17504,6 @@ GameObject:
   - component: {fileID: 5720045498306543877}
   - component: {fileID: 7414364008208717401}
   - component: {fileID: 1361198049900245850}
-  - component: {fileID: 6309384637694304592}
   m_Layer: 0
   m_Name: rich_lock
   m_TagString: Untagged
@@ -18629,7 +17573,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -18687,18 +17631,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6309384637694304592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4559927744208616816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &4560232308820374682
 GameObject:
   m_ObjectHideFlags: 0
@@ -18782,7 +17714,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &4909112859984044127
@@ -18891,7 +17823,6 @@ GameObject:
   - component: {fileID: 4649294587603123477}
   - component: {fileID: 2859338159129091098}
   - component: {fileID: 8040186916652446164}
-  - component: {fileID: 3635017110097513877}
   m_Layer: 0
   m_Name: book_salmon
   m_TagString: Untagged
@@ -18961,7 +17892,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6968482123839010341, guid: ffc23486a6772e94c8d3d10f3a5147af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -19019,18 +17950,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3635017110097513877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4627232330096611750}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &4650281840754592682
 GameObject:
   m_ObjectHideFlags: 0
@@ -19114,7 +18033,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &7572469461920491573
@@ -19295,7 +18214,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &8313436118634344766
@@ -19476,7 +18395,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &6070204082172596610
@@ -19657,7 +18576,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &843993082676331532
@@ -19838,7 +18757,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5841494253173850375
@@ -19947,7 +18866,6 @@ GameObject:
   - component: {fileID: 7347970731851211078}
   - component: {fileID: 3375580636625465256}
   - component: {fileID: 8649686350302702334}
-  - component: {fileID: 3865958303335669675}
   m_Layer: 0
   m_Name: spicy_lock
   m_TagString: Untagged
@@ -20017,7 +18935,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -20075,18 +18993,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3865958303335669675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4795472257665421256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &4836642455813406336
 GameObject:
   m_ObjectHideFlags: 0
@@ -20098,7 +19004,6 @@ GameObject:
   - component: {fileID: 5644652534594135310}
   - component: {fileID: 7997814139154391668}
   - component: {fileID: 3998427221345899051}
-  - component: {fileID: 964662530949816303}
   m_Layer: 0
   m_Name: book_bellpepper
   m_TagString: Untagged
@@ -20168,7 +19073,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: 2138038235988477792, guid: 3282c8f43eff5254bb1546b5e864a2b6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -20226,18 +19131,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &964662530949816303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4836642455813406336}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &4878196540593028302
 GameObject:
   m_ObjectHideFlags: 0
@@ -20321,7 +19214,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &408109276231984321
@@ -20430,7 +19323,6 @@ GameObject:
   - component: {fileID: 4889217128897784882}
   - component: {fileID: 3732083803164631629}
   - component: {fileID: 225382052051603234}
-  - component: {fileID: 6114663642910992755}
   m_Layer: 0
   m_Name: healthy_lock
   m_TagString: Untagged
@@ -20500,7 +19392,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -20558,18 +19450,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6114663642910992755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4925883038244337870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &4935449526288084247
 GameObject:
   m_ObjectHideFlags: 0
@@ -20653,7 +19533,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &1814083200416238319
@@ -20878,7 +19758,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5021083099095836001
@@ -21059,7 +19939,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &4105186790766594505
@@ -21168,7 +20048,6 @@ GameObject:
   - component: {fileID: 7785971658027034624}
   - component: {fileID: 8633685150216330164}
   - component: {fileID: 2819692042137950197}
-  - component: {fileID: 7825322480271945545}
   m_Layer: 0
   m_Name: sweet_lock
   m_TagString: Untagged
@@ -21238,7 +20117,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -21296,18 +20175,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7825322480271945545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5117630318338821389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &5149817092384466461
 GameObject:
   m_ObjectHideFlags: 0
@@ -21391,7 +20258,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &4123605347728279907
@@ -21489,157 +20356,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 2199513889838046393}
   m_maskType: 0
---- !u!1 &5161153929805559462
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1783528922796615246}
-  - component: {fileID: 6258657088992667085}
-  - component: {fileID: 7658896028810877261}
-  - component: {fileID: 2234907612621942657}
-  m_Layer: 0
-  m_Name: CloseButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1783528922796615246
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5161153929805559462}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.1, y: 8.87, z: -4}
-  m_LocalScale: {x: 1.4515, y: 1.3612, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7311750087812091639}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6258657088992667085
-SpriteRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5161153929805559462}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 100
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: 5839820706974066888, guid: 70067a2dbb055c44d8cb7b60fb242546, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
---- !u!61 &7658896028810877261
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5161153929805559462}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.66, y: 0.66}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &2234907612621942657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5161153929805559462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &5170079971767909781
 GameObject:
   m_ObjectHideFlags: 0
@@ -21723,7 +20439,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &2455176610238083580
@@ -21832,7 +20548,6 @@ GameObject:
   - component: {fileID: 8406712614699166749}
   - component: {fileID: 7423440346615844931}
   - component: {fileID: 2808155105524482678}
-  - component: {fileID: 9216976765061403966}
   m_Layer: 0
   m_Name: healthy_lock
   m_TagString: Untagged
@@ -21902,7 +20617,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -21960,18 +20675,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &9216976765061403966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5172094420867974636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &5207446274977243624
 GameObject:
   m_ObjectHideFlags: 0
@@ -22019,7 +20722,6 @@ GameObject:
   - component: {fileID: 8844395869336577431}
   - component: {fileID: 4136291218432708815}
   - component: {fileID: 3192287209542209998}
-  - component: {fileID: 4096244433369288423}
   m_Layer: 0
   m_Name: spicy_lock
   m_TagString: Untagged
@@ -22089,7 +20791,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -22147,18 +20849,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4096244433369288423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5332793958672865811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &5343692199127478762
 GameObject:
   m_ObjectHideFlags: 0
@@ -22170,7 +20860,6 @@ GameObject:
   - component: {fileID: 3321539484737183250}
   - component: {fileID: 3011223841575807827}
   - component: {fileID: 6192759773228425105}
-  - component: {fileID: 506979791803158126}
   m_Layer: 0
   m_Name: book_pineapple
   m_TagString: Untagged
@@ -22240,7 +20929,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4546342716588443074, guid: aad679e404b61d0488404d8262506589, type: 3}
   m_Color: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
@@ -22298,18 +20987,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &506979791803158126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5343692199127478762}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &5351590428103320417
 GameObject:
   m_ObjectHideFlags: 0
@@ -22321,7 +20998,6 @@ GameObject:
   - component: {fileID: 6629035636051039827}
   - component: {fileID: 2146218678034509815}
   - component: {fileID: 1861122678803156112}
-  - component: {fileID: 7195188686795840486}
   m_Layer: 0
   m_Name: rich_lock
   m_TagString: Untagged
@@ -22391,7 +21067,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -22449,18 +21125,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7195188686795840486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5351590428103320417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &5357469778252960114
 GameObject:
   m_ObjectHideFlags: 0
@@ -22544,7 +21208,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5098968710112556562
@@ -22747,7 +21411,6 @@ GameObject:
   - component: {fileID: 2392994323444711508}
   - component: {fileID: 1265632827188324027}
   - component: {fileID: 5001010822702899264}
-  - component: {fileID: 6334167865161748388}
   m_Layer: 0
   m_Name: classic_lock
   m_TagString: Untagged
@@ -22817,7 +21480,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -22875,18 +21538,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6334167865161748388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5452040120450693601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &5478190225456230035
 GameObject:
   m_ObjectHideFlags: 0
@@ -22970,7 +21621,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &144192441008009120
@@ -23151,7 +21802,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &3620831561116740858
@@ -23260,7 +21911,6 @@ GameObject:
   - component: {fileID: 7557654390251834125}
   - component: {fileID: 840789501166559130}
   - component: {fileID: 4793995395015533463}
-  - component: {fileID: 3285021897744474597}
   m_Layer: 0
   m_Name: healthy_lock
   m_TagString: Untagged
@@ -23330,7 +21980,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -23388,18 +22038,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3285021897744474597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5507545803012344206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &5540560646590011546
 GameObject:
   m_ObjectHideFlags: 0
@@ -23411,7 +22049,6 @@ GameObject:
   - component: {fileID: 7475495514649466114}
   - component: {fileID: 2488698626781264820}
   - component: {fileID: 3979940336792279110}
-  - component: {fileID: 4519098703941831978}
   m_Layer: 0
   m_Name: healthy_lock
   m_TagString: Untagged
@@ -23481,7 +22118,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -23539,18 +22176,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4519098703941831978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5540560646590011546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &5630527166980501677
 GameObject:
   m_ObjectHideFlags: 0
@@ -23634,7 +22259,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &1959303396999491754
@@ -23743,7 +22368,6 @@ GameObject:
   - component: {fileID: 5840913153163480910}
   - component: {fileID: 1636481229540981004}
   - component: {fileID: 3024269436203117129}
-  - component: {fileID: 5828196224378359967}
   m_Layer: 0
   m_Name: sweet_lock
   m_TagString: Untagged
@@ -23813,7 +22437,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -23871,18 +22495,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &5828196224378359967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5711819178852864257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &5738458265573365759
 GameObject:
   m_ObjectHideFlags: 0
@@ -23894,7 +22506,6 @@ GameObject:
   - component: {fileID: 3911382827362209901}
   - component: {fileID: 1316090819621061752}
   - component: {fileID: 6141601842102474535}
-  - component: {fileID: 8765824541086229746}
   m_Layer: 0
   m_Name: sweet_lock
   m_TagString: Untagged
@@ -23964,7 +22575,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -24022,18 +22633,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8765824541086229746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5738458265573365759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &5791620843305514420
 GameObject:
   m_ObjectHideFlags: 0
@@ -24045,7 +22644,6 @@ GameObject:
   - component: {fileID: 2644264996640220997}
   - component: {fileID: 508561590433155026}
   - component: {fileID: 5053437421537307201}
-  - component: {fileID: 8370734484674398313}
   m_Layer: 0
   m_Name: classic_lock
   m_TagString: Untagged
@@ -24115,7 +22713,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -24173,18 +22771,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8370734484674398313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5791620843305514420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &5806465582070356236
 GameObject:
   m_ObjectHideFlags: 0
@@ -24265,7 +22851,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: 3580409467149532229, guid: cf77e387ee6f84442a5ac6fdc06fe272, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -24284,7 +22870,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5806465582070356236}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -24334,7 +22920,6 @@ GameObject:
   - component: {fileID: 2347048341219745331}
   - component: {fileID: 4038136198394262581}
   - component: {fileID: 643554136794638651}
-  - component: {fileID: 1133644225887584436}
   m_Layer: 0
   m_Name: book_salmon
   m_TagString: Untagged
@@ -24404,7 +22989,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6968482123839010341, guid: ffc23486a6772e94c8d3d10f3a5147af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -24462,18 +23047,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1133644225887584436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5810258578504966732}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &5815085051931817810
 GameObject:
   m_ObjectHideFlags: 0
@@ -24518,7 +23091,6 @@ GameObject:
   - component: {fileID: 2186858810720156972}
   - component: {fileID: 2470362031475683394}
   - component: {fileID: 896566645748212514}
-  - component: {fileID: 6055531375437074704}
   m_Layer: 0
   m_Name: book_jalapeno
   m_TagString: Untagged
@@ -24588,7 +23160,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -8776276224301494530, guid: 509664d26eff8a44dbe8259b41ba97e2, type: 3}
   m_Color: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
@@ -24646,18 +23218,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6055531375437074704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5836998457056246709}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &5858389469467138320
 GameObject:
   m_ObjectHideFlags: 0
@@ -24741,7 +23301,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &8982293188888037902
@@ -24850,7 +23410,6 @@ GameObject:
   - component: {fileID: 4503478514219402474}
   - component: {fileID: 8630708956062191847}
   - component: {fileID: 3417446912276505935}
-  - component: {fileID: 8682267426907058809}
   m_Layer: 0
   m_Name: book_jalapeno
   m_TagString: Untagged
@@ -24920,7 +23479,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -8776276224301494530, guid: 509664d26eff8a44dbe8259b41ba97e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -24978,18 +23537,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8682267426907058809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5899832393314987122}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &5948720613835346279
 GameObject:
   m_ObjectHideFlags: 0
@@ -25026,187 +23573,6 @@ Transform:
   - {fileID: 4592000877698028578}
   m_Father: {fileID: 4378914348975575863}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5974004277346999904
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2522500445696532730}
-  - component: {fileID: 1036434511570576768}
-  - component: {fileID: 4753416645746063861}
-  m_Layer: 0
-  m_Name: IngredientText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2522500445696532730
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5974004277346999904}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7773354252374753204}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.11, y: 5.88}
-  m_SizeDelta: {x: 16, y: 2.5}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!23 &1036434511570576768
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5974004277346999904}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 8356042223540677512, guid: e90dbcfce5208d4479f0e18763e944e1, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 100
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4753416645746063861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5974004277346999904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshPro
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: SALMON
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e90dbcfce5208d4479f0e18763e944e1, type: 2}
-  m_sharedMaterial: {fileID: 8356042223540677512, guid: e90dbcfce5208d4479f0e18763e944e1, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281874488
-  m_fontColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 10
-  m_fontSizeBase: 10
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_characterHorizontalScale: 1
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 0
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -0.08561897}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  _SortingLayer: 0
-  _SortingLayerID: 0
-  _SortingOrder: 0
-  m_hasFontAssetChanged: 0
-  m_renderer: {fileID: 1036434511570576768}
-  m_maskType: 0
 --- !u!1 &5984245304555581695
 GameObject:
   m_ObjectHideFlags: 0
@@ -25290,7 +23656,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &1407611716412621387
@@ -25399,7 +23765,6 @@ GameObject:
   - component: {fileID: 258000242430981071}
   - component: {fileID: 7120328647072606244}
   - component: {fileID: 5418364913166592716}
-  - component: {fileID: 2982526321434976035}
   m_Layer: 0
   m_Name: sweet_lock
   m_TagString: Untagged
@@ -25469,7 +23834,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -25527,18 +23892,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2982526321434976035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6077201834685549400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &6105572602673580792
 GameObject:
   m_ObjectHideFlags: 0
@@ -25550,7 +23903,6 @@ GameObject:
   - component: {fileID: 2740426940876435960}
   - component: {fileID: 694676689628530562}
   - component: {fileID: 6777272129283004752}
-  - component: {fileID: 198724400858051719}
   m_Layer: 0
   m_Name: locked (2)
   m_TagString: Untagged
@@ -25620,7 +23972,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -25678,18 +24030,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &198724400858051719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6105572602673580792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &6126883591635493629
 GameObject:
   m_ObjectHideFlags: 0
@@ -25773,7 +24113,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &6296983491149820445
@@ -25954,7 +24294,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &6046899525587921749
@@ -26063,7 +24403,6 @@ GameObject:
   - component: {fileID: 5279352155166421621}
   - component: {fileID: 857905070493841481}
   - component: {fileID: 2941224557826321363}
-  - component: {fileID: 6419737775260278501}
   m_Layer: 0
   m_Name: book_cucumber
   m_TagString: Untagged
@@ -26133,7 +24472,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -5838560117421861970, guid: 52198a0c5aacf424e9cfca0f887bc424, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -26191,18 +24530,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6419737775260278501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6170035368980851346}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &6184566416453705650
 GameObject:
   m_ObjectHideFlags: 0
@@ -26214,7 +24541,6 @@ GameObject:
   - component: {fileID: 6752716279565036826}
   - component: {fileID: 149307703415871599}
   - component: {fileID: 6786954152710597750}
-  - component: {fileID: 4808158240186887209}
   m_Layer: 0
   m_Name: book_spicy_mayp
   m_TagString: Untagged
@@ -26284,7 +24610,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3000447827351177221, guid: b1f406b44697e554f992648f1f12a815, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -26342,54 +24668,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4808158240186887209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6184566416453705650}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
---- !u!1 &6215865572867662906
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7773354252374753204}
-  m_Layer: 0
-  m_Name: Panel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &7773354252374753204
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6215865572867662906}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2847286847049854742}
-  - {fileID: 1323386039097561946}
-  - {fileID: 4276304452398308709}
-  - {fileID: 2522500445696532730}
-  - {fileID: 6325115106858588529}
-  m_Father: {fileID: 6176897731836814824}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6221227739650920558
 GameObject:
   m_ObjectHideFlags: 0
@@ -26401,7 +24679,6 @@ GameObject:
   - component: {fileID: 2643014324695786219}
   - component: {fileID: 8506734234986713}
   - component: {fileID: 2476376954836136098}
-  - component: {fileID: 2581119703745973938}
   m_Layer: 0
   m_Name: classic_lock
   m_TagString: Untagged
@@ -26471,7 +24748,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -26529,18 +24806,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2581119703745973938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6221227739650920558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &6239139494641120950
 GameObject:
   m_ObjectHideFlags: 0
@@ -26552,7 +24817,6 @@ GameObject:
   - component: {fileID: 6121937255893879592}
   - component: {fileID: 5451090860404744581}
   - component: {fileID: 6605706319624744752}
-  - component: {fileID: 6145158026267442702}
   m_Layer: 0
   m_Name: book_fried_onion
   m_TagString: Untagged
@@ -26622,7 +24886,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7746689838202435228, guid: b113e1b77fb65c444ab4208cb78e9ba1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -26680,18 +24944,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6145158026267442702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6239139494641120950}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &6301189909754830588
 GameObject:
   m_ObjectHideFlags: 0
@@ -26775,7 +25027,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &888003719296591170
@@ -26956,7 +25208,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &122585849039524537
@@ -27065,7 +25317,6 @@ GameObject:
   - component: {fileID: 5504230160808154226}
   - component: {fileID: 2512479596284811532}
   - component: {fileID: 5359675757191539726}
-  - component: {fileID: 60686085511958979}
   m_Layer: 0
   m_Name: classic_lock
   m_TagString: Untagged
@@ -27135,7 +25386,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -27193,18 +25444,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &60686085511958979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6326340456660176817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &6344546825337615770
 GameObject:
   m_ObjectHideFlags: 0
@@ -27286,7 +25525,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -5859064968924809791, guid: ab6e601f8498c95458e914393ef1c324, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -27439,7 +25678,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &604472233853853523
@@ -27620,7 +25859,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &902160415876722899
@@ -27729,7 +25968,6 @@ GameObject:
   - component: {fileID: 5150179155876061978}
   - component: {fileID: 6500090906516411283}
   - component: {fileID: 2142580123551697947}
-  - component: {fileID: 4819996036426688479}
   m_Layer: 0
   m_Name: classic_lock
   m_TagString: Untagged
@@ -27799,7 +26037,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -27857,18 +26095,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4819996036426688479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6492348019877378690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &6493573982341954371
 GameObject:
   m_ObjectHideFlags: 0
@@ -27952,7 +26178,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &147388623499168044
@@ -28133,7 +26359,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5901875921995339146
@@ -28242,7 +26468,6 @@ GameObject:
   - component: {fileID: 1876231325635241981}
   - component: {fileID: 1930216749050670453}
   - component: {fileID: 4990335273954701607}
-  - component: {fileID: 3763859522574823100}
   m_Layer: 0
   m_Name: healthy_lock
   m_TagString: Untagged
@@ -28312,7 +26537,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -28370,18 +26595,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3763859522574823100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6601751463074816534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &6620279260978420272
 GameObject:
   m_ObjectHideFlags: 0
@@ -28393,7 +26606,6 @@ GameObject:
   - component: {fileID: 6307015167559143312}
   - component: {fileID: 6557755827868468708}
   - component: {fileID: 4365865436430996214}
-  - component: {fileID: 9139214355567009555}
   m_Layer: 0
   m_Name: rich_lock
   m_TagString: Untagged
@@ -28463,7 +26675,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -28521,18 +26733,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &9139214355567009555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6620279260978420272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &6648048190385703760
 GameObject:
   m_ObjectHideFlags: 0
@@ -28616,7 +26816,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &4014250693061557462
@@ -28797,7 +26997,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &6034823169969738061
@@ -28906,7 +27106,6 @@ GameObject:
   - component: {fileID: 5363770196263397891}
   - component: {fileID: 8993577026909569397}
   - component: {fileID: 6400071570596085060}
-  - component: {fileID: 3958105035816024206}
   m_Layer: 0
   m_Name: locked
   m_TagString: Untagged
@@ -28976,7 +27175,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -29034,18 +27233,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3958105035816024206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6720087443426092318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &6730222039010147602
 GameObject:
   m_ObjectHideFlags: 0
@@ -29057,7 +27244,6 @@ GameObject:
   - component: {fileID: 7350532298533325485}
   - component: {fileID: 3276522260181106674}
   - component: {fileID: 4361371074854706941}
-  - component: {fileID: 8911623694226549920}
   m_Layer: 0
   m_Name: locked (4)
   m_TagString: Untagged
@@ -29127,7 +27313,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -29185,18 +27371,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8911623694226549920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6730222039010147602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &6766895237206719931
 GameObject:
   m_ObjectHideFlags: 0
@@ -29280,7 +27454,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &6484582181097393569
@@ -29461,7 +27635,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5158311719490469924
@@ -29642,7 +27816,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &4433892550064490435
@@ -29845,7 +28019,6 @@ GameObject:
   - component: {fileID: 4735225458284994364}
   - component: {fileID: 6513931228192413297}
   - component: {fileID: 7298187852112704453}
-  - component: {fileID: 8520098231457833115}
   m_Layer: 0
   m_Name: healthy_lock
   m_TagString: Untagged
@@ -29915,7 +28088,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -29973,18 +28146,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8520098231457833115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6866065232521298021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &6941232854022618651
 GameObject:
   m_ObjectHideFlags: 0
@@ -30031,7 +28192,6 @@ Transform:
   - {fileID: 1075845577115475637}
   - {fileID: 130673512309587695}
   - {fileID: 679812984964639171}
-  - {fileID: 1783528922796615246}
   - {fileID: 2347048341219745331}
   - {fileID: 32982869959043940}
   - {fileID: 6629989605481261843}
@@ -30080,9 +28240,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8608697936978047841}
-  - {fileID: 7773354252374753204}
   - {fileID: 7944501532581500334}
-  - {fileID: 2936526170149541492}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8598063918566484350
@@ -30101,7 +28259,7 @@ MonoBehaviour:
   panel2: {fileID: 5049884126616880148}
   arrowLeft: {fileID: 7068912194581076774}
   arrowRight: {fileID: 6344546825337615770}
-  clickCatcher: {fileID: 8560664841675809991}
+  bookBackground: {fileID: 1663109392900565881}
   pages:
   - {fileID: 6941232854022618651}
   - {fileID: 2787947300793786667}
@@ -30128,6 +28286,7 @@ MonoBehaviour:
   - {fileID: 8018830373855937051}
   - {fileID: 4215290052140414161}
   - {fileID: 2512537316786082421}
+  turnSound: {fileID: 0}
 --- !u!1 &7068912194581076774
 GameObject:
   m_ObjectHideFlags: 0
@@ -30210,7 +28369,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3646648088846649019, guid: 9bd7adb2b00f1384f9ebd5ce58c5289e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -30347,7 +28506,6 @@ GameObject:
   - component: {fileID: 1007806821401838809}
   - component: {fileID: 4402880247668941171}
   - component: {fileID: 1180391269550383298}
-  - component: {fileID: 6994579603807401983}
   m_Layer: 0
   m_Name: book_mango
   m_TagString: Untagged
@@ -30417,7 +28575,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8414037911259995995, guid: 34484945565db9d408673ae4d3032bd8, type: 3}
   m_Color: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
@@ -30475,18 +28633,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6994579603807401983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7153733849732614054}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &7159156315714840263
 GameObject:
   m_ObjectHideFlags: 0
@@ -30570,7 +28716,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &4542392660199552589
@@ -30787,7 +28933,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &4480466969947276527
@@ -30896,7 +29042,6 @@ GameObject:
   - component: {fileID: 883636378512636052}
   - component: {fileID: 4255635042264932288}
   - component: {fileID: 2145533904709710732}
-  - component: {fileID: 4676756557349512012}
   m_Layer: 0
   m_Name: sweet_lock
   m_TagString: Untagged
@@ -30966,7 +29111,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -31024,18 +29169,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4676756557349512012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7359939421353893162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &7396825762644717957
 GameObject:
   m_ObjectHideFlags: 0
@@ -31152,7 +29285,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &2841168070992013344
@@ -31261,7 +29394,6 @@ GameObject:
   - component: {fileID: 5919248092491698679}
   - component: {fileID: 3164381541956678224}
   - component: {fileID: 6294668949202412794}
-  - component: {fileID: 9031181687891131885}
   m_Layer: 0
   m_Name: spicy_lock
   m_TagString: Untagged
@@ -31331,7 +29463,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -31389,18 +29521,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &9031181687891131885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7463533342531708303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &7489049376626085972
 GameObject:
   m_ObjectHideFlags: 0
@@ -31444,7 +29564,6 @@ GameObject:
   - component: {fileID: 2689398721973144400}
   - component: {fileID: 752805201145716799}
   - component: {fileID: 3996624187539440371}
-  - component: {fileID: 1867738738976447462}
   m_Layer: 0
   m_Name: book_mango
   m_TagString: Untagged
@@ -31514,7 +29633,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8414037911259995995, guid: 34484945565db9d408673ae4d3032bd8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -31572,18 +29691,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1867738738976447462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7539877949123550563}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &7542413381793211159
 GameObject:
   m_ObjectHideFlags: 0
@@ -31595,7 +29702,6 @@ GameObject:
   - component: {fileID: 5773682810810441949}
   - component: {fileID: 1211009537346433175}
   - component: {fileID: 6645742448390904985}
-  - component: {fileID: 3695608353339444865}
   m_Layer: 0
   m_Name: healthy_lock
   m_TagString: Untagged
@@ -31665,7 +29771,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -31723,18 +29829,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3695608353339444865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7542413381793211159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &7570469170068429736
 GameObject:
   m_ObjectHideFlags: 0
@@ -31818,7 +29912,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &1191442042317302096
@@ -31999,7 +30093,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &2109215379801149478
@@ -32108,7 +30202,6 @@ GameObject:
   - component: {fileID: 7285381690367516240}
   - component: {fileID: 6199555858721705714}
   - component: {fileID: 5072191136588399477}
-  - component: {fileID: 1032431493331868383}
   m_Layer: 0
   m_Name: book_avocado
   m_TagString: Untagged
@@ -32178,7 +30271,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6443217551946223865, guid: 83304d5a27722d141b0035c9aeb64aa9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -32236,18 +30329,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1032431493331868383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7593244018218210507}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &7817261232102110583
 GameObject:
   m_ObjectHideFlags: 0
@@ -32259,7 +30340,6 @@ GameObject:
   - component: {fileID: 1295756589266396843}
   - component: {fileID: 4397479480882228691}
   - component: {fileID: 3972989342212579760}
-  - component: {fileID: 5516955254301734566}
   m_Layer: 0
   m_Name: classic_lock
   m_TagString: Untagged
@@ -32329,7 +30409,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -32387,18 +30467,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &5516955254301734566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7817261232102110583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &7831310120015605056
 GameObject:
   m_ObjectHideFlags: 0
@@ -32410,7 +30478,6 @@ GameObject:
   - component: {fileID: 4512777276102269661}
   - component: {fileID: 4867907812508824769}
   - component: {fileID: 84785585262054336}
-  - component: {fileID: 5936636348188234815}
   m_Layer: 0
   m_Name: classic_lock
   m_TagString: Untagged
@@ -32480,7 +30547,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -32538,18 +30605,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &5936636348188234815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7831310120015605056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &7846848706508694556
 GameObject:
   m_ObjectHideFlags: 0
@@ -32691,7 +30746,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &7257037276755139364
@@ -32872,7 +30927,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5582065245372545872
@@ -33053,7 +31108,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &4989338974516605134
@@ -33162,7 +31217,6 @@ GameObject:
   - component: {fileID: 5750250106781124773}
   - component: {fileID: 3745995178264912460}
   - component: {fileID: 5970268846764515196}
-  - component: {fileID: 3477038352943096755}
   m_Layer: 0
   m_Name: sweet_lock
   m_TagString: Untagged
@@ -33232,7 +31286,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -33290,18 +31344,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3477038352943096755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7983399245842988442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &7998175987056037589
 GameObject:
   m_ObjectHideFlags: 0
@@ -33385,7 +31427,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &8663186477311108279
@@ -33566,7 +31608,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &826224625392735254
@@ -33747,7 +31789,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &8772110624566424457
@@ -33928,7 +31970,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &7358218712460240787
@@ -34109,7 +32151,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &8725105894194759393
@@ -34218,7 +32260,6 @@ GameObject:
   - component: {fileID: 1728942747334912890}
   - component: {fileID: 6738124646261704478}
   - component: {fileID: 874795765577037208}
-  - component: {fileID: 7094092476008820706}
   m_Layer: 0
   m_Name: rich_lock
   m_TagString: Untagged
@@ -34288,7 +32329,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -34346,18 +32387,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7094092476008820706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8166129758934618356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &8190275217507757920
 GameObject:
   m_ObjectHideFlags: 0
@@ -34441,7 +32470,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &6827383921192429090
@@ -34586,7 +32615,6 @@ GameObject:
   - component: {fileID: 6404754485744057418}
   - component: {fileID: 7544343783562033601}
   - component: {fileID: 6385719143732373903}
-  - component: {fileID: 1368126659070641757}
   m_Layer: 0
   m_Name: sweet_lock
   m_TagString: Untagged
@@ -34656,7 +32684,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -34714,18 +32742,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1368126659070641757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8221559138959391960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &8247435901993348207
 GameObject:
   m_ObjectHideFlags: 0
@@ -34867,7 +32883,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5112267554677155365
@@ -35048,7 +33064,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &7236319073135259162
@@ -35229,7 +33245,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &183621380459451049
@@ -35408,7 +33424,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: a2e43905afd07c245b4bb3fde9651b3e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -35478,6 +33494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e936fea627bdf3438803cf33d80c989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GuidebookOpener
+  clickSound: {fileID: 0}
 --- !u!1 &8537342520221174611
 GameObject:
   m_ObjectHideFlags: 0
@@ -35489,7 +33506,6 @@ GameObject:
   - component: {fileID: 6648858818791627315}
   - component: {fileID: 8415855423384803250}
   - component: {fileID: 7510159324058067179}
-  - component: {fileID: 8181308679457626529}
   m_Layer: 0
   m_Name: classic_lock
   m_TagString: Untagged
@@ -35559,7 +33575,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -35617,169 +33633,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8181308679457626529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8537342520221174611}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
---- !u!1 &8560664841675809991
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2936526170149541492}
-  - component: {fileID: 6308337562226709692}
-  - component: {fileID: 5925697970897090477}
-  - component: {fileID: 2535476076738871779}
-  m_Layer: 0
-  m_Name: ClickCatcher
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &2936526170149541492
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8560664841675809991}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.53, y: -0.48, z: -3}
-  m_LocalScale: {x: 39, y: 22, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6176897731836814824}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6308337562226709692
-SpriteRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8560664841675809991}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 100
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
---- !u!61 &5925697970897090477
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8560664841675809991}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &2535476076738871779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8560664841675809991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &8575824739200564752
 GameObject:
   m_ObjectHideFlags: 0
@@ -35791,7 +33644,6 @@ GameObject:
   - component: {fileID: 2466542569197116516}
   - component: {fileID: 1200529245823053830}
   - component: {fileID: 8238370529097583818}
-  - component: {fileID: 3138981040937870295}
   m_Layer: 0
   m_Name: classic_lock
   m_TagString: Untagged
@@ -35861,7 +33713,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -35919,18 +33771,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3138981040937870295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8575824739200564752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &8584651564603059347
 GameObject:
   m_ObjectHideFlags: 0
@@ -35942,7 +33782,6 @@ GameObject:
   - component: {fileID: 3429360446175735756}
   - component: {fileID: 6966807854089040998}
   - component: {fileID: 8227513207684961325}
-  - component: {fileID: 5207292943293025277}
   m_Layer: 0
   m_Name: sweet_lock
   m_TagString: Untagged
@@ -36012,7 +33851,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -36070,18 +33909,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &5207292943293025277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8584651564603059347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &8659674712114154270
 GameObject:
   m_ObjectHideFlags: 0
@@ -36165,7 +33992,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &8058895909673794902
@@ -36274,7 +34101,6 @@ GameObject:
   - component: {fileID: 7398387595377071980}
   - component: {fileID: 2231791574652806287}
   - component: {fileID: 6312166997353750488}
-  - component: {fileID: 91024482298771827}
   m_Layer: 0
   m_Name: rich_lock
   m_TagString: Untagged
@@ -36344,7 +34170,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -36402,199 +34228,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &91024482298771827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8671241126433153815}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
---- !u!1 &8773857160724560164
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4276304452398308709}
-  - component: {fileID: 9059353201454057270}
-  - component: {fileID: 267592450105982092}
-  m_Layer: 0
-  m_Name: HeaderText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &4276304452398308709
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8773857160724560164}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7773354252374753204}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.3, y: 8.62}
-  m_SizeDelta: {x: 11.5142, y: 1.3286}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!23 &9059353201454057270
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8773857160724560164}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 8356042223540677512, guid: e90dbcfce5208d4479f0e18763e944e1, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 100
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &267592450105982092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8773857160724560164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshPro
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: INGREDIENTS
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e90dbcfce5208d4479f0e18763e944e1, type: 2}
-  m_sharedMaterial: {fileID: 8356042223540677512, guid: e90dbcfce5208d4479f0e18763e944e1, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 10
-  m_fontSizeBase: 10
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 4
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_characterHorizontalScale: 1
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 0
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -0.08561897}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  _SortingLayer: 0
-  _SortingLayerID: 0
-  _SortingOrder: 0
-  m_hasFontAssetChanged: 0
-  m_renderer: {fileID: 9059353201454057270}
-  m_maskType: 0
 --- !u!1 &8824817825561221555
 GameObject:
   m_ObjectHideFlags: 0
@@ -36606,7 +34239,6 @@ GameObject:
   - component: {fileID: 4874358747875442683}
   - component: {fileID: 1208239948948653439}
   - component: {fileID: 7661160112880206622}
-  - component: {fileID: 275581696011080623}
   m_Layer: 0
   m_Name: book_salmon (1)
   m_TagString: Untagged
@@ -36676,7 +34308,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -221456226722966725, guid: 5b42173adb30f874786b5d25de73573a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -36734,18 +34366,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &275581696011080623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8824817825561221555}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &8825231819958911166
 GameObject:
   m_ObjectHideFlags: 0
@@ -36887,7 +34507,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &8169150954258930035
@@ -36996,7 +34616,6 @@ GameObject:
   - component: {fileID: 9014727237526736002}
   - component: {fileID: 2050619957998111522}
   - component: {fileID: 2092701322961927739}
-  - component: {fileID: 3926707183293644374}
   m_Layer: 0
   m_Name: classic_lock
   m_TagString: Untagged
@@ -37066,7 +34685,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -37124,18 +34743,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3926707183293644374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8835700326775642714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &8888190748116217625
 GameObject:
   m_ObjectHideFlags: 0
@@ -37147,7 +34754,6 @@ GameObject:
   - component: {fileID: 1841737999964501262}
   - component: {fileID: 5422389337333400969}
   - component: {fileID: 7901563876872414788}
-  - component: {fileID: 1842522761072970182}
   m_Layer: 0
   m_Name: rich_lock
   m_TagString: Untagged
@@ -37217,7 +34823,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -37275,18 +34881,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1842522761072970182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8888190748116217625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &8939618294884214088
 GameObject:
   m_ObjectHideFlags: 0
@@ -37370,7 +34964,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &876137321968366378
@@ -37551,7 +35145,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5984472142262113214
@@ -37718,7 +35312,6 @@ GameObject:
   - component: {fileID: 2614594826194472958}
   - component: {fileID: 6968233149617343702}
   - component: {fileID: 4062746434428462102}
-  - component: {fileID: 1547945856397065035}
   m_Layer: 0
   m_Name: rich_lock
   m_TagString: Untagged
@@ -37788,7 +35381,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3846330120125846787, guid: 9774ae779ade92b45bc1dabacc04543f, type: 3}
   m_Color: {r: 0.509434, g: 0.47338912, b: 0.47338912, a: 1}
@@ -37846,18 +35439,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1547945856397065035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9109396182349285334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &9118132279615641004
 GameObject:
   m_ObjectHideFlags: 0
@@ -37869,7 +35450,6 @@ GameObject:
   - component: {fileID: 4378514280690063535}
   - component: {fileID: 1639898110520135653}
   - component: {fileID: 4169427841708747772}
-  - component: {fileID: 854887726187549026}
   m_Layer: 0
   m_Name: book_fried_chicken
   m_TagString: Untagged
@@ -37939,7 +35519,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -8338660807769302954, guid: 145363ec4a6ce3c4794cda5f62e2b99a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -37997,18 +35577,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &854887726187549026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9118132279615641004}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &9124563553200132707
 GameObject:
   m_ObjectHideFlags: 0
@@ -38092,7 +35660,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &230558142086744616
@@ -38306,7 +35874,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &8223882338851729365
@@ -38415,7 +35983,6 @@ GameObject:
   - component: {fileID: 7530197212917780302}
   - component: {fileID: 4453866101777391877}
   - component: {fileID: 6081811522922199334}
-  - component: {fileID: 3554382283219233980}
   m_Layer: 0
   m_Name: book_shrimp
   m_TagString: Untagged
@@ -38485,7 +36052,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_Sprite: {fileID: -611345357495766623, guid: 825c92fa7dc8f8d4f9173e9a85efd0a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -38543,18 +36110,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3554382283219233980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9175479887492919897}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664d0f8c6ab031547a5f1611399b2bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuidebookCloser
 --- !u!1 &9187086796497175691
 GameObject:
   m_ObjectHideFlags: 0
@@ -38638,7 +36193,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &7688183083352653031
@@ -38819,7 +36374,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 300
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &3985680007419607692
