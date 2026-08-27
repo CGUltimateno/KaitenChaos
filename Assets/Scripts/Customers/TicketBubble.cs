@@ -4,6 +4,8 @@ using UnityEngine;
 
 //implemented by Cise Nil Köksal on 05.08.2026
 //AI Assistance: ChatGPT(debugging support on three-state switching)
+//Extended by Mohamed Osman on 13.08.2026
+//AI assistance: Claude (autocomplete, architecture review)
 
 public class TicketBubble : MonoBehaviour
 {

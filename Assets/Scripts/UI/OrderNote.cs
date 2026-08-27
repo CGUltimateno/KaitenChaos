@@ -3,6 +3,8 @@ using UnityEngine;
 using TMPro;
 
 // Implemented by: Cise Nil Köksal on 06.08.2026
+// Extended by Mohamed Osman on 13.08.2026   
+//AI assistance: Claude (autocomplete, architecture review)
 
 public class OrderNote : MonoBehaviour
 {
