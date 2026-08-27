@@ -7,6 +7,7 @@ public class FullscreenToggle : MonoBehaviour
 {
     [SerializeField] private GameObject checkmark;
     [SerializeField] private AudioSource clickSound;
+    [SerializeField] private ResolutionCycler resolutionCycler;
 
     private void OnEnable()
     {
@@ -19,5 +20,6 @@ public class FullscreenToggle : MonoBehaviour
         bool newValue = !SettingsManager.Instance.IsFullscreen;
         SettingsManager.Instance.SetFullscreen(newValue);
         checkmark.SetActive(newValue);
+        resolutionCycler.RefreshInteractable();
     }
 }
