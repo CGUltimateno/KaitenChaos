@@ -21,6 +21,10 @@ public class SettingsManager : MonoBehaviour
     public float SfxVolume { get; private set; }
     public bool IsFullscreen { get; private set; }
     public bool IsOpen => settingsPanel.activeSelf;
+    public int CurrentWidth { get; private set; }
+    public int CurrentHeight { get; private set; }
+    private const int DefaultWidth = 1280;
+    private const int DefaultHeight = 720;
 
     private void Awake()
     {
@@ -29,25 +33,32 @@ public class SettingsManager : MonoBehaviour
 
         MusicVolume = PlayerPrefs.GetFloat(MusicVolumeKey, 1f);
         SfxVolume = PlayerPrefs.GetFloat(SfxVolumeKey, 1f);
-        IsFullscreen = PlayerPrefs.GetInt(FullscreenKey, Screen.fullScreen ? 1 : 0) == 1;
+        IsFullscreen = PlayerPrefs.GetInt(FullscreenKey, 0) == 1;
 
+        int width = PlayerPrefs.GetInt(ResolutionWidthKey, DefaultWidth);
+        int height = PlayerPrefs.GetInt(ResolutionHeightKey, DefaultHeight);
         ApplyMusicVolume();
         ApplySfxVolume();
         Screen.fullScreen = IsFullscreen;
 
-        if (PlayerPrefs.HasKey(ResolutionWidthKey))
-        {
-            int width = PlayerPrefs.GetInt(ResolutionWidthKey);
-            int height = PlayerPrefs.GetInt(ResolutionHeightKey);
-            Screen.SetResolution(width, height, IsFullscreen);
-        }
+        Screen.SetResolution(width, height, IsFullscreen);
+        CurrentWidth = width;
+        CurrentHeight = height;
 
         settingsPanel.SetActive(false);
+    }
+
+    private void Start()
+    {
+        ApplyMusicVolume();
+        ApplySfxVolume();
     }
 
     public void OpenSettings()
     {
         settingsPanel.SetActive(true);
+        foreach (var handle in settingsPanel.GetComponentsInChildren<VolumeSliderHandle>(true))
+            handle.Refresh();
     }
 
     public void CloseSettings()
@@ -77,8 +88,23 @@ public class SettingsManager : MonoBehaviour
     public void SetFullscreen(bool value)
     {
         IsFullscreen = value;
-        Screen.fullScreen = value;
         PlayerPrefs.SetInt(FullscreenKey, value ? 1 : 0);
+
+        if (value)
+        {
+            Resolution native = Screen.currentResolution;
+            Screen.SetResolution(native.width, native.height, true);
+            CurrentWidth = native.width;
+            CurrentHeight = native.height;
+        }
+        else
+        {
+            int width = PlayerPrefs.GetInt(ResolutionWidthKey, DefaultWidth);
+            int height = PlayerPrefs.GetInt(ResolutionHeightKey, DefaultHeight);
+            Screen.SetResolution(width, height, false);
+            CurrentWidth = width;
+            CurrentHeight = height;
+        }
     }
 
     public void SetResolution(int width, int height)
@@ -86,5 +112,7 @@ public class SettingsManager : MonoBehaviour
         Screen.SetResolution(width, height, IsFullscreen);
         PlayerPrefs.SetInt(ResolutionWidthKey, width);
         PlayerPrefs.SetInt(ResolutionHeightKey, height);
+        CurrentWidth = width;
+        CurrentHeight = height;
     }
 }
