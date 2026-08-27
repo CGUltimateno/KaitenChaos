@@ -8,6 +8,12 @@ public class Clock : MonoBehaviour
 
     private void Update()
     {
+        if (DayManager.Instance == null) return;
+
+        bool visible = DayManager.Instance.CurrentState == DayManager.DayState.Spawning
+            || DayManager.Instance.CurrentState == DayManager.DayState.LastOrders;
+   
+        if (!visible) return;
         float progress = DayManager.Instance.DayProgress;
 
         float angle = Mathf.Lerp(-90f, 90f, progress);

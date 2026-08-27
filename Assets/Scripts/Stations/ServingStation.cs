@@ -13,6 +13,7 @@ public class ServingStation : MonoBehaviour
     [SerializeField] private Transform plateSlot;
     [SerializeField] private BoxCollider2D conveyorBeltCollider;
     [SerializeField] private BoxCollider2D trashCollider;
+    [SerializeField] private Transform conveyorStart;
     [SerializeField] private Transform conveyorEnd;
     private bool dishMoving = false;
     [SerializeField] private float conveyorSpeed = 6f;
@@ -109,6 +110,7 @@ public class ServingStation : MonoBehaviour
         placeSound.Play();
         if (conveyorBeltCollider.bounds.Contains(worldPos))
         {
+            dishIconObj.transform.position = conveyorStart.position;
             dishIconObj.transform.localScale = new Vector3(0.73f, 0.76f, 1f);
             dishMoving = true;
         }
