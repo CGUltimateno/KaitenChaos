@@ -89,7 +89,7 @@ The clock at the top-center of the screen shows how much time is left in the cur
 ### Background Music — Midnight.mp3
 
 * Path: esp-26-kaiten-chaos\Assets\Audio\used\Midnight.mp3
-* Link: https://fablefly-music.itch.io/lily-paddling-down-the-stream
+* Link: https://swarajthegreat.itch.io/lo-fi-soundtrack-pack
 * License: "Royalty-free for personal & commercial use" as declared on the source page.
 
 ### main_button_sound, station_buttons_sound
