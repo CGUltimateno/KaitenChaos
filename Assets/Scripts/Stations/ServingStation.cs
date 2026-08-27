@@ -2,7 +2,8 @@ using System.Collections;
 using UnityEngine;
 
 // Implemented by Mohamed Osman on 2026-08-08
-//Extended by Cise Nil Köksal on 21/08/2026 - Guidebook unlocks, on 24/08/2026 - Plate animation. AI: ChatGPT (animation implementation, guidebook debugging)
+//Extended by Cise Nil Köksal on 21/08/2026 - Guidebook unlocks, 
+// on 24/08/2026 - Plate animation. AI: ChatGPT (animation implementation, guidebook debugging) Prompts ( roughly): "How can I animate the plate moving along the conveyor belt after it is dropped?", Why does my plate get placed at the conveyor start but not move?, debug the guidebook trait unlocking in my serving station
 // AI assistance: Claude (autocomplete, architecture review)
 
 

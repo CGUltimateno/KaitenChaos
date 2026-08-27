@@ -1,6 +1,7 @@
 using UnityEngine;
 // Implemented by Cise Nil Köksal on 21/08/2026
 // AI Assistance: ChatGPT (Conceptualization, Autocomplete, Debugging)
+// Prompts (roughly): "How can I make the guidebook display different rating sprites for trait scores from -2 to +2?", "Why isn't Resources.Load finding my rating sprites?", "Add debug logs for loading and displaying the correct score sprite"
 public class GuidebookPage : MonoBehaviour
 {
 
