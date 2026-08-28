@@ -1,5 +1,9 @@
 # esp-26-kaiten-chaos
 
+## Start Scene
+
+Open `Assets/Scenes/Main.unity` and press Play — it's the only scene in the project.
+
 ## Guide
 
 In this game, you play as a sushi chef. Each day, customers come in and place "vibe-based" orders. Instead of directly ordering a sushi roll with specific ingredients, a customer might ask you to "keep it classic", for example.
@@ -79,6 +83,37 @@ For example, after trying mango for a Sweet order, you can check the guidebook t
 ### Day Timer
 
 The clock at the top-center of the screen shows how much time is left in the current day.
+
+---
+
+## Self-Created Assets
+
+All original art and audio in this project was created by Cise Nil Köksal, including:
+
+* `Assets/Resources/Art/people/*` — customer portraits
+* `Assets/Resources/Art/objects/ingredients/*` — ingredient sprites
+* `Assets/Resources/Art/objects/book_ratings/*` — guidebook trait-rating icons
+* `Assets/Resources/Art/objects/clock/*` — day-clock art
+* `Assets/Resources/Art/background/*` — station backgrounds
+* `Assets/Resources/Art/objects/plates/*` — dish and plate sprites
+
+All code (gameplay systems, UI logic, scoring) was implemented by Mohamed Osman, with contributions from Cise Nil Köksal on specific scripts — see the "Implemented by / Extended by" comment at the top of each script for exact per-file attribution.
+
+## Generative AI Disclosure
+
+Claude was used throughout development for autocomplete and architecture review on the C# scripts — see the "AI assistance: Claude" comment at the top of each script for which files. ChatGPT was used by Cise Nil Köksal for targeted debugging help on specific systems — see the "AI Assistance: ChatGPT" comments at the top of each script for which files.
+
+## Scene Structure
+
+The project is a single scene (`Main.unity`) with all screens as sibling GameObjects toggled by `ViewManager`: Main Menu, Order View (restaurant floor + seated customers), four station views (Ingredients, Filling/Assembly, Cutting, Serving), and the Day End summary. Overlay panels — Settings, Pause, Guidebook, Credits — layer on top regardless of which station is currently active.
+
+## Assets Folder Structure
+
+* `Scripts/` — Core (managers: Day, View, Pause, Settings, Guidebook), Customers (seating, tickets, patience), Stations (ingredient/filling/cutting/serving stations), Scoring (craving/filling/cut scoring), UI, Data (JSON loading)
+* `Resources/Data/` — ingredient and order JSON, loaded at runtime by `GameDatabase`
+* `Resources/Art/` — ingredients, backgrounds, character portraits, guidebook art
+* `Prefabs/` — reusable station and UI prefabs
+* `Audio/`, `Casual Game Sounds U6/` — SFX and music (see Credits below for sourcing)
 
 ---
 
