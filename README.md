@@ -1,5 +1,11 @@
 # esp-26-kaiten-chaos
 
+## About
+
+This game was created as a university project for the Introduction to Game Programming course at the University of Augsburg. It was originally developed and submitted in the university GitLab repository, and is published here as part of my personal portfolio:
+
+[Original university GitLab repository](https://git.rz.uni-augsburg.de/koeksaci/esp-26-kaiten-chaos)
+
 ## Start Scene
 
 Open `Assets/Scenes/Main.unity` and press Play — it's the only scene in the project.
